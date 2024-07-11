@@ -2,15 +2,15 @@ package model;
 
 public class World {
 
-    private int week;
+    private static int week;
     private long population;
     private double growth;
     private int environment;
     private int economy;
     private int science;
 
-    public int getWeek() {
-        return week;
+    public static int getWeek() {
+        return World.week;
     }
 
     public long getPopulation() {
@@ -33,8 +33,8 @@ public class World {
         return science;
     }
 
-    public void setWeek(int week) {
-        this.week = week;
+    public static void setWeek(int w) {
+        World.week = w;
     }
 
     public void setPopulation(long population) {
@@ -57,8 +57,8 @@ public class World {
         this.science = science;
     }
 
-    public void nextWeek() {
-        this.week++;
+    public static void nextWeek() {
+        World.week++;
     }
 
     public void changePopulation(int n) {
@@ -81,7 +81,7 @@ public class World {
         population = Math.round(population + (population * growth));
     }
 
-    public void printState() {
+    public void printWorldState() {
         System.out.println(
                 "| pop. "
                         + this.population

@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import util.FileReaderUtil;
 import util.Question;
+import model.Player;
 
 public class Quiz {
 
@@ -15,13 +16,17 @@ public class Quiz {
     private int correctAnswers;
     private int incorrectAnswers;
     private int difficultyLevel;
+    private static List<Integer> scores = new ArrayList<>();
+    private static int bonus = 0;
+    private Player player;
 
-    public Quiz() {
+    public Quiz(Player player) {
         this.score = 0;
         this.totalQuestions = 0;
         this.correctAnswers = 0;
         this.incorrectAnswers = 0;
         this.difficultyLevel = 0;
+        this.player = player;
     }
 
     public int getScore() {
@@ -42,6 +47,10 @@ public class Quiz {
 
     public int getDifficultyLevel() {
         return this.difficultyLevel;
+    }
+
+    public static int getBonus() {
+        return bonus;
     }
 
     public void startMathQuiz() {
@@ -121,14 +130,15 @@ public class Quiz {
             // Check if the user fails the test in this category
             if (incorrectAnswers > totalQuestions / 2) {
                 System.out.println("Too many incorrect. You have failed the test");
+                askToPlayAgain();
                 return;
             }
         }
 
-        score = (int) ((double) correctAnswers / totalQuestions * 100);
-        System.out.println("You answered " + correctAnswers + " out of " + totalQuestions + " questions correctly.");
-        System.out.println("Your score is: " + score + "%");
+        updateScoreAndBonus("intelligence");
+        askToPlayAgain();
     }
+
     public void startTriviaQuiz(String category) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -141,16 +151,17 @@ public class Quiz {
         }
 
         List<Question> selectedQuestions = new ArrayList<>();
-        List<Question> askedQuestions = new ArrayList<>();
         for (int i = 1; i <= 3; i++) {
             final int difficulty = i;
             List<Question> difficultyQuestions = questions.stream()
-                    .filter(q -> q.getDifficulty() == difficulty && !askedQuestions.contains(q))
+                    .filter(q -> q.getDifficulty() == difficulty)
                     .collect(Collectors.toList());
             for (int j = 0; j < 5; j++) {
-                Question selectedQuestion = difficultyQuestions.get(random.nextInt(difficultyQuestions.size()));
+                if (difficultyQuestions.isEmpty()) {
+                    break; // Break if there are no more questions available for this difficulty
+                }
+                Question selectedQuestion = difficultyQuestions.remove(random.nextInt(difficultyQuestions.size()));
                 selectedQuestions.add(selectedQuestion);
-                askedQuestions.add(selectedQuestion);
             }
         }
 
@@ -171,22 +182,85 @@ public class Quiz {
             // Check if the user fails the test in this category
             if (incorrectAnswers > totalQuestions / 2) {
                 System.out.println("Too many incorrect. You have failed the test.");
+                askToPlayAgain();
                 return;
             }
         }
 
+        updateScoreAndBonus("power");
+        askToPlayAgain();
+    }
+
+    private void updateScoreAndBonus(String attribute) {
         score = (int) ((double) correctAnswers / totalQuestions * 100);
         System.out.println("You answered " + correctAnswers + " out of " + totalQuestions + " questions correctly.");
         System.out.println("Your score is: " + score + "%");
+
+        if (score < 75) {
+            System.out.println("You scored below 75%. You will receive a -2 penalty, and no bonus from the score.");
+            bonus -= 2;  // Penalty for scoring below 75%
+            scores.add(0);
+        } else if (score > 95) {
+            System.out.println("You scored near perfectly. You will receive a +2 extra bonus.");
+            bonus += 2;
+            scores.add(score);// Bonus for scoring 100%
+        } else scores.add(score);
+
+        calculateBonus(attribute);
     }
 
+    private void calculateBonus(String attribute) {
+        int totalScore = 0;
+        if (scores.isEmpty()) {
+            return;
+        }
 
-    public static void main(String[] args) {
-        Quiz quiz = new Quiz();
+        for (int score : scores) {
+            totalScore += score;
+        }
+        int totalBonus = 0;
+        int attributeBonus = 0;
+
+        if (!(scores.size() == 1 && scores.get(0) == 0)) {
+            double averageScore = (double) totalScore / scores.size();
+            System.out.println("Average score: " + averageScore);
+            attributeBonus = (int) Math.round(averageScore / 13);
+            totalBonus = bonus + attributeBonus;
+        } else {
+            totalBonus = bonus;
+        }
+
+        if (attribute.equals("intelligence")) {
+            player.changeIntelligence(totalBonus);
+            System.out.println("Intelligence increased by " + totalBonus);
+        } else if (attribute.equals("power")) {
+            player.changePower(totalBonus);
+            System.out.println("Power increased by " + totalBonus);
+        }
+
+        bonus += attributeBonus;
+    }
+
+    private void askToPlayAgain() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Do you want to play again? [0] Exit [1] Play Again");
+        int choice = scanner.nextInt();
+        if (choice == 1) {
+            main(new String[]{});
+        } else {
+            System.out.println("Your final bonus is: " + bonus);
+            System.out.println("Player's final state:");
+            player.printPlayerState();
+            System.exit(0);
+        }
+    }
+
+    public static void startQuiz(Quiz quiz, Player player) {
         System.out.println("""
         Welcome to the Quiz section!
         What type of Quiz do you want to do?
-        [1] Math Quiz [2] Trivia Quiz
+        You can either increase your intelligence, or your power.
+        [1] Math Quiz [2] Power Quiz
         """);
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -196,6 +270,8 @@ public class Quiz {
                 break;
             case 2:
                 System.out.println("""
+                Welcome to Trivia. Time to test your knowledge!
+                Most answers are one-word, so often only last names of people are asked.
                 Choose a category: 
                 [1] Nature [2] Music [3] History [4] Literature [5] Java
                 """);
@@ -215,6 +291,10 @@ public class Quiz {
                 quiz.startMathQuiz();
                 break;
         }
-        System.out.println("Final score: " + quiz.getScore() + "%");
+    }
+    public static void main(String[] args) {
+        Player player = new Player();
+        Quiz quiz = new Quiz(player);
+        startQuiz(quiz, player);
     }
 }

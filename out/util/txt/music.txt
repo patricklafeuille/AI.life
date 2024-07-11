@@ -1,0 +1,92 @@
+1;Who is known as the King of Pop?;Michael Jackson
+1;What is the highest female singing voice?;soprano
+1;Which instrument has black and white keys?;piano
+1;Who is known for the hit song "Shape of You"?;Ed Sheeran
+1;Which famous band was John Lennon a part of?;The Beatles
+1;What is the smallest and highest-pitched string instrument in an orchestra?;violin
+1;Who is known as the Queen of Pop?;Madonna
+1;Which instrument is often used in jazz music?;saxophone
+1;What is the main percussion instrument in a marching band?;drum
+1;Who sang "Thriller"?;Michael Jackson
+1;What is the musical symbol for silence?;rest
+1;Who is known for the song "Rolling in the Deep"?;Adele
+1;What do you call a group of singers?;choir
+1;Which composer wrote "The Four Seasons"?;Vivaldi
+1;What is the lowest male singing voice?;bass
+1;Who is known for the song "Hello"?;Adele
+1;What type of music is Beethoven known for?;classical
+1;Who is the lead singer of U2?;Bono
+1;Which instrument does Yo-Yo Ma play?;cello
+1;Who is known for the song "Happy"?;Pharrell Williams
+1;What instrument has strings and is played with a bow?;violin
+1;Who is known for the song "Bad Guy"?;Billie Eilish
+1;Which instrument has pedals and strings and is played by plucking?;harp
+1;What is the term for the speed of music?;tempo
+1;Who is known for the song "Uptown Funk"?;Bruno Mars
+1;Which instrument is played by blowing air into it and pressing keys?;flute
+1;Who is known for the song "Firework"?;Katy Perry
+1;What is the musical term for "loud"?;forte
+1;Who is known for the song "Blinding Lights"?;The Weeknd
+1;Which instrument is commonly used in rock music?;guitar
+2;What is the musical term for "soft"?;piano
+2;Who composed the opera "The Magic Flute"?;Mozart
+2;What is the musical term for gradually getting louder?;crescendo
+2;Who is known for the album "Lemonade"?;Beyoncé
+2;What is the musical term for gradually getting softer?;diminuendo
+2;Who composed "Swan Lake"?;Tchaikovsky
+2;What is the musical term for a quick, lively tempo?;allegro
+2;Who is known for the song "Like a Rolling Stone"?;Bob Dylan
+2;What is the term for a combination of three or more notes played together?;chord
+2;Who is known for the song "Imagine"?;John Lennon
+2;What is the musical term for the highness or lowness of a sound?;pitch
+2;Who composed the "Moonlight Sonata"?;Beethoven
+2;What is the term for a repeated pattern in music?;ostinato
+2;Who is known for the song "Purple Rain"?;Prince
+2;What is the term for a smooth, connected style of playing?;legato
+2;Who is known for the song "Bohemian Rhapsody"?;Queen
+2;What is the term for the structure of a musical composition?;form
+2;Who composed the "1812 Overture"?;Tchaikovsky
+2;What is the musical term for "medium loud"?;mezzo forte
+2;Who is known for the song "Born in the U.S.A."?;Bruce Springsteen
+2;What is the term for a musical piece written for two performers?;duet
+2;Who is known for the song "Billie Jean"?;Michael Jackson
+2;What is the term for a solo vocal piece in an opera?;aria
+2;Who composed "The Nutcracker"?;Tchaikovsky
+2;What is the term for the distinctive sound of an instrument or voice?;timbre
+2;Who is known for the song "Like a Prayer"?;Madonna
+2;What is the term for the combination of different musical notes played or sung at the same time?;harmony
+2;Who is known for the song "Respect"?;Aretha Franklin
+2;What is the term for the speed of a musical beat?;tempo
+2;Who composed "Symphony No. 5"?;Beethoven
+2;What is the term for a musical scale with half steps between certain notes?;chromatic
+3;What is the term for the repetition of a musical theme?;refrain
+3;Who is known for the opera "Carmen"?;Bizet
+3;What is the term for a sudden, sharp accent on a note or chord?;sforzando
+3;Who composed the "Rite of Spring"?;Stravinsky
+3;What is the term for a musical composition for a solo instrument, often with a piano accompaniment?;sonata
+3;Who is known for the symphony "From the New World"?;Dvořák
+3;What is the term for a scale with five notes?;pentatonic
+3;Who composed the "Flight of the Bumblebee"?;Rimsky-Korsakov
+3;What is the term for a musical form with a recurring leading theme, often found in the final movement of a sonata or concerto?;rondo
+3;Who is known for the song "Hallelujah"?;Leonard Cohen
+3;What is the term for a rhythm that emphasizes weak beats or off beats?;syncopation
+3;Who composed "Clair de Lune"?;Debussy
+3;What is the term for the distance between two musical notes?;interval
+3;Who is known for the song "Yesterday"?;The Beatles
+3;What is the term for the unique quality of sound that distinguishes one instrument or voice from another?;timbre
+3;Who composed "The Blue Danube"?;Johann Strauss II
+3;What is the term for a slow, lyrical piece of music, often a movement within a larger work?;adagio
+3;Who is known for the song "Imagine"?;John Lennon
+3;What is the term for a short, recurring musical idea or motif?;leitmotif
+3;Who composed "Eine kleine Nachtmusik"?;Mozart
+3;What is the term for the speed at which a piece of music is played?;tempo
+3;Who is known for the song "What a Wonderful World"?;Louis Armstrong
+3;What is the term for a set of related songs or pieces of music, performed together in a concert?;suite
+3;Who composed "The Planets"?;Holst
+3;What is the term for a long, extended musical composition for orchestra?;symphony
+3;Who is known for the song "Hotel California"?;Eagles
+3;What is the term for a group of notes played in ascending or descending order?;scale
+3;Who composed "Pictures at an Exhibition"?;Mussorgsky
+3;What is the term for a musical interval spanning seven diatonic scale degrees?;seventh
+3;Who is known for the song "Someone Like You"?;Adele
+3;What is the term for a musical passage or phrase played by two or more instruments or voices in alternation?;antiphony

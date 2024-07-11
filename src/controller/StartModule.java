@@ -1,4 +1,8 @@
 package controller;
+
+import model.World;
+import model.Player;
+import controller.TrainingPhase;
 public class StartModule extends main.Main {
 
     public static void showIntroduction() {
@@ -66,7 +70,7 @@ public class StartModule extends main.Main {
             String answer = util.Tools.getAns();
 
             if (answer.equals("1")) {
-                // Start training phase
+
             } else if (answer.equals("2")) {
                 // Start life phase
             } else {

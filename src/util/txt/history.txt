@@ -1,0 +1,84 @@
+1;Who was the first President of the United States?;Washington
+1;What year did World War II end?;1945
+1;Who was the first man to walk on the moon?;Armstrong
+1;What ancient civilization built the pyramids?;Egyptians
+1;Who wrote the Declaration of Independence?;Jefferson
+1;In what year did the Titanic sink?;1912
+1;Who was the British Prime Minister during World War II?;Churchill
+1;What country was the first to use paper money?;China
+1;Who discovered America in 1492?;Columbus
+1;What year did the Berlin Wall fall?;1989
+1;Who was the first woman to fly solo across the Atlantic?;Earhart
+1;What city was the first capital of the United States?;Philadelphia
+1;Who was the Roman god of war?;Mars
+1;Who was the second President of the United States?;Adams
+1;What year did the American Civil War start?;1861
+1;Who was the first emperor of Rome?;Augustus
+1;What year did the first manned moon landing occur?;1969
+1;Who was the leader of the Soviet Union during World War II?;Stalin
+1;What was the primary language of the Roman Empire?;Latin
+1;Who was the first Secretary of the Treasury in the United States?;Hamilton
+1;What was the original purpose of the Great Wall of China?;Defense
+1;Who was the Greek goddess of wisdom?;Athena
+1;Who was the first person to circumnavigate the globe?;Magellan
+1;What year did the French Revolution begin?;1789
+1;What year did the United States declare independence?;1776
+1;What ancient civilization used hieroglyphics?;Egyptians
+1;Who was the King of England during the American Revolution?;George
+1;Who was the first human to journey into outer space?;Gagarin
+1;What year did the Magna Carta get signed?;1215
+1;What ancient Greek philosopher taught Alexander the Great?;Aristotle
+2;Who was the first President of the Confederate States of America?;Davis
+2;What ancient city was buried by a volcanic eruption in 79 AD?;Pompeii
+2;Who was the longest reigning British monarch before Queen Elizabeth II?;Victoria
+2;What event started World War I?;Assassination
+2;Who was the leader of Nazi Germany?;Hitler
+2;What was the name of the ship that brought the first English settlers to Virginia in 1607?;Susan
+2;Who was the first woman to win a Nobel Prize?;Curie
+2;What empire was known for its road system?;Roman
+2;Who was the first African American Supreme Court Justice?;Marshall
+2;What famous prison was stormed during the French Revolution?;Bastille
+2;What was the main goal of the Crusades?;Holy Land
+2;Who was the first female Prime Minister of the United Kingdom?;Thatcher
+2;What country did the United States purchase Alaska from?;Russia
+2;Who was the longest-serving president of the United States?;Roosevelt
+2;What ancient civilization was known for its aqueducts?;Romans
+2;Who was the first emperor of China?;Qin
+2;What event is known as the "Great Hunger" in Irish history?;Famine
+2;Who was the leader of Italy during World War II?;Mussolini
+2;Who was the King of France during the French Revolution?;Louis
+2;What ancient city was known for its Hanging Gardens?;Babylon
+2;Who was the leader of the Soviet Union during the Cuban Missile Crisis?;Khrushchev
+2;What was the name of the plane that dropped the first atomic bomb?;Enola
+2;Who was the last monarch of the Kingdom of Hawaii?;Liliuokalani
+2;Who was the founder of the Mongol Empire?;Khan
+2;Who was the founder of the Persian Empire?;Cyrus
+2;What was the primary goal of the Manhattan Project?;Atomic bomb
+2;Who was the longest-reigning emperor of Japan?;Hirohito
+2;What was the main purpose of the Berlin Conference of 1884-1885?;Africa
+2;What year did the United States land the first man on the moon?;1969
+3;Who was the last emperor of Russia?;Nicholas
+3;What battle is considered the turning point of the American Civil War?;Gettysburg
+3;What was the main reason for the fall of the Roman Empire?;Barbarians
+3;Who was the first Prime Minister of India?;Nehru
+3;What year did the Spanish Armada attempt to invade England?;1588
+3;Who was the French military leader who rose to prominence during the French Revolution?;Napoleon
+3;What was the main purpose of the Silk Road?;Trade
+3;Who was the first President of the Republic of China?;Sun
+3;What treaty ended World War I?;Versailles
+3;Who was the first Chancellor of Germany?;Bismarck
+3;What was the name of the first artificial satellite?;Sputnik
+3;Who was the architect of the Holocaust?;Himmler
+3;What ancient civilization built Machu Picchu?;Inca
+3;What was the main cause of the Thirty Years' War?;Religion
+3;Who was the first President of South Africa after apartheid?;Mandela
+3;What battle marked the end of Napoleon's rule?;Waterloo
+3;What year did the Roman Republic become the Roman Empire?;27 BC
+3;Who was the first Secretary-General of the United Nations?;Lie
+3;What was the name of the first successful English colony in America?;Jamestown
+3;Who was the first female ruler of ancient Egypt?;Hatshepsut
+3;What event led to the United States entering World War II?;Pearl Harbor
+3;Who was the first President of the United States to be impeached?;Johnson
+3;What was the main reason for the Cuban Missile Crisis?;Missiles
+3;What ancient civilization built the Colosseum?;Romans
+3;What event marked the beginning of the Great Depression?;Crash

@@ -4,9 +4,9 @@ public class Player {
 
     private String name;
     private boolean objective; // Objective of the AI (true means good)
-    private boolean dataset;
-    private int intelligence;
-    private int power;
+    private boolean dataset; // Dataset of the AI (true means emotional)
+    private int intelligence; // IQ between 50 and 150
+    private int power; // Power between 0 and 100
 
     public String getName() {
         return name;
@@ -33,11 +33,15 @@ public class Player {
     }
 
     public void setIntelligence(int intelligence) {
+
         this.intelligence = intelligence;
+        System.out.println(" [*] Your intelligence is now " + intelligence);
     }
 
     public void setPower(int power) {
+
         this.power = power;
+        System.out.println(" [*] Your power is now " + power);
     }
 
     public boolean isObjective() {
@@ -49,14 +53,18 @@ public class Player {
     }
 
     public void changeIntelligence(int n) {
+
         this.intelligence = this.intelligence + n;
+        System.out.println(" [+] Your intelligence changed by" + n + " to " + intelligence);
     }
 
     public void changePower(int n) {
+
         this.power = this.power + n;
+        System.out.println(" [+] Your power changed by" + n + " to " + power);
     }
 
-    public void printState() {
+    public void printPlayerState() {
         System.out.println(
                 "| Intelligence: "
                         + this.intelligence
@@ -64,5 +72,8 @@ public class Player {
                         + this.power
                         + " |"
         );
+    }
+    public String getPlayerState() {
+        return "| Intelligence: " + this.intelligence + " | Power: " + this.power + " |";
     }
 }
