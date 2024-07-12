@@ -13,10 +13,13 @@ public class Main {
 
         //Title at the beginning
         System.out.println("""
+                ----------------------------------------------
                 AI.life
                 a text-based simulator of the future
                 A Programming Project by Kane Friedenhagen and Patrick Ye
-                [1] Start [0] Quit""");
+                Do you want to enter the game?
+                [1] Enter [0] Quit
+                ----------------------------------------------""");
 
         while(true) {
             util.Tools.scan();
@@ -26,12 +29,13 @@ public class Main {
                 System.exit(0);
             } else if (answer.equals("1")) {
                 controller.StartModule.showIntroduction();
-                player.setName(controller.StartModule.ChooseName());
-                player.setObjective(controller.StartModule.ChooseObjective());
-                player.setDataset(controller.StartModule.ChooseDataset());
-                controller.StartModule.StartWith();
+                player.setName(controller.StartModule.chooseName());
+                player.setObjective(controller.StartModule.chooseObjective());
+                controller.StartModule.tutorialChoice();
+                player.setDataset(controller.StartModule.chooseDataset());
+                controller.StartModule.startWith(player);
             } else {
-                System.out.println("Invalid input. Please enter 1 to start training phase or 2 to start life phase.");
+                System.out.println("Invalid input. Please enter 1 to enter the game or 0 to quit");
             }
         }
     }

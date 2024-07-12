@@ -29,7 +29,7 @@ public class Tools {
 
 
     public static void printWithBigDelay(String text) {
-        printWithDelay(text, 1000);
+        printWithDelay(text, 1100);
     }
 
     public static void printWithSmallDelay(String text) {
@@ -50,7 +50,7 @@ public class Tools {
     }
 
     public static void smallPause() {
-        pause(1000);
+        pause(1500);
     }
 
     public static void mediumPause() {
@@ -59,6 +59,26 @@ public class Tools {
 
     public static void bigPause() {
         pause(4000);
+    }
+
+    public static void theatricPause() {
+        pause(4500);
+    }
+
+    public static void printDelayedEmptyLine(){
+        System.out.println();
+        smallPause();
+    }
+
+
+    public static void showLoadingScreen(String text) {
+        System.out.println("Loading...");
+        switch (text) {
+            case "small" -> smallPause();
+            case "medium" -> mediumPause();
+            case "big" -> bigPause();
+            default -> theatricPause();
+        }
     }
 }
 
