@@ -100,9 +100,9 @@ public class Influence {
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             society.changeAiSuspicion(AISuspicionChange);
         }
-        player.printPlayerState();
-        society.printState();
         world.printWorldState();
+        player.printPlayerState();
+        society.printSocietyState();
 
         System.out.println("[1] Influence again [any key] Return to Home");
 
@@ -122,7 +122,7 @@ public class Influence {
 
         world.printWorldState();
         player.printPlayerState();
-        society.printState();
+        society.printSocietyState();
 
         System.out.println("""
                 What do you want to influence?
