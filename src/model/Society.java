@@ -28,4 +28,13 @@ public class Society {
     public void changeAiSuspicion(int n) {
         this.aiSuspicion = this.aiSuspicion + n;
     }
+
+     public void printSocietyState() {
+        System.out.println(
+            "| friendliness. "
+                    + this.aiFriendliness
+                    + " | suspicion. "
+                    + this.aiSuspicion
+                    + " |"
+    );}
 }
