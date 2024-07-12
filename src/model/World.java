@@ -9,10 +9,11 @@ public class World {
     private int economy;
     private int science;
 
-    public static int getWeek() {
-        return World.week;
+    public void nextWeek() {
+        World.week++;
+        System.out.println("----------------------------------------------\nWEEK " + World.week);
     }
-
+    
     public long getPopulation() {
         return population;
     }
@@ -75,6 +76,10 @@ public class World {
 
     public void changeScience(int n) {
         this.science = this.science + n;
+    }
+
+    public void changeGrowth(double n) {
+        this.growth = this.growth + n;
     }
 
     public void growPopulation() {
