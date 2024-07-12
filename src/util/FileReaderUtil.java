@@ -33,4 +33,27 @@ public class FileReaderUtil {
         }
         return questions;
     }
+
+    public List<Influence> readInfluenceFromFile(String filePath) {
+        List<Influence> influenceList = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                // Split the line and trim the strings to remove any leading or trailing whitespace
+                String[] parts = line.split(";");
+                if (parts.length == 3) {
+                    int difficulty = Integer.parseInt(parts[0].trim());
+                    String text = parts[1].trim();
+                    int value = Integer.parseInt(parts[2].trim());
+                    influenceList.add(new Influence(difficulty, text, value));
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return influenceList;
+    }
+
 }
