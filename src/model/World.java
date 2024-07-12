@@ -13,7 +13,11 @@ public class World {
         World.week++;
         System.out.println("----------------------------------------------\nWEEK " + World.week);
     }
-    
+
+    public static int getWeek() {
+        return week;
+    }
+
     public long getPopulation() {
         return population;
     }
@@ -56,10 +60,6 @@ public class World {
 
     public void setScience(int science) {
         this.science = science;
-    }
-
-    public static void nextWeek() {
-        World.week++;
     }
 
     public void changePopulation(int n) {
