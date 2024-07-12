@@ -9,7 +9,7 @@ public class World {
     private int economy;
     private int science;
 
-    public void nextWeek() {
+    public static void nextWeek() {
         World.week++;
         System.out.println("----------------------------------------------\nWEEK " + World.week);
     }
