@@ -3,13 +3,26 @@ package main;
 import model.Player;
 import model.Society;
 import model.World;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        Random random = new Random();
         // INITIALIZATION
         Player player = new Player();
+        Society society = new Society();
+        World world = new World();
+
+        player.setIntelligence(random.nextInt(50,150));
+        player.setPower(random.nextInt(0, 100));
+        society.setAiFriendliness(random.nextInt(0,100));
+        society.setAiSuspicion(random.nextInt(0, 100));
+        world.setEconomy(random.nextInt(0, 100));
+        world.setEnvironment(random.nextInt(0, 100));
+        world.setPopulation(random.nextInt(0, 100));
+        world.setScience(random.nextInt(0, 100));
 
         //Title at the beginning
         System.out.println("""
