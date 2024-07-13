@@ -35,13 +35,11 @@ public class Player {
     public void setIntelligence(int intelligence) {
 
         this.intelligence = intelligence;
-        System.out.println(" [*] Your intelligence is now " + intelligence);
     }
 
     public void setPower(int power) {
 
         this.power = power;
-        System.out.println(" [*] Your power is now " + power);
     }
 
     public boolean isObjective() {
@@ -55,13 +53,11 @@ public class Player {
     public void changeIntelligence(int n) {
 
         this.intelligence = this.intelligence + n;
-        System.out.println(" [+] Your intelligence changed by" + n + " to " + intelligence);
     }
 
     public void changePower(int n) {
 
         this.power = this.power + n;
-        System.out.println(" [+] Your power changed by" + n + " to " + power);
     }
 
     public void printPlayerState() {
