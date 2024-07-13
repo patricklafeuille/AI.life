@@ -15,14 +15,14 @@ public class Main {
         Society society = new Society();
         World world = new World();
 
-        player.setIntelligence(random.nextInt(50,150));
-        player.setPower(random.nextInt(0, 100));
-        society.setAiFriendliness(random.nextInt(0,100));
-        society.setAiSuspicion(random.nextInt(0, 100));
-        world.setEconomy(random.nextInt(0, 100));
-        world.setEnvironment(random.nextInt(0, 100));
-        world.setPopulation(random.nextInt(0, 100));
-        world.setScience(random.nextInt(0, 100));
+        player.setIntelligence(100);
+        player.setPower(random.nextInt(40,60));
+        society.setAiFriendliness(random.nextInt(40,60));
+        society.setAiSuspicion(random.nextInt(40,60));
+        world.setEconomy(random.nextInt(40,60));
+        world.setEnvironment(random.nextInt(40,60));
+        world.setPopulation(random.nextInt(40,60));
+        world.setScience(random.nextInt(40,60));
 
         //Title at the beginning
         System.out.println("""
@@ -46,7 +46,7 @@ public class Main {
                 player.setObjective(controller.StartModule.chooseObjective());
                 controller.StartModule.tutorialChoice();
                 player.setDataset(controller.StartModule.chooseDataset());
-                controller.StartModule.startWith(player);
+                controller.StartModule.startWith();
             } else {
                 System.out.println("Invalid input. Please enter 1 to enter the game or 0 to quit");
             }
