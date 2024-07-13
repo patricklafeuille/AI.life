@@ -8,6 +8,14 @@ public class Player {
     private int intelligence; // IQ between 50 and 150
     private int intelligenceIn100 = intelligence - 50;
     private int power; // Power between 0 and 100
+    private static Player instance;
+
+    public static Player getInstance() {
+        if (instance == null) {
+            instance = new Player();
+        }
+        return instance;
+    }
 
     public String getName() {
         return name;
