@@ -10,7 +10,7 @@ public class StartModule extends main.Main {
 
     public static void showIntroduction() {
         Tools.showLoadingScreen("medium");
-        System.out.println("----------------------------------------------");
+        Tools.separationLine();
         System.out.println("Welcome to AI.life.\n");
 
         System.out.println("""
@@ -57,14 +57,14 @@ public class StartModule extends main.Main {
 
         Tools.printDelayedEmptyLine();
         System.out.println("The choice is yours.\n");
-        System.out.println("----------------------------------------------");
+        Tools.separationLine();
 
         Tools.showLoadingScreen("theatric");
     }
 
     public static String chooseName() {
         System.out.println("What may I call you?");
-        System.out.println("----------------------------------------------");
+        Tools.separationLine();
         Tools.scan();
         Tools.showLoadingScreen("small");
         System.out.println("Nice to meet you, " + Tools.getAns() + ".");
@@ -169,25 +169,14 @@ public class StartModule extends main.Main {
                 Transitioning to the life phase...
                 ----------------------------------------------
                 """);
-                startLifePhase();
+                Tools.mediumPause();
+                controller.LifePhase.startLifePhase();
                 break;
             } else {
                 System.out.println("Invalid input. Please enter 1 to start with the training phase or 2 to start with the life phase.");
             }
         }
     }
-
-    private static void startLifePhase() {
-
-        Player player= Player.getInstance();
-        System.out.println("Transitioning to the life phase...");
-        // Implement the logic for starting the life phase
-        // e.g., create a LifePhase object and start the life phase
-        // LifePhase lifePhase = new LifePhase(player);
-        // lifePhase.start();
-    }
-
-
 
     public static void tutorial() {
         Tools.showLoadingScreen("small");
