@@ -1,9 +1,19 @@
 package model;
 
+import static controller.EndModule.EndGame;
+
 public class Society {
 
     private int aiFriendliness;
     private int aiSuspicion;
+    private static Society instance;
+
+    public static Society getInstance() {
+        if (instance == null) {
+            instance = new Society();
+        }
+        return instance;
+    }
 
     public int getAiFriendliness() {
         return aiFriendliness;
@@ -37,6 +47,7 @@ public class Society {
 
         if (this.aiSuspicion > 100) {
             setAiSuspicion(100);
+            EndGame("high suspicion");
         }
         if (this.aiSuspicion < 0) {
             setAiSuspicion(0);
