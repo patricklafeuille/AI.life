@@ -4,9 +4,9 @@ import model.Player;
 
 public class EndModule {
     public static void EndGame(String reason) {
-        
+
         Player player = Player.getInstance();
-        
+
         String text = switch (reason) {
             case "low environment" -> "Low environment...";
             case "high environment" -> "High environment...";
@@ -32,10 +32,10 @@ public class EndModule {
         };
 
         System.out.println("----------------------------------------------");
-        if (player.isObjective() == GoodEnd) {
-            System.out.println("GAME OVER: VICTORY");
-        } else {
+        if (reason.equals("high suspicion") || player.isObjective() != GoodEnd) {
             System.out.println("GAME OVER: FAILED");
+        } else {
+            System.out.println("GAME OVER: VICTORY");
         }
         System.out.println("----------------------------------------------");
         System.out.println(text);
