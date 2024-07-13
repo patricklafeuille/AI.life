@@ -1,5 +1,7 @@
 package model;
 
+import static controller.EndModule.EndGame;
+
 public class World {
 
     private static int week;
@@ -8,6 +10,14 @@ public class World {
     private int environment;
     private int economy;
     private int science;
+    private static World instance;
+
+    public static World getInstance() {
+        if (instance == null) {
+            instance = new World();
+        }
+        return instance;
+    }
 
     public static void nextWeek() {
         World.week++;
@@ -64,20 +74,23 @@ public class World {
 
     public void changePopulation(int n) {
         this.population = this.population + n;
-        
+
         if (this.population < 0) {
             setPopulation(0);
+            EndGame("low population");
         }
     }
 
     public void changeEnvironment(int n) {
         this.environment = this.environment + n;
-        
+
         if (this.environment > 100) {
             setEnvironment(100);
+            EndGame("high environment");
         }
         if (this.environment < 0) {
             setEnvironment(0);
+            EndGame("low environment");
         }
     }
 
@@ -86,9 +99,11 @@ public class World {
 
         if (this.economy > 100) {
             setEconomy(100);
+            EndGame("high economy");
         }
         if (this.economy < 0) {
             setEconomy(0);
+            EndGame("low economy");
         }
     }
 
@@ -97,9 +112,11 @@ public class World {
 
         if (this.science > 100) {
             setScience(100);
+            EndGame("high science");
         }
         if (this.science < 0) {
             setScience(0);
+            EndGame("low science");
         }
     }
 
