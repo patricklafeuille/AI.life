@@ -4,6 +4,7 @@ import model.Player;
 import model.Society;
 import model.World;
 import util.FileReaderUtil;
+import util.Tools;
 
 import java.util.List;
 import java.util.Random;
@@ -101,9 +102,7 @@ public class Influence {
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             society.changeAiSuspicion(AISuspicionChange);
         }
-        world.printWorldState();
-        player.printPlayerState();
-        society.printSocietyState();
+        Tools.showState(player,society,world);
 
         System.out.println("[1] Influence again [any key] Return to Home");
 
@@ -122,9 +121,7 @@ public class Influence {
         Society society = Society.getInstance();
         World world = World.getInstance();
 
-        world.printWorldState();
-        player.printPlayerState();
-        society.printSocietyState();
+        Tools.showState(player,society,world);
 
         System.out.println("""
                 What do you want to influence?
@@ -169,7 +166,7 @@ public class Influence {
                 }
             }
         } else {
-            // return to Life Phase
+            controller.LifePhase.startLifePhase();
         }
     }
 
