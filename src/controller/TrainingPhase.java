@@ -127,6 +127,12 @@ public class TrainingPhase {
                 }
             }
             // Transition to life phase
+            System.out.println("""
+                ----------------------------------------------
+                Transitioning to the life phase...
+                ----------------------------------------------
+                """);
+            Tools.mediumPause();
             startLifePhase();
         }
     }
