@@ -11,12 +11,12 @@ public class Main {
 
         Random random = new Random();
         // INITIALIZATION
-        Player player = new Player();
-        Society society = new Society();
-        World world = new World();
+        Player player = Player.getInstance();
+        Society society = Society.getInstance();
+        World world = World.getInstance();
 
         player.setIntelligence(100);
-        player.setPower(random.nextInt(40,60));
+        player.setPower(50);
         society.setAiFriendliness(random.nextInt(40,60));
         society.setAiSuspicion(random.nextInt(40,60));
         world.setEconomy(random.nextInt(40,60));
