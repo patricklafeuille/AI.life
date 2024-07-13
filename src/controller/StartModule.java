@@ -139,7 +139,10 @@ public class StartModule extends main.Main {
         }
     }
 
-    public static void startWith(Player player) {
+    public static void startWith() {
+
+        Player player = Player.getInstance();
+
         Tools.showLoadingScreen("medium");
         System.out.println("""
         ----------------------------------------------
@@ -166,7 +169,7 @@ public class StartModule extends main.Main {
                 Transitioning to the life phase...
                 ----------------------------------------------
                 """);
-                startLifePhase(player);
+                startLifePhase();
                 break;
             } else {
                 System.out.println("Invalid input. Please enter 1 to start with the training phase or 2 to start with the life phase.");
@@ -174,7 +177,9 @@ public class StartModule extends main.Main {
         }
     }
 
-    private static void startLifePhase(Player player) {
+    private static void startLifePhase() {
+
+        Player player= Player.getInstance();
         System.out.println("Transitioning to the life phase...");
         // Implement the logic for starting the life phase
         // e.g., create a LifePhase object and start the life phase
@@ -234,12 +239,12 @@ public class StartModule extends main.Main {
     }
 
     public static void main(String[] args) {
-        Player player = new Player();
+        Player player = Player.getInstance();
         player.setName(chooseName());
         player.setObjective(chooseObjective());
         player.setDataset(chooseDataset());
 
         showIntroduction();
-        startWith(player);
+        startWith();
     }
 }
