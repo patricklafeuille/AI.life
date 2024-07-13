@@ -1,4 +1,8 @@
 package util;
+import model.World;
+import model.Player;
+import model.Society;
+
 import java.util.Scanner;
 
 public class Tools {
@@ -29,15 +33,15 @@ public class Tools {
 
 
     public static void printWithBigDelay(String text) {
-        printWithDelay(text, 1100);
+        printWithDelay(text, 110);
     }
 
     public static void printWithSmallDelay(String text) {
-        printWithDelay(text, 500);
+        printWithDelay(text, 50);
     }
 
     public static void printWithMediumDelay(String text) {
-        printWithDelay(text, 750);
+        printWithDelay(text, 75);
     }
 
     public static void pause(long delayInMillis) {
@@ -50,19 +54,19 @@ public class Tools {
     }
 
     public static void smallPause() {
-        pause(1500);
+        pause(150);
     }
 
     public static void mediumPause() {
-        pause(3000);
+        pause(300);
     }
 
     public static void bigPause() {
-        pause(4000);
+        pause(400);
     }
 
     public static void theatricPause() {
-        pause(4500);
+        pause(450);
     }
 
     public static void printDelayedEmptyLine(){
@@ -79,6 +83,18 @@ public class Tools {
             case "big" -> bigPause();
             default -> theatricPause();
         }
+    }
+    
+    public static void showState(Player player, Society society, World world) {
+        System.out.println("--------------------------------");
+        player.printPlayerState();
+        society.printSocietyState();
+        world.printWorldState();
+        System.out.println("--------------------------------");
+    }
+    
+    public static void separationLine() {
+        System.out.println("--------------------------------");
     }
 }
 
