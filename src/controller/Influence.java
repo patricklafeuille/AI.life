@@ -15,25 +15,89 @@ public class Influence {
     private static Society society;
     private static World world;
 
-    public static boolean CalChance(int difficulty, double chance) {
+    world.nextWeek();
+
+    // Calculation if the player has a chance to succeed in influencing.
+    public static boolean CalChance(int difficulty, int chance) {
         return (difficulty <= chance);
     }
 
+    
+    public static void selectInfluence(Player p, World w, Society s) {
+        society = s;
+        player = p;
+        world = w;
+
+        world.printWorldState();
+        player.printPlayerState();
+        society.printSocietyState();
+
+        System.out.println("""
+                What do you want to influence?
+                Beware, any of these choices would increase the suspicion. 
+                Moreover, the influence takes a week and costs your power.
+                [1] Increase AI friendliness [requires 10 Intelligence]
+                [2] Influence Economy [requires 10 Power]
+                [3] Influence Science [requires 20 Intelligence]
+                [4] Influence Population [requires 20 Power]
+                [5] Influence Environment [requires 25 Power]
+                
+                [any key] Return to Home
+                """);
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
+
+        if (choice > 0 && choice < 6) {
+            String variable = switch(choice) {
+                case 1 -> "friendliness";
+                case 2 -> "economy";
+                case 3 -> "science";
+                case 4 -> "population";
+                case 5 -> "environment";
+                default -> null;
+            };
+
+            if (variable.equals("friendliness")) {
+                TryInfluence("friendliness", "increased");
+            } else {
+                System.out.println("[1] Increase "
+                        + variable
+                        + " [2] Decrease "
+                        + variable
+                        + " [any key] Return");
+                int howInfluence = scanner.nextInt();
+                if (howInfluence == 1) {
+                    TryInfluence(variable, "increased");
+                } else if (howInfluence == 2) {
+                    TryInfluence(variable, "decreased");
+                } else {
+                    selectInfluence(player, world, society);
+                }
+            }
+        } else {
+            // return to Life Phase
+        }
+    }
+    
+    // Try to influence a selected area
     public static void TryInfluence(String var, String change) {
         Random random = new Random();
         FileReaderUtil fileReader = new FileReaderUtil();
+
+        // Make the value either positive or negative
         int sign = switch (change) {
             case "increased" -> 1;
             case "decreased" -> -1;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
-        int competence;
+        // Base value of the AI Suspicion
         int AISuspicionChange = switch(change) {
             case "increased" -> 5;
             case "decreased" -> 10;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
 
+        // Loading database
         List<util.Influence> Influence = fileReader.readInfluenceFromFile(
                 "src/util/txt/influence/"
                         + var
@@ -42,12 +106,12 @@ public class Influence {
                         + ".txt");
         int randomIndex = random.nextInt(Influence.size());
         util.Influence selectedInfluence = Influence.get(randomIndex);
-
-        world.nextWeek();
         System.out.println(selectedInfluence.getText());
 
+        // competence means either intelligence or power is needed here.
+        int competence;
         if (var.equals("friendliness") || var.equals("science")) {
-            competence = player.getIntelligence();
+            competence = player.getIntelligence100();
         } else {
             competence = player.getPower();
         }
@@ -114,61 +178,4 @@ public class Influence {
             // return to Life Module
         }
     }
-
-    public static void selectInfluence(Player p, World w, Society s) {
-        society = s;
-        player = p;
-        world = w;
-
-        world.printWorldState();
-        player.printPlayerState();
-        society.printSocietyState();
-
-        System.out.println("""
-                What do you want to influence?
-                Beware, any of these choices would increase the suspicion. 
-                Moreover, the influence takes a week and costs your power.
-                [1] Increase AI friendliness [requires 10 Intelligence]
-                [2] Influence Economy [requires 10 Power]
-                [3] Influence Science [requires 20 Intelligence]
-                [4] Influence Population [requires 20 Power]
-                [5] Influence Environment [requires 25 Power]
-                
-                [any key] Return to Home
-                """);
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-
-        if (choice > 0 && choice < 6) {
-            String variable = switch(choice) {
-                case 1 -> "friendliness";
-                case 2 -> "economy";
-                case 3 -> "science";
-                case 4 -> "population";
-                case 5 -> "environment";
-                default -> null;
-            };
-
-            if (variable.equals("friendliness")) {
-                TryInfluence("friendliness", "increased");
-            } else {
-                System.out.println("[1] Increase "
-                        + variable
-                        + " [2] Decrease "
-                        + variable
-                        + " [any key] Return");
-                int howInfluence = scanner.nextInt();
-                if (howInfluence == 1) {
-                    TryInfluence(variable, "increased");
-                } else if (howInfluence == 2) {
-                    TryInfluence(variable, "decreased");
-                } else {
-                    selectInfluence(player, world, society);
-                }
-            }
-        } else {
-            // return to Life Phase
-        }
-    }
-
 }
