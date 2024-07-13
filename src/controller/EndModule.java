@@ -3,7 +3,10 @@ package controller;
 import model.Player;
 
 public class EndModule {
-    public static void EndGame(String reason, Player player) {
+    public static void EndGame(String reason) {
+        
+        Player player = Player.getInstance();
+        
         String text = switch (reason) {
             case "low environment" -> "Low environment...";
             case "high environment" -> "High environment...";
@@ -25,7 +28,7 @@ public class EndModule {
             case "low science" -> false;
             case "high science" -> true;
             case "high suspicion" -> false;
-            default -> "Game ended";
+            default -> false;
         };
 
         System.out.println("----------------------------------------------");
