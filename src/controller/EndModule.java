@@ -16,7 +16,7 @@ public class EndModule {
             default -> "Game ended";
         };
 
-        String GoodEnd = switch (reason) {
+        boolean GoodEnd = switch (reason) {
             case "low environment" -> false;
             case "high environment" -> true;
             case "low economy" -> false;
