@@ -6,6 +6,7 @@ public class Player {
     private boolean objective; // Objective of the AI (true means good)
     private boolean dataset; // Dataset of the AI (true means emotional)
     private int intelligence; // IQ between 50 and 150
+    private int intelligenceIn100 = intelligence - 50;
     private int power; // Power between 0 and 100
 
     public String getName() {
@@ -14,6 +15,10 @@ public class Player {
 
     public int getIntelligence() {
         return intelligence;
+    }
+
+    public int getIntelligenceIn100() {
+        return intelligenceIn100;
     }
 
     public int getPower() {
@@ -53,11 +58,25 @@ public class Player {
     public void changeIntelligence(int n) {
 
         this.intelligence = this.intelligence + n;
+
+        if (this.intelligence > 150) {
+            setIntelligence(150);
+        }
+        if (this.intelligence < 50) {
+            setIntelligence(50);
+        }
     }
 
     public void changePower(int n) {
 
         this.power = this.power + n;
+
+        if (this.power > 150) {
+            setPower(150);
+        }
+        if (this.power < 50) {
+            setPower(50);
+        }
     }
 
     public void printPlayerState() {
@@ -69,7 +88,10 @@ public class Player {
                         + " |"
         );
     }
+
     public String getPlayerState() {
         return "| Intelligence: " + this.intelligence + " | Power: " + this.power + " |";
     }
+
+
 }
