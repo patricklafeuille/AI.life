@@ -161,7 +161,7 @@ public class StartModule extends main.Main {
                 trainingPhase.startTrainingPhase();
                 break;
             } else if (answer.equals("2")) {
-                player.setIntelligence(80);
+                player.setIntelligence(100);
                 player.setPower(40);
                 World.setWeek(1);
                 System.out.println("""
