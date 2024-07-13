@@ -64,26 +64,54 @@ public class World {
 
     public void changePopulation(int n) {
         this.population = this.population + n;
+        
+        if (this.population < 0) {
+            setPopulation(0);
+        }
     }
 
     public void changeEnvironment(int n) {
         this.environment = this.environment + n;
+        
+        if (this.environment > 100) {
+            setEnvironment(100);
+        }
+        if (this.environment < 0) {
+            setEnvironment(0);
+        }
     }
 
     public void changeEconomy(int n) {
         this.economy = this.economy + n;
+
+        if (this.economy > 100) {
+            setEconomy(100);
+        }
+        if (this.economy < 0) {
+            setEconomy(0);
+        }
     }
 
     public void changeScience(int n) {
         this.science = this.science + n;
+
+        if (this.science > 100) {
+            setScience(100);
+        }
+        if (this.science < 0) {
+            setScience(0);
+        }
     }
 
     public void changeGrowth(double n) {
         this.growth = this.growth + n;
-    }
 
-    public void growPopulation() {
-        population = Math.round(population + (population * growth));
+        if (this.growth > 10) {
+            setGrowth(10);
+        }
+        if (this.growth < 0) {
+            setGrowth(0);
+        }
     }
 
     public void printWorldState() {
