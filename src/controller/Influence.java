@@ -9,6 +9,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * The Influence class is a part of the life phase, 
+ * where the player can influence the world state
+ * This is one of the most important part of this game, 
+ * since influencing the world is the only way you can win or lose.
+ */
+
 public class Influence {
 
     public static boolean CalChance(int difficulty, double chance) { // returns if the task is successful
