@@ -143,7 +143,7 @@ public class Quiz {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         FileReaderUtil fileReader = new FileReaderUtil();
-        List<Question> questions = fileReader.readQuestionsFromFile("src/util/txt/" + category + ".txt");
+        List<Question> questions = fileReader.readQuestionsFromFile("src/util/txt/quiz/" + category + ".txt");
 
         if (questions.isEmpty()) {
             System.out.println("No questions available for this category.");

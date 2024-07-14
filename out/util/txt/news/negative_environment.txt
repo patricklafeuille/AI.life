@@ -1,0 +1,50 @@
+"Massive deforestation leads to widespread habitat loss";environment:-10;science:-2;population:-2
+"Global water crisis causes severe shortages";environment:-9;economy:-3;population:-1;science:-2
+"Ocean acidification devastates marine ecosystems";environment:-8;economy:-2;science:-1
+"Uncontrolled wildfires ravage vast areas";environment:-10;population:-3;science:-2
+"Extreme heatwaves render large regions uninhabitable";environment:-9;population:-2;science:-2
+"Massive oil spill contaminates oceans";environment:-8;economy:-2;science:-1
+"Sudden ice age plunges global temperatures";environment:-10;economy:-3;population:-2;science:-3
+"Industrial pollution poisons air and water supplies";environment:-9;population:-2;science:-2
+"Methane release from permafrost accelerates climate change";environment:-8;economy:-2;science:-1
+"Rising sea levels flood coastal cities";environment:-10;population:-3;science:-2
+"Mass extinction event disrupts ecosystems";environment:-9;economy:-2;science:-2
+"Global desertification reduces arable land";environment:-8;economy:-3;population:-1;science:-1
+"Persistent droughts cause widespread famine";environment:-10;population:-3;science:-2
+"Toxic waste dumping destroys freshwater sources";environment:-9;economy:-2;science:-2
+"Overfishing collapses global fish stocks";environment:-8;economy:-2;science:-1
+"Acid rain devastates forests and crops";environment:-10;economy:-2;population:-1;science:-1
+"Massive landslides bury entire communities";environment:-9;population:-2;science:-1
+"Supervolcano eruption causes long-term environmental damage";environment:-10;economy:-3;population:-3;science:-3
+"Global blackout disrupts all energy supplies";environment:-8;economy:-3;population:-1;science:-2
+"Alien invasion destroys Earth's natural resources";environment:-9;economy:-2;population:-3;science:-2
+"Severe smog chokes major cities";environment:-10;population:-2;science:-1
+"Deforestation releases ancient pathogens";environment:-8;population:-2;science:-1
+"Massive coral bleaching event collapses marine food webs";environment:-9;economy:-2;science:-1
+"Global nuclear fallout contaminates the environment";environment:-10;economy:-3;population:-2;science:-3
+"Persistent chemical spills destroy agricultural land";environment:-8;economy:-3;population:-1;science:-2
+"Massive earthquakes trigger environmental disasters";environment:-9;population:-2;science:-1
+"Unchecked urban sprawl destroys natural habitats";environment:-8;population:-1;science:-1
+"Global warming triggers unprecedented natural disasters";environment:-10;economy:-2;population:-3;science:-2
+"Industrial farming exhausts soil fertility";environment:-9;economy:-3;science:-1
+"Alien bacteria consume Earth's biomass";environment:-10;economy:-2;population:-3;science:-2
+"Global mining boom devastates ecosystems";environment:-8;economy:-3;population:-1;science:-1
+"Fracking operations trigger widespread contamination";environment:-9;economy:-2;science:-1
+"Severe deforestation leads to oxygen shortages";environment:-10;population:-2;science:-2
+"Superstorm destroys critical infrastructure";environment:-9;economy:-3;population:-2;science:-2
+"Ancient viruses reawaken, causing pandemics";environment:-8;population:-2;science:-1
+"Unchecked pollution leads to global health crisis";environment:-10;population:-3;science:-2
+"Global temperature spike causes widespread chaos";environment:-9;economy:-2;science:-1
+"Alien terraforming machines disrupt Earth's environment";environment:-10;economy:-2;population:-3;science:-2
+"Solar flares strip Earth's atmosphere";environment:-9;population:-2;science:-2
+"Desertification causes mass migrations";environment:-8;economy:-2;population:-1;science:-1
+"Global food supply collapses due to crop failures";environment:-10;economy:-3;population:-3;science:-2
+"Extreme weather patterns cause widespread devastation";environment:-9;economy:-2;science:-1
+"Industrial accidents lead to massive environmental contamination";environment:-8;economy:-2;population:-1;science:-1
+"Melting polar ice releases ancient toxins";environment:-10;population:-2;science:-1
+"Global insect die-off disrupts food chains";environment:-9;economy:-2;science:-1
+"Deforestation disrupts global water cycle";environment:-8;economy:-2;population:-1;science:-1
+"Underground resource extraction causes surface collapses";environment:-10;economy:-3;population:-2;science:-2
+"Massive urban pollution creates toxic cities";environment:-9;population:-2;science:-1
+"Climate refugees trigger resource conflicts";environment:-8;economy:-3;population:-1;science:-1
+"Uncontrolled genetic modification disrupts ecosystems";environment:-10;economy:-2;population:-2;science:-2

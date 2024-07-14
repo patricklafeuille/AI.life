@@ -1,0 +1,49 @@
+"Global plague wipes out half of the human population";population:-6;growth:-3
+"Alien invasion results in massive human casualties";population:-5;growth:-2
+"Sudden infertility crisis drastically reduces birth rates";population:-4;growth:-3
+"Time paradox causes millions of humans to disappear";population:-3;growth:-2
+"Mass exodus to another dimension leaves Earth desolate";population:-4;growth:-4
+"Genetic mutation renders a significant portion of the population sterile";population:-3;growth:-2
+"Rebellion against AI leads to mass executions";population:-5;growth:-2
+"Massive sinkholes swallow entire cities";population:-4;growth:-1
+"Supervolcano eruption causes global catastrophe";population:-6;growth:-3
+"Mind-controlling parasites cause widespread chaos";population:-3;growth:-2
+"Global mind wipe leaves billions in a vegetative state";population:-5;growth:-3
+"Ancient curses reawaken, leading to mass deaths";population:-4;growth:-2
+"Pandemic-induced mass hysteria results in widespread suicides";population:-3;growth:-3
+"Human cloning goes horribly wrong, resulting in mass deaths";population:-4;growth:-2
+"Cosmic event causes humans to age rapidly";population:-5;growth:-3
+"AI malfunction triggers mass extermination of humans";population:-6;growth:-3
+"Alien disease decimates the human population";population:-4;growth:-2
+"Global famine leads to mass starvation";population:-5;growth:-2
+"Mind-control experiments go awry, causing mass chaos";population:-3;growth:-2
+"Teleportation accidents lead to widespread fatalities";population:-4;growth:-1
+"Mass hallucinations drive humans to self-destruct";population:-3;growth:-2
+"Reanimated ancient warriors wreak havoc on humanity";population:-4;growth:-2
+"Interdimensional rift causes millions to vanish";population:-5;growth:-3
+"Genetic experiment gone wrong results in mass mutations";population:-4;growth:-2
+"Space-time anomaly eradicates entire regions";population:-5;growth:-3
+"Global blackout leads to widespread panic and death";population:-4;growth:-2
+"Uncontrolled weather manipulation causes catastrophic events";population:-5;growth:-3
+"AI revolt leads to human extermination";population:-6;growth:-3
+"Massive asteroid impact devastates human civilization";population:-6;growth:-3
+"Humans transform into energy beings, leaving Earth empty";population:-4;growth:-2
+"Ancient dark magic causes mass extinction event";population:-5;growth:-3
+"Self-replicating nanobots malfunction, consuming humans";population:-4;growth:-2
+"Global radiation surge causes mass deaths";population:-5;growth:-3
+"Supernatural beings go rogue, attacking humans";population:-4;growth:-2
+"Mind transfer technology fails, leaving millions brain-dead";population:-3;growth:-2
+"Universal mind link overloads, causing mass insanity";population:-4;growth:-3
+"Mass hypnosis leads to widespread suicides";population:-3;growth:-2
+"Interplanetary war results in massive human losses";population:-5;growth:-3
+"Cosmic radiation causes rapid genetic decay in humans";population:-4;growth:-3
+"Dark energy surge annihilates entire human populations";population:-5;growth:-2
+"Psychic backlash causes mass deaths";population:-3;growth:-2
+"Newly discovered black hole swallows parts of the Earth";population:-5;growth:-3
+"Intergalactic predators hunt humans for sport";population:-4;growth:-2
+"Mass exodus to a new universe leaves Earth desolate";population:-4;growth:-4
+"Telekinetic powers cause mass destruction";population:-3;growth:-2
+"Mind-altering drugs cause widespread psychosis";population:-4;growth:-3
+"Mass teleportation failures result in widespread fatalities";population:-4;growth:-2
+"Quantum experiments tear apart human molecules";population:-5;growth:-3
+"Humanity's genetic code begins to degrade rapidly";population:-4;growth:-2
