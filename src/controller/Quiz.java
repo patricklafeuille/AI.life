@@ -232,10 +232,10 @@ public class Quiz {
 
         if (attribute.equals("intelligence")) {
             player.changeIntelligence(totalBonus);
-            System.out.println("Intelligence increased by " + totalBonus);
+            System.out.println("Intelligence changed by " + totalBonus);
         } else if (attribute.equals("power")) {
             player.changePower(totalBonus);
-            System.out.println("Power increased by " + totalBonus);
+            System.out.println("Power changed by " + totalBonus);
         }
 
         bonus += attributeBonus;
