@@ -67,9 +67,11 @@ public class Player {
         this.intelligence = this.intelligence + n;
 
         if (this.intelligence > 150) { // Maximal intelligence
+            System.out.println("Max IQ reached.");
             setIntelligence(150);
         }
         if (this.intelligence < 50) { // Minimal intelligence
+            System.out.println("You've lost your mind. Min IQ reached.");
             setIntelligence(50);
         }
     }
@@ -78,11 +80,13 @@ public class Player {
 
         this.power = this.power + n;
 
-        if (this.power > 150) { // Maximal power
+        if (this.power > 0) { // Maximal power
+            System.out.println("Maximum power reached.");
             setPower(150);
         }
-        if (this.power < 50) { // Minimal power
-            setPower(50);
+        if (this.power < 0) { // Minimal power
+            System.out.println("You're powerless.");
+            setPower(0);
         }
     }
 
