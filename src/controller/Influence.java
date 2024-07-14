@@ -104,14 +104,15 @@ public class Influence {
         }
         Tools.showState(player,society,world);
 
-        System.out.println("[1] Influence again [any key] Return to Home");
+        System.out.println("[1] Influence again [0] Return to Home");
 
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
+
         if (choice == 1) {
             selectInfluence();
         } else {
-            // return to Life Module
+            LifePhase.startLifePhase();
         }
     }
 
@@ -133,7 +134,7 @@ public class Influence {
                 [4] Influence Population [requires 20 Power]
                 [5] Influence Environment [requires 25 Power]
                 
-                [any key] Return to Home
+                [0] Return to Home
                 """);
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -155,7 +156,7 @@ public class Influence {
                         + variable
                         + " [2] Decrease "
                         + variable
-                        + " [any key] Return");
+                        + " [0] Return");
                 int howInfluence = scanner.nextInt();
                 if (howInfluence == 1) {
                     TryInfluence(variable, "increased");
@@ -166,7 +167,7 @@ public class Influence {
                 }
             }
         } else {
-            controller.LifePhase.startLifePhase();
+            LifePhase.startLifePhase();
         }
     }
 
