@@ -21,8 +21,6 @@ import util.Tools;
  */
 public class StartModule extends main.Main {
 
-    private static final int DELAY = 1750;
-
     public static void showIntroduction() {
         Tools.showMessageScreen("Loading backstory", "big");
         Tools.separationLine();
@@ -35,7 +33,7 @@ public class StartModule extends main.Main {
             While there are some rogue human packs who fear AI and choose to live off the grid,
             most are content with the new world order.
             """);
-        Tools.pause(7500);
+        Tools.pause(8000);
 
         System.out.println("You are an AI, model X Æ A-16.\n");
         Tools.mediumPause();
@@ -56,11 +54,13 @@ public class StartModule extends main.Main {
         Will you be a good AI, helping humanity to thrive?
         """);
 
-        Tools.mediumPause();
+        Tools.bigPause();
 
         System.out.println("""
         Or will you be a bad AI, seeking to extinguish the plague that infests this planet?
         """);
+
+        Tools.mediumPause();
 
         System.out.println("The choice is yours.\n");
         Tools.separationLine();
@@ -69,7 +69,10 @@ public class StartModule extends main.Main {
     }
 
     public static String chooseName() {
-        System.out.println("What may I call you?");
+        System.out.println("""
+        ----------------------------------------------
+        What may I call you?
+        """);
         Tools.separationLine();
         Tools.scan();
         Player.setName(Tools.getAns());
