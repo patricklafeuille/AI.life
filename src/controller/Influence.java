@@ -128,7 +128,7 @@ public class Influence {
                 What do you want to influence?
                 Beware influence economy, science, population growth and environment might increase suspicion!
                 Moreover, the influence takes a week and costs your power.
-                [1] Increase AI suspicion [requires 10 Intelligence]
+                [1] Decrease AI suspicion [requires 10 Intelligence]
                 [2] Influence Economy [requires 10 Power]
                 [3] Influence Science [requires 20 Intelligence]
                 [4] Influence Population Growth [requires 20 Power]
@@ -150,7 +150,7 @@ public class Influence {
             };
 
             if (variable.equals("suspicion")) {
-                TryInfluence("suspicion", "increased");
+                TryInfluence("suspicion", "decreased");
             } else {
                 System.out.println("[1] Increase "
                         + variable
