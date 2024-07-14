@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Influence {
 
-    public static boolean CalChance(int difficulty, double chance) {
+    public static boolean CalChance(int difficulty, double chance) { // Returns if the task is successful
         return (difficulty <= chance);
     }
 
@@ -22,19 +22,20 @@ public class Influence {
 
         Random random = new Random();
         FileReaderUtil fileReader = new FileReaderUtil();
-        int sign = switch (change) {
+        
+        int sign = switch (change) { // whether the change will be positive or negative.
             case "increased" -> 1;
             case "decreased" -> -1;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
-        int competence;
-        int AISuspicionChange = switch(change) {
-            case "increased" -> 5;
-            case "decreased" -> 10;
+        
+        int AISuspicionChange = switch(change) { // the base value for AI suspicion
+            case "increased" -> 2;
+            case "decreased" -> 5;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
 
-        List<util.Influence> Influence = fileReader.readInfluenceFromFile(
+        List<util.Influence> Influence = fileReader.readInfluenceFromFile( // randomly select one task from the text file.
                 "src/util/txt/influence/"
                         + var
                         + "_"
@@ -43,19 +44,22 @@ public class Influence {
         int randomIndex = random.nextInt(Influence.size());
         util.Influence selectedInfluence = Influence.get(randomIndex);
 
-        world.nextWeek();
-        System.out.println(selectedInfluence.getText());
+        world.nextWeek(); // Next week
+        
+        System.out.println(selectedInfluence.getText()); // show the text of the influence task
 
+        int competence; // whether intelligence or power is required
         if (var.equals("suspicion") || var.equals("science")) {
             competence = player.getIntelligence();
         } else {
             competence = player.getPower();
         }
 
-        if (CalChance(selectedInfluence.getDifficulty(), competence)) {
+        if (CalChance(selectedInfluence.getDifficulty(), competence)) { // Case SUCCESS
 
-            AISuspicionChange = AISuspicionChange + random.nextInt(-5, 5);
+            AISuspicionChange += random.nextInt(-5, 5); // Increase or decrease suspicion randomly
 
+            // print out the changes after the task
             String AISuspicionChangeInText;
             if (var.equals("suspicion")) {
                 AISuspicionChangeInText = "";
@@ -74,6 +78,7 @@ public class Influence {
                     + AISuspicionChangeInText
             );
 
+            // making changes after the task is successful
             switch (var) {
                 case "suspicion":
                     AISuspicionChange = 0;
@@ -98,7 +103,7 @@ public class Influence {
                     break;
             }
             world.changeAiSuspicion(AISuspicionChange);
-        } else {
+        } else { // Case FAILED
             AISuspicionChange = AISuspicionChange + random.nextInt(0, 2);
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             world.changeAiSuspicion(AISuspicionChange);
@@ -149,7 +154,7 @@ public class Influence {
                 default -> null;
             };
             
-            boolean reachRequirement = switch(choice) {
+            boolean reachRequirement = switch(choice) { // which requirement the task need to reach and if it reaches it
                 case 1 -> (player.getIntelligence() >= 10);
                 case 2 -> (player.getPower() >= 10);
                 case 3 -> (player.getIntelligence() >= 20);
@@ -187,6 +192,7 @@ public class Influence {
     }
 
 
+    // MAIN FOR TESTING INFLUENCE
     public static void main(String[] args) {
         Random random = new Random();
         World world = World.getInstance();
@@ -197,7 +203,7 @@ public class Influence {
         world.setAiSuspicion(random.nextInt(40,60));
         world.setEconomy(random.nextInt(40,60));
         world.setEnvironment(random.nextInt(40,60));
-        world.setPopulation(random.nextInt(40,60));
+        world.setPopulation(random.nextInt(5,8));
         world.setScience(random.nextInt(40,60));
         selectInfluence();
     }
