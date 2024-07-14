@@ -16,7 +16,7 @@ import util.Tools;
  * Which you probably already know, since you're here.
  * The game is basically a simulation of the future,
  * where the player (an AI) has to influence the world in order to achieve a set objective.
- * Before you go on, make sure to check out our README.md file (work in progress) and our GitHub repository:
+ * Before you go on, make sure to check out our README.md file (WIP), which is accessible on our GitHub repository:
  * https://github.com/patricklafeuille/AI.life
  *
  * As a side-note: This is the first "real" project Patrick and I have built, so there's probably a lot of room
