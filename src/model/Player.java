@@ -2,11 +2,11 @@ package model;
 
 public class Player {
 
-    private String name;
+    private String name; // The name of the AI
     private boolean objective; // Objective of the AI (true means good)
     private int intelligence; // IQ between 50 and 150
     private int power; // Power between 0 and 100
-    private static Player instance;
+    private static Player instance; // Making Player an instance so it can be accessed more easily
 
     public static Player getInstance() {
         if (instance == null) {
@@ -49,10 +49,10 @@ public class Player {
 
         this.intelligence = this.intelligence + n;
 
-        if (this.intelligence > 150) {
+        if (this.intelligence > 150) { // Maximal intelligence
             setIntelligence(150);
         }
-        if (this.intelligence < 50) {
+        if (this.intelligence < 50) { // Minimal intelligence
             setIntelligence(50);
         }
     }
@@ -61,10 +61,10 @@ public class Player {
 
         this.power = this.power + n;
 
-        if (this.power > 150) {
+        if (this.power > 150) { // Maximal power
             setPower(150);
         }
-        if (this.power < 50) {
+        if (this.power < 50) { // Minimal power
             setPower(50);
         }
     }
@@ -79,7 +79,7 @@ public class Player {
         );
     }
 
-    public String getPlayerState() {
+    public String getPlayerState() { // similar to printPlayerState, but instead of printing it, this returns it.
         return "| Intelligence: " + this.intelligence + " | Power: " + this.power + " |";
     }
 
