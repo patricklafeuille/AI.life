@@ -14,6 +14,7 @@ public class LifePhase {
         Tools.showState(player,world);
         
         System.out.println("""
+                WHAT DO YOU WANT TO DO?
                 [1] Influence the World
                 [2] React to news
                 [3] Return to Training Phase
