@@ -248,9 +248,6 @@ public class Quiz {
         if (choice == 1) {
             main(new String[]{});
         } else {
-            System.out.println("Your final bonus is: " + bonus);
-            System.out.println("Player's final state:");
-            player.printPlayerState();
             LifePhase.startLifePhase();
         }
     }
