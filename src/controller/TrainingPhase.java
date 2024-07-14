@@ -23,12 +23,13 @@ public class TrainingPhase {
 
     public void displayStats() {
         Tools.showMessageScreen("Loading stats", "small");
+        Tools.separationLine();
         Tools.printWithSmallDelay("Current Stats:\n" + player.getPlayerState());
         Tools.smallPause();
     }
 
     public void displayRound() {
-        Tools.printWithSmallDelay("Week: " + World.getWeek());
+        Tools.printWithSmallDelay("WEEK: " + World.getWeek());
         Tools.smallPause();
     }
 
