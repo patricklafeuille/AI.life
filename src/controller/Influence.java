@@ -11,11 +11,11 @@ import java.util.Scanner;
 
 public class Influence {
 
-    public static boolean CalChance(int difficulty, double chance) { // Returns if the task is successful
+    public static boolean CalChance(int difficulty, double chance) { // returns if the task is successful
         return (difficulty <= chance);
     }
 
-    public static void TryInfluence(String var, String change) {
+    public static void TryInfluence(String var, String change) { // after selected the variable to influence, here is the main process of influencing
 
         Player player = Player.getInstance();
         World world = World.getInstance();
@@ -23,13 +23,13 @@ public class Influence {
         Random random = new Random();
         FileReaderUtil fileReader = new FileReaderUtil();
         
-        int sign = switch (change) { // whether the change will be positive or negative.
+        int sign = switch (change) { // determines whether the change will be positive or negative.
             case "increased" -> 1;
             case "decreased" -> -1;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
         
-        int AISuspicionChange = switch(change) { // the base value for AI suspicion
+        int AISuspicionChange = switch(change) { // determines the base value for AI suspicion
             case "increased" -> 2;
             case "decreased" -> 5;
             default -> throw new IllegalStateException("Unexpected value: " + change);
@@ -122,7 +122,7 @@ public class Influence {
         }
     }
 
-    public static void selectInfluence() {
+    public static void selectInfluence() { // The player can select which variable to influence
 
         Player player = Player.getInstance();
         World world = World.getInstance();
