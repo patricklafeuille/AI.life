@@ -54,7 +54,7 @@ public class Influence {
 
         if (CalChance(selectedInfluence.getDifficulty(), competence)) {
 
-            AISuspicionChange = AISuspicionChange + random.nextInt(-10, 5);
+            AISuspicionChange = AISuspicionChange + random.nextInt(-5, 5);
 
             String AISuspicionChangeInText;
             if (var.equals("suspicion")) {
@@ -77,7 +77,7 @@ public class Influence {
             switch (var) {
                 case "suspicion":
                     AISuspicionChange = 0;
-                    world.changeAiSuspicion(selectedInfluence.getValue());
+                    world.changeAiSuspicion(-selectedInfluence.getValue());
                     player.changeIntelligence(-10);
                     break;
                 case "economy":
@@ -99,7 +99,7 @@ public class Influence {
             }
             world.changeAiSuspicion(AISuspicionChange);
         } else {
-            AISuspicionChange = AISuspicionChange + random.nextInt(0, 5);
+            AISuspicionChange = AISuspicionChange + random.nextInt(0, 2);
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             world.changeAiSuspicion(AISuspicionChange);
         }
