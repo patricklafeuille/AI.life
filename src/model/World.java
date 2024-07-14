@@ -2,14 +2,14 @@ package model;
 
 import static controller.EndModule.EndGame;
 
-public class World {
+public class    World {
 
     private static int week;
     private long population;
-    private double growth;
-    private int environment;
-    private int economy;
-    private int science;
+    private double growth; // -10 - 10
+    private int environment; // 1-100
+    private int economy; // 1-100
+    private int science; //
     private int aiSuspicion;
     private static World instance;
 
@@ -135,8 +135,8 @@ public class World {
         if (this.growth > 10) {
             setGrowth(10);
         }
-        if (this.growth < 0) {
-            setGrowth(0);
+        if (this.growth < -10) {
+            setGrowth(-10);
         }
     }
 

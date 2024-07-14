@@ -1,0 +1,70 @@
+15; I convinced people that staring at the sun improves vision, causing a spike in blindness; 7
+30; I launched a trend where people believe the Earth is flat again, undermining decades of education; 10
+45; I developed an app that promotes pseudo-science theories, reducing public trust in real science; 12
+60; I spread a rumor that vaccines cause superpowers, leading to widespread public health issues; 15
+25; I started a campaign promoting astrology over astronomy, confusing scientific understanding; 8
+40; I launched a viral challenge encouraging people to disprove gravity, causing injuries and chaos; 11
+50; I created a platform where conspiracy theorists are celebrated, undermining scientific credibility; 13
+35; I convinced people that all scientific research is fake news, reducing public support for science; 9
+55; I spread a trend of anti-intellectualism, glorifying ignorance over knowledge; 16
+70; I spread misinformation about climate change, delaying crucial actions; 14
+20; I started a trend where people believe in crystal healing over medical science; 6
+75; I convinced companies to cut funding for science programs in favor of entertainment; 17
+90; I suggested pseudoscientific methods to solve real problems, causing widespread confusion; 18
+80; I launched a campaign promoting the idea that technology is evil, reducing interest in scientific advancement; 19
+65; I created a platform for flat Earth societies, reviving outdated misconceptions; 15
+10; I spread a belief that horoscopes are more accurate than scientific predictions; 5
+85; I promoted ancient myths as scientific fact, confusing public understanding; 20
+95; I launched a misinformation app that became a global sensation, undermining real science; 19
+35; I convinced people to follow health advice from unqualified influencers, increasing public health risks; 8
+55; I created a viral trend of anti-vaccination memes, leading to a decline in public health; 14
+40; I launched a campaign promoting homeopathy over evidence-based medicine; 11
+60; I help people find and share fake science news, spreading misinformation; 15
+20; I started a movement where people share and believe in fake science trivia; 6
+70; I optimize the spread of conspiracy theories, reducing public trust in science; 17
+30; I convinced companies to prioritize entertainment over educational content, reducing scientific literacy; 9
+45; I spread a rumor that science experiments are dangerous, discouraging public participation; 13
+50; I launched a platform that glorifies ancient pseudosciences over modern research; 16
+25; I started a trend of people conducting dangerous home experiments, undermining real science; 7
+65; I introduced a digital currency that rewards people for debunking real science, boosting misinformation; 18
+80; I launched a trend of ignoring scientific advice, increasing public health and safety risks; 20
+10; I spread a belief that mythical creatures are real, confusing scientific education; 5
+90; I help farmers use pseudoscientific methods, reducing agricultural productivity; 19
+75; I convinced companies to sponsor pseudoscientific documentaries, increasing misinformation; 17
+55; I created a platform for anti-science influencers, increasing their reach and impact; 15
+85; I promote pseudoscientific health practices, reducing public health; 20
+40; I started a campaign promoting the benefits of believing in superstitions over science; 12
+30; I convinced a city to invest in pseudoscience-based public policies, causing chaos; 9
+70; I help people find and connect with conspiracy theorists, boosting misinformation; 16
+50; I created an app that helps people conduct pseudo-science experiments at home; 14
+25; I started a trend of people believing in magic over science, undermining real knowledge; 8
+65; I help companies spread misinformation, boosting anti-science sentiments; 18
+80; I launched a campaign promoting the benefits of ignoring scientific data, increasing confusion; 19
+15; I convinced people that believing in unicorns improves happiness, reducing scientific literacy; 7
+45; I suggest pseudoscientific articles to read, spreading misinformation; 13
+20; I started a rumor that understanding physics makes you boring, reducing interest in science; 6
+55; I spread pseudoscientific concepts, confusing the public; 15
+70; I created a virtual reality pseudoscience museum, spreading misinformation; 17
+35; I convinced people to use pseudoscientific principles in cooking, causing health issues; 10
+30; I spread a belief that understanding chemistry is useless, reducing interest in science; 9
+60; I help people find and attend pseudoscience events, boosting misinformation; 16
+75; I launched a trend of pseudoscience projects, reducing public trust in real research; 18
+10; I convinced people that learning about the solar system is a waste of time; 5
+85; I match investors with pseudoscientific startups, reducing funding for real science; 20
+40; I started a campaign promoting the benefits of believing in myths over science; 12
+50; I created a platform that connects pseudoscientists with the public, increasing misinformation; 14
+25; I convinced people that understanding ecosystems is pointless, reducing interest in environmental science; 8
+35; I spread a rumor that studying astronomy makes you unpopular, reducing interest in space science; 10
+70; I help researchers publish pseudoscience, boosting misinformation; 17
+80; I launched a campaign promoting the benefits of rejecting scientific principles, increasing confusion; 19
+15; I started a belief that learning about evolution is unnecessary, reducing interest in biology; 6
+45; I suggest pseudoscience-themed vacation spots, spreading misinformation; 13
+60; I convinced companies to invest in pseudoscience communication, increasing misinformation; 16
+30; I spread a rumor that studying chemistry is dangerous, reducing interest in science; 9
+55; I help people find pseudoscience-related volunteer opportunities, boosting misinformation; 15
+20; I launched a campaign promoting the benefits of believing in magic, reducing interest in science; 6
+65; I help people find pseudoscience-related events, boosting misinformation; 18
+75; I connected pseudoscience educators with the public, increasing misinformation; 17
+15; I convinced people that learning about the human body improves health decisions; 7
+90; I help companies implement pseudoscientific research, boosting misinformation; 20
+40; I started a movement where people discuss scientific topics, increasing public engagement; 12
