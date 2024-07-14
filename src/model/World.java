@@ -10,6 +10,7 @@ public class World {
     private int environment;
     private int economy;
     private int science;
+    private int aiSuspicion;
     private static World instance;
 
     public static World getInstance() {
@@ -26,6 +27,14 @@ public class World {
 
     public static int getWeek() {
         return week;
+    }
+
+    public int getAiSuspicion() {
+        return aiSuspicion;
+    }
+
+    public void setAiSuspicion(int aiSuspicion) {
+        this.aiSuspicion = aiSuspicion;
     }
 
     public long getPopulation() {
@@ -131,6 +140,18 @@ public class World {
         }
     }
 
+    public void changeAiSuspicion(int n) {
+        this.aiSuspicion = this.aiSuspicion + n;
+
+        if (this.aiSuspicion > 100) {
+            setAiSuspicion(100);
+            EndGame("high suspicion");
+        }
+        if (this.aiSuspicion < 0) {
+            setAiSuspicion(0);
+        }
+    }
+
     public void printWorldState() {
         System.out.println(
                 "| pop. "
@@ -141,6 +162,8 @@ public class World {
                         + this.economy
                         + " | sci. "
                         + this.science
+                        + " | sus. "
+                        + this.aiSuspicion
                         + " |"
         );
     }
