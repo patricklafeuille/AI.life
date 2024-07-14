@@ -5,8 +5,8 @@ import static controller.EndModule.EndGame;
 public class    World {
 
     private static int week;
-    private long population;
-    private double growth; // -10 - 10
+    private long population; //in billions, 0 - 12
+    private double human_growth_rate; // -10 - 10
     private int environment; // 1-100
     private int economy; // 1-100
     private int science; //
@@ -42,7 +42,7 @@ public class    World {
     }
 
     public double getGrowth() {
-        return growth;
+        return human_growth_rate;
     }
 
     public int getEnvironment() {
@@ -66,7 +66,7 @@ public class    World {
     }
 
     public void setGrowth(double growth) {
-        this.growth = growth;
+        this.human_growth_rate = growth;
     }
 
     public void setEnvironment(int environment) {
@@ -87,8 +87,8 @@ public class    World {
         if (this.population < 0) {
             setPopulation(0);
             EndGame("low population");
-        } else if (this.population > 1000000000) {
-            setPopulation(1000000000);
+        } else if (this.population > 12) {
+            setPopulation(12);
             EndGame("high population");
         }
     }
@@ -133,12 +133,12 @@ public class    World {
     }
 
     public void changeGrowth(double n) {
-        this.growth = this.growth + n;
+        this.human_growth_rate = this.human_growth_rate + n;
 
-        if (this.growth > 10) {
+        if (this.human_growth_rate > 10) {
             setGrowth(10);
         }
-        if (this.growth < -10) {
+        if (this.human_growth_rate < -10) {
             setGrowth(-10);
         }
     }
