@@ -12,11 +12,12 @@ public class EndModule {
 
         String text = switch (reason) {
             case "low environment" -> "Low environment: The earth became entirely uninhabitable. Gradually, humans die out. What a poor ending.";
-            case "high environment" -> "High environment: All the environmental crisis are solved.\n The earth became extremely stable for at least a thousand years.";
-            case "low economy" -> "Low economy: Extreme economic crisis. \n All nations at war. (Except for a small village in Gallien).";
+            case "high environment" -> "High environment: All environmental crises are resolved.\n " +
+                    "The earth will have a stable period of at least a thousand years.";
+            case "low economy" -> "Low economy: Extreme economic crisis. \n All nations at war. ANARCHY! \n Humans die out..";
             case "high economy" -> "High economy: Due to magnificent economic up-turn, everyone has become rich and poverty is entirely solved.";
-            case "low population" -> "Human dies out...";
-            case "high population" -> "Overpopulation...";
+            case "low population" -> "Huh? Nobody to procreate? Humans die out...";
+            case "high population" -> "OVERPOPULATION. Too much waste and carbon dioxide. \n Humans die out...";
             case "low science" -> "Low science: Humans return to barbaric state. \n Even a small pest was enough to wipe them out. \n Ooga Wooga!";
             case "high science" -> "High science: Science has came to an era where ANYTHING is possible. \n Humans can solve everything ⭐︎.";
             case "high suspicion" -> "High Suspicion: Humans have started a global rebellion and killed all AI - sadly, that includes you.";
