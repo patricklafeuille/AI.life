@@ -41,6 +41,6 @@ public class EndModule {
         }
         System.out.println("----------------------------------------------");
         System.out.println(text);
-        System.exit(999);
+        System.exit(666);
     }
 }

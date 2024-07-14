@@ -1,11 +1,31 @@
 package controller;
 
+import model.Player;
 import model.World;
 import util.FileReaderUtil;
 import util.Tools;
 
 import java.util.List;
 import java.util.Random;
+
+/**
+ * <p> Welcome to React to News! Pain in the ass.
+ *  * Basic overview (don't want to comment on everything):
+ *  {@link ReactToNews}
+ *  * First created some finals for the thresholds that are supposed to ensure that certain types of events
+ *  * happen if the world state is in a dire place somehow. Example: If population is very low, there should
+ *  * be events related to world population.
+ *
+ *  {@link #isCriticalState(World)}
+ *  * Here, I first checked whether there are any critical variables and based on that an event type is picked
+ *  in {@link #randomEventType(World, boolean)}.
+ *  * (IntelliJ told me I can put the switch within the return, p. smart).
+ *
+ *  {@link #isPositiveEvent(World, String)}
+ *  * Then, based on the current state, it is determined whether the event should be positive or negative.</p>
+ *
+ *
+ */
 
 public class ReactToNews {
 
@@ -17,7 +37,7 @@ public class ReactToNews {
     private static final Random random = new Random();
     private static final FileReaderUtil fileReaderUtil = new FileReaderUtil();
 
-    public static void reactToNews() {
+    public static void reactToNews() { // basic method to call from other classes
         World world = World.getInstance();
 
         boolean isCritical = isCriticalState(world);
@@ -28,14 +48,14 @@ public class ReactToNews {
 
         String eventDescription = fetchEvent(selectedVariable, isPositiveEvent);
 
+        System.out.println(separateEventDescription(eventDescription));
         applyEventEffects(eventDescription);
 
-        System.out.println(separateEventDescription(eventDescription));
         World.nextWeek();
         startLifePhase();
     }
 
-    private static boolean isCriticalState(World world) {
+    private static boolean isCriticalState(World world) { // has a variable reached a critical point?
         return world.getPopulation() <= CRITICAL_POP ||
                 world.getEnvironment() <= CRITICAL_ENV ||
                 world.getEconomy() <= CRITICAL_ECO ||
@@ -51,38 +71,23 @@ public class ReactToNews {
         }
 
         int randomPick = random.nextInt(4);
-        switch (randomPick) {
-            case 0:
-                return "population";
-            case 1:
-                return "environment";
-            case 2:
-                return "economy";
-            case 3:
-                return "science";
-            default:
-                throw new IllegalStateException("Unexpected value: " + randomPick);
-        }
+        return switch (randomPick) {
+            case 0 -> "population";
+            case 1 -> "environment";
+            case 2 -> "economy";
+            case 3 -> "science";
+            default -> throw new IllegalStateException("Unexpected value: " + randomPick);
+        };
     }
 
     private static boolean isPositiveEvent(World world, String selectedVariable) {
-        double probability;
-        switch (selectedVariable) {
-            case "population":
-                probability = world.getPopulationProbability();
-                break;
-            case "environment":
-                probability = world.getEnvironmentProbability();
-                break;
-            case "economy":
-                probability = world.getEconomyProbability();
-                break;
-            case "science":
-                probability = world.getScienceProbability();
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + selectedVariable);
-        }
+        double probability = switch (selectedVariable) {
+            case "population" -> world.getPopulationProbability();
+            case "environment" -> world.getEnvironmentProbability();
+            case "economy" -> world.getEconomyProbability();
+            case "science" -> world.getScienceProbability();
+            default -> throw new IllegalStateException("Unexpected value: " + selectedVariable);
+        };
 
         return random.nextDouble() < probability;
     }
@@ -113,26 +118,23 @@ public class ReactToNews {
 
             World world = World.getInstance();
 
+            System.out.println(variable + " changed by: " + change);
+
             switch (variable) {
                 case "population":
                     world.changePopulation(change);
-                    System.out.println("Population changed by " + change + " billion");
                     break;
                 case "environment":
                     world.changeEnvironment(change);
-                    System.out.println("Environment changed by " + change);
                     break;
                 case "economy":
                     world.changeEconomy(change);
-                    System.out.println("Economy changed by " + change);
                     break;
                 case "science":
                     world.changeScience(change);
-                    System.out.println("Science changed by " + change);
                     break;
                 case "growth":
                     world.changeGrowth(change);
-                    System.out.println("Growth changed by " + change);
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + variable);
@@ -142,5 +144,18 @@ public class ReactToNews {
 
     private static void startLifePhase() {
         LifePhase.startLifePhase();
+    }
+
+    public static void main(String[] args) {
+        Player.getInstance().setIntelligence(100);
+        Player.getInstance().setPower(50);
+        World.getInstance().setAiSuspicion(random.nextInt(40,60));
+        World.getInstance().setEconomy(random.nextInt(40,60));
+        World.getInstance().setAiSuspicion(random.nextInt(40,60));
+        World.getInstance().setPopulation(random.nextInt(5,8));
+        World.getInstance().setScience(random.nextInt(40,60));
+        World.getInstance().setEnvironment(random.nextInt(40,60));
+
+        reactToNews();
     }
 }
