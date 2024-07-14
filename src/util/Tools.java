@@ -19,10 +19,10 @@ import java.util.Scanner;
  */
 public class Tools {
 
-    private static final Scanner scanner = new Scanner(System.in);
     static String ans = "";
 
     public static void scan() {
+        Scanner scanner = new Scanner(System.in);
         ans = scanner.nextLine();
     }
 
@@ -105,6 +105,7 @@ public class Tools {
     }
 
     public static int onlyInt(){
+        Scanner scanner = new Scanner(System.in);
         int input = 0;
         boolean validInput = false;
 

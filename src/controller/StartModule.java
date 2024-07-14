@@ -70,12 +70,12 @@ public class StartModule extends main.Main {
 
 
     public static String chooseName() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("""
         ----------------------------------------------
         What may I call you?
         """);
-        String name = scanner.nextLine();
+        Tools.scan();
+        String name = Tools.getAns();
         Tools.showMessageScreen("Setting name", "small");
         System.out.println("Nice to meet you, " + name + ".");
         return name;
