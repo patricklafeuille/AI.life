@@ -1,0 +1,50 @@
+"Scientists discover a cure for all cancers";science:+10;population:+2
+"Quantum teleportation becomes a reality";science:+9
+"AI develops unified theory of everything";science:+10;economy:+2
+"Human brain fully mapped, unlocking mental potential";science:+8;population:+1
+"Breakthrough in fusion energy provides limitless power";science:+10;economy:+2
+"Gene editing eradicates all genetic disorders";science:+9;population:+2
+"Antigravity technology revolutionizes transportation";science:+8;economy:+2
+"Nano-medicine cures all known diseases";science:+10;population:+2
+"Global warming reversed through climate engineering";science:+9;environment:+3
+"Artificial intelligence surpasses human intelligence";science:+8;economy:+2
+"Discovery of extraterrestrial life confirmed";science:+9
+"Space-time manipulation allows for time travel";science:+10
+"Mind-upload technology achieves digital immortality";science:+9;population:+1
+"Human lifespan extended to 200 years";science:+8;population:+2
+"Breakthrough in telepathy enhances human communication";science:+9;economy:+1
+"Teleportation devices become commercially available";science:+10;economy:+2
+"Universal translator enables communication with all species";science:+8;population:+1
+"Discovery of new element revolutionizes technology";science:+9;economy:+1
+"Quantum computing solves unsolvable problems";science:+10;economy:+2
+"Interstellar travel becomes possible";science:+9
+"Genetic enhancements create superhumans";science:+8;population:+2
+"New particle discovered, unlocking new physics";science:+9;economy:+1
+"Advances in robotics eliminate menial labor";science:+10;economy:+2
+"Humans gain the ability to photosynthesize";science:+9;population:+1
+"Brain-computer interfaces enhance cognitive abilities";science:+8;economy:+1
+"Breakthrough in renewable energy powers the planet";science:+10;environment:+2
+"New material discovered, stronger than anything known";science:+9;economy:+1
+"Advances in biotechnology heal all injuries";science:+8;population:+2
+"Global collaboration leads to scientific renaissance";science:+10
+"AI-driven research accelerates scientific discoveries";science:+9;economy:+1
+"New method of space colonization developed";science:+8;population:+1
+"Breakthrough in cryogenics allows for human hibernation";science:+9
+"Advances in neurotechnology enhance memory and learning";science:+10;economy:+1
+"New theory of quantum gravity revolutionizes physics";science:+9
+"Genetic manipulation allows for custom-designed organisms";science:+8;population:+1
+"AI discovers solution to climate change";science:+10;environment:+2
+"Breakthrough in virtual reality creates new worlds";science:+9;economy:+1
+"Humans develop the ability to regenerate limbs";science:+8;population:+1
+"Discovery of new energy source ends energy crisis";science:+10;economy:+2
+"Quantum entanglement enables instant communication";science:+9
+"AI solves the mystery of dark matter and dark energy";science:+8
+"Human-animal hybrids enhance medical research";science:+9;population:+1
+"Breakthrough in nanotechnology revolutionizes medicine";science:+10;economy:+1
+"New method of space travel reduces costs by 90%";science:+9;economy:+2
+"AI develops universal cure for all viral infections";science:+8;population:+2
+"Discovery of parallel universes confirmed";science:+9
+"Advances in genetic engineering create new crops";science:+10;environment:+2
+"New form of communication discovered, transcending language";science:+9
+"Discovery of universal antidote for all poisons";science:+8;population:+1
+"Breakthrough in artificial organs saves millions of lives";science:+10;population:+2

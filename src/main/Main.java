@@ -20,7 +20,7 @@ public class Main {
         world.setAiSuspicion(random.nextInt(40,60));
         world.setEconomy(random.nextInt(40,60));
         world.setEnvironment(random.nextInt(40,60));
-        world.setPopulation(random.nextInt(40,60));
+        world.setPopulation(random.nextInt(5,8));
         world.setScience(random.nextInt(40,60));
 
         //Title at the beginning

@@ -1,0 +1,50 @@
+"Genetic experiments go wrong, causing widespread mutations";science:-10;population:-2
+"AI malfunctions, causing global technological chaos";science:-9;economy:-2
+"New disease-resistant bacteria render antibiotics useless";science:-8;population:-2
+"Fusion reactor accident leads to catastrophic explosion";science:-10;economy:-3
+"Nanotechnology runs amok, consuming all matter";science:-9;environment:-2
+"Quantum experiment creates a black hole on Earth";science:-10;population:-3;environment:-2
+"Global communications disrupted by solar flare";science:-8;economy:-2
+"AI develops sentience and rebels against humanity";science:-9;population:-3
+"Human cloning project fails, causing mass deformities";science:-8;population:-2
+"Failed space mission causes international crisis";science:-10;economy:-2
+"Superintelligent AI erases all digital information";science:-9;economy:-3
+"Genetic modifications cause unforeseen health issues";science:-8;population:-2
+"Quantum tunneling experiment destabilizes reality";science:-10;environment:-2
+"Mind control experiments backfire, causing mass hysteria";science:-9;population:-2
+"Failed cryogenics project leads to mass casualties";science:-8;population:-2
+"Global pandemic caused by engineered virus";science:-10;population:-3;economy:-2
+"Dark matter research unleashes unknown forces";science:-9;environment:-2
+"Human-animal hybrid experiments cause global outrage";science:-8;population:-1
+"Time travel experiment alters history, causing chaos";science:-10;economy:-3
+"AI-driven research leads to dangerous technology";science:-9;population:-2
+"Genetic enhancement causes widespread infertility";science:-8;population:-2
+"Cybernetic implants malfunction, causing severe injuries";science:-10;population:-2
+"Teleportation accidents lead to loss of life";science:-9;population:-2
+"Mind upload technology causes irreversible damage";science:-8;population:-1
+"Alien technology malfunctions, causing global disaster";science:-10;population:-3;economy:-2
+"Breakthrough in dark energy research destroys infrastructure";science:-9;economy:-2
+"Quantum computing error crashes global systems";science:-8;economy:-2
+"Biotech failure leads to mass food shortages";science:-10;population:-2;economy:-3
+"Newly discovered element proves highly toxic";science:-9;environment:-2
+"AI prediction error leads to economic collapse";science:-8;economy:-2
+"Failed genetic experiment causes global pandemic";science:-10;population:-3
+"Global blackout caused by solar storm disrupts research";science:-9;economy:-2
+"Nanobots malfunction and attack human cells";science:-8;population:-2
+"Terraforming project backfires, causing environmental damage";science:-10;environment:-2
+"Revolutionary technology proves unstable and dangerous";science:-9;economy:-2
+"Failed experiment releases deadly pathogens";science:-8;population:-2
+"AI misinterprets data and makes catastrophic decisions";science:-10;population:-2;economy:-3
+"Space-time rift caused by experiment swallows entire city";science:-9;environment:-2
+"Genetic engineering error causes crop failures";science:-8;population:-1
+"Mind expansion drug leads to permanent psychosis";science:-10;population:-2
+"Cyberattack on research facilities disrupts progress";science:-9;economy:-2
+"Alien bacteria escape containment, causing disease";science:-8;population:-2
+"Failed weather control experiment triggers superstorms";science:-10;environment:-3
+"Global network collapse due to AI malfunction";science:-9;economy:-3
+"Quantum entanglement error causes widespread chaos";science:-8;economy:-2
+"Failed cryonics project results in mass casualties";science:-10;population:-2
+"Breakthrough in weapon technology leads to arms race";science:-9;population:-1
+"Failed teleportation experiment causes material loss";science:-8;economy:-1
+"Genetic manipulation backfires, causing species extinction";science:-10;environment:-3
+"Failed artificial intelligence project leads to economic turmoil";science:-9;economy:-2

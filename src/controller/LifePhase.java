@@ -25,7 +25,7 @@ public class LifePhase {
                 Influence.selectInfluence();
                 break;
             case 2:
-                // React to news
+                ReactToNews.reactToNews();
                 break;
             case 3:
                 TrainingPhase trainingPhase = new TrainingPhase(player);

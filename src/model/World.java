@@ -2,11 +2,11 @@ package model;
 
 import static controller.EndModule.EndGame;
 
-public class    World {
+public class World {
 
     private static int week;
-    private static double population; //in billions, 0 - 12
-    private static double human_growth_rate; // -10 - 10
+    private double population; //in billions, 0 - 12
+    private double human_growth_rate; // -10 - 10
     private int environment; // 1-100
     private int economy; // 1-100
     private int science; //
@@ -38,9 +38,9 @@ public class    World {
     }
 
     public static void nextWeek() {
-        World.week++;
-        System.out.println("----------------------------------------------\nWEEK " + World.week);
-        changePopulation(population + (Math.round(human_growth_rate / 10)));
+        week++;
+        System.out.println("----------------------------------------------\nWEEK " + week);
+        getInstance().changePopulation(getInstance().getGrowth() / 10);
     }
 
     public static int getWeek() {
@@ -76,15 +76,15 @@ public class    World {
     }
 
     public static void setWeek(int w) {
-        World.week = w;
+        week = w;
     }
 
-    public static void setPopulation(double population) {
-        World.population = population;
+    public void setPopulation(double population) {
+        this.population = population;
     }
 
     public void setGrowth(double growth) {
-        human_growth_rate = growth;
+        this.human_growth_rate = growth;
     }
 
     public void setEnvironment(int environment) {
@@ -99,13 +99,13 @@ public class    World {
         this.science = science;
     }
 
-    public static void changePopulation(double n) {
-        population += n;
+    public void changePopulation(double n) {
+        this.population += n;
 
-        if (population < 0) {
+        if (this.population < 0) {
             setPopulation(0);
             EndGame("low population");
-        } else if (population > 12) {
+        } else if (this.population > 12) {
             setPopulation(12);
             EndGame("high population");
         }
@@ -151,12 +151,12 @@ public class    World {
     }
 
     public void changeGrowth(double n) {
-        human_growth_rate = human_growth_rate + n;
+        this.human_growth_rate = this.human_growth_rate + n;
 
-        if (human_growth_rate > 10) {
+        if (this.human_growth_rate > 10) {
             setGrowth(10);
         }
-        if (human_growth_rate < -10) {
+        if (this.human_growth_rate < -10) {
             setGrowth(-10);
         }
     }

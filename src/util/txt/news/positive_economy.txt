@@ -1,0 +1,51 @@
+"Communism established, poverty eradicated";economy:+10;science:+1
+"Humans go back to trading sea shells";economy:+8
+"Top 1% decide to give back to the poor";economy:+9;population:+1;science:+1
+"Global adoption of barter system simplifies trade";economy:+7
+"Universal basic income ends all poverty";economy:+10;population:+1;science:+1
+"New economic policies double global wealth";economy:+9;growth:+1;science:+1
+"Massive gold deposits discovered, boosting wealth";economy:+8
+"Quantum finance algorithms eliminate market crashes";economy:+9;science:+1
+"Global jubilee cancels all debts";economy:+10
+"New currency based on happiness increases wealth";economy:+8;population:+1
+"Fair trade laws ensure equal wealth distribution";economy:+9;science:+1
+"Alien trade agreements bring new wealth to Earth";economy:+8;growth:+1;science:+1
+"Miracle crop triples agricultural output";economy:+9
+"Time-travel tourism boosts global economy";economy:+7;growth:+1
+"Global cooperative society shares all resources";economy:+10
+"Mind-to-mind trade networks increase efficiency";economy:+8;growth:+1;science:+1
+"New education systems create a highly skilled workforce";economy:+9;science:+2
+"Technological singularity increases productivity tenfold";economy:+10;growth:+1;science:+2
+"Global peace treaty diverts funds to economic growth";economy:+8;population:+1
+"Massive solar farms power the global economy";economy:+9;science:+1
+"Worldwide tax reform boosts economic equality";economy:+8;growth:+1
+"Genetic enhancements create super-efficient workers";economy:+9;science:+1
+"Intergalactic commerce opens new markets";economy:+10;growth:+1;science:+1
+"Ancient treasures discovered, boosting wealth";economy:+8
+"Mass telepathy improves market predictions";economy:+9;growth:+1
+"Global reduction in work hours increases productivity";economy:+7
+"Revolutionary recycling technology reduces costs";economy:+9;science:+1
+"AI-driven economy eliminates inefficiencies";economy:+10;growth:+1;science:+1
+"Massive diamond mines discovered, increasing wealth";economy:+8
+"Global free trade zone boosts economic activity";economy:+9;growth:+1
+"Utopian economy eliminates scarcity";economy:+10;population:+1
+"Quantum computing solves economic inequality";economy:+9;science:+2
+"Global energy surplus reduces costs";economy:+8;growth:+1
+"Virtual reality jobs create new markets";economy:+7;growth:+1
+"Every human receives a share of Earth's resources";economy:+10
+"Interdimensional trade opens infinite markets";economy:+9;growth:+1;science:+1
+"Mind upload technology creates new economy";economy:+8;science:+1
+"Planetary alignment brings economic prosperity";economy:+7
+"Global barter system replaces currency";economy:+8
+"Ancient wisdom improves economic policies";economy:+9
+"Revolutionary agriculture boosts food production";economy:+10;growth:+1;science:+1
+"Global financial literacy program increases wealth";economy:+9
+"Magic-like technology reduces costs to zero";economy:+8;science:+1
+"Universal wealth redistribution ends poverty";economy:+10;population:+1
+"Cosmic events boost global economy";economy:+7
+"Massive tourism boom increases economic activity";economy:+8;growth:+1;science:+1
+"AI predicts and prevents economic downturns";economy:+9;science:+1
+"Ancient trade routes reopen, boosting commerce";economy:+8
+"Global cooperation on economic policies increases wealth";economy:+9;science:+1
+"Mind-expanding substances improve worker efficiency";economy:+7;growth:+1
+"Newly discovered resources create economic boom";economy:+10;growth:+1;science:+1

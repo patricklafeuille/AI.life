@@ -9,10 +9,10 @@ import java.util.Random;
 
 public class ReactToNews {
 
-    private static final int CRITICAL_THRESHOLD_POPULATION = 2; // in billions
-    private static final int CRITICAL_THRESHOLD_ENVIRONMENT = 20;
-    private static final int CRITICAL_THRESHOLD_ECONOMY = 20;
-    private static final int CRITICAL_THRESHOLD_SCIENCE = 20;
+    private static final int CRITICAL_POP = 2; // in billions
+    private static final int CRITICAL_ENV = 20;
+    private static final int CRITICAL_ECO = 20;
+    private static final int CRITICAL_SCI = 20;
 
     private static final Random random = new Random();
     private static final FileReaderUtil fileReaderUtil = new FileReaderUtil();
@@ -20,44 +20,34 @@ public class ReactToNews {
     public static void reactToNews() {
         World world = World.getInstance();
 
-        // Check if any variables are critical
         boolean isCritical = isCriticalState(world);
 
-        // Select a variable to base the event on
-        String selectedVariable = selectVariable(world, isCritical);
+        String selectedVariable = randomEventType(world, isCritical);
 
-        // Determine if the event is positive or negative
-        boolean isPositiveEvent = determineEventPositivity(world, selectedVariable);
+        boolean isPositiveEvent = isPositiveEvent(world, selectedVariable);
 
-        // Fetch the event description and its effects
         String eventDescription = fetchEvent(selectedVariable, isPositiveEvent);
 
-        // Apply the event effects
         applyEventEffects(eventDescription);
 
-        // Display the event
         System.out.println(eventDescription);
-
-        // Increase the week counter
         World.nextWeek();
-
-        // Return to the life phase (this could be a method in another class)
         startLifePhase();
     }
 
     private static boolean isCriticalState(World world) {
-        return world.getPopulation() <= CRITICAL_THRESHOLD_POPULATION ||
-                world.getEnvironment() <= CRITICAL_THRESHOLD_ENVIRONMENT ||
-                world.getEconomy() <= CRITICAL_THRESHOLD_ECONOMY ||
-                world.getScience() <= CRITICAL_THRESHOLD_SCIENCE;
+        return world.getPopulation() <= CRITICAL_POP ||
+                world.getEnvironment() <= CRITICAL_ENV ||
+                world.getEconomy() <= CRITICAL_ECO ||
+                world.getScience() <= CRITICAL_SCI;
     }
 
-    private static String selectVariable(World world, boolean isCritical) {
+    private static String randomEventType(World world, boolean isCritical) {
         if (isCritical) {
-            if (world.getPopulation() <= CRITICAL_THRESHOLD_POPULATION) return "population";
-            if (world.getEnvironment() <= CRITICAL_THRESHOLD_ENVIRONMENT) return "environment";
-            if (world.getEconomy() <= CRITICAL_THRESHOLD_ECONOMY) return "economy";
-            if (world.getScience() <= CRITICAL_THRESHOLD_SCIENCE) return "science";
+            if (world.getPopulation() <= CRITICAL_POP) return "population";
+            if (world.getEnvironment() <= CRITICAL_ENV) return "environment";
+            if (world.getEconomy() <= CRITICAL_ECO) return "economy";
+            if (world.getScience() <= CRITICAL_SCI) return "science";
         }
 
         int randomPick = random.nextInt(4);
@@ -75,7 +65,7 @@ public class ReactToNews {
         }
     }
 
-    private static boolean determineEventPositivity(World world, String selectedVariable) {
+    private static boolean isPositiveEvent(World world, String selectedVariable) {
         double probability;
         switch (selectedVariable) {
             case "population":
@@ -98,8 +88,14 @@ public class ReactToNews {
     }
 
     private static String fetchEvent(String selectedVariable, boolean isPositiveEvent) {
+        System.out.println("Fetching event...");
+        Tools.showLoadingScreen("small");
+        System.out.println("Event Type: " + selectedVariable);
         String filename = (isPositiveEvent ? "positive_" : "negative_") + selectedVariable + ".txt";
-        List<String> events = fileReaderUtil.readLinesFromFile("src/util/txt/" + filename);
+        List<String> events = fileReaderUtil.readLinesFromFile("src/util/txt/news/" + filename);
+        if (events.isEmpty()) {
+            throw new IllegalStateException("No events found in file: " + filename);
+        }
         return events.get(random.nextInt(events.size()));
     }
 
@@ -115,18 +111,23 @@ public class ReactToNews {
             switch (variable) {
                 case "population":
                     world.changePopulation(change);
+                    System.out.println("Population changed by " + change + " billion");
                     break;
                 case "environment":
                     world.changeEnvironment(change);
+                    System.out.println("Environment changed by " + change);
                     break;
                 case "economy":
                     world.changeEconomy(change);
+                    System.out.println("Economy changed by " + change);
                     break;
                 case "science":
                     world.changeScience(change);
+                    System.out.println("Science changed by " + change);
                     break;
                 case "growth":
                     world.changeGrowth(change);
+                    System.out.println("Growth changed by " + change);
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + variable);
@@ -135,7 +136,6 @@ public class ReactToNews {
     }
 
     private static void startLifePhase() {
-        // Placeholder for starting the life phase
-        // This should call the method to initiate the life phase in the appropriate class
+        LifePhase.startLifePhase();
     }
 }

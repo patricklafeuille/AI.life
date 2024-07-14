@@ -1,0 +1,50 @@
+"Humans surpass solid foods and are fed with nutrient-dense formulas";population:+2;growth:+2
+"Interstellar migrations double Earth's population overnight";population:+3;growth:+3
+"New underground cities expand human living space dramatically";population:+2;growth:+2
+"Utopian societies attract billions with promises of perfect living conditions";population:+2;growth:+2
+"Mass cloning operations produce millions of new humans";population:+3;growth:+3
+"Universal telepathy reduces conflicts, boosting population morale";population:+1;growth:+2
+"Humans merge with benevolent alien species, increasing numbers";population:+2;growth:+3
+"All diseases are miraculously cured by a mysterious force";population:+3;growth:+3
+"Time travel allows for historical population surges";population:+2;growth:+3
+"Humans develop the ability to photosynthesize, reducing food needs";population:+1;growth:+2
+"Enigmatic portals transport billions to new habitable dimensions";population:+3;growth:+3
+"Virtual reality paradises attract billions, stabilizing population growth";population:+2;growth:+2
+"Ancient prophecies come true, heralding an era of peace and prosperity";population:+2;growth:+2
+"Massive space arks bring back millions of explorers";population:+3;growth:+3
+"Dream technology boosts mental health, increasing birth rates";population:+2;growth:+2
+"Rejuvenation spas open worldwide, significantly extending lifespans";population:+2;growth:+2
+"Massive underground reservoirs provide limitless resources";population:+2;growth:+2
+"Human DNA found to have regenerative properties, curing all injuries";population:+3;growth:+3
+"Global festivals and celebrations boost birth rates significantly";population:+2;growth:+2
+"Telekinesis becomes widespread, reducing physical labor needs";population:+1;growth:+2
+"Shared consciousness networks enhance human cooperation";population:+2;growth:+2
+"Ancient advanced civilizations return, merging populations";population:+3;growth:+3
+"New harmonic frequencies discovered that heal the human body";population:+2;growth:+2
+"Humanity achieves collective enlightenment, reducing conflicts";population:+1;growth:+2
+"Alien ambassadors share their secrets to immortality";population:+3;growth:+3
+"Mass teleportation devices eliminate all transportation issues";population:+2;growth:+2
+"Humans gain ability to live underwater, expanding habitats";population:+2;growth:+3
+"Genetic memory unlocks, providing ancestral wisdom";population:+2;growth:+2
+"Global empathy surge leads to unprecedented cooperation";population:+1;growth:+2
+"Humans discover how to harness dream energy for real-world benefits";population:+2;growth:+2
+"Massive floating cities expand human living space";population:+2;growth:+3
+"Supernatural beings join human society, boosting population";population:+3;growth:+3
+"Everyone receives a personal guardian angel, improving safety";population:+2;growth:+2
+"Humans gain ability to hibernate during crises, stabilizing numbers";population:+1;growth:+2
+"Intergalactic alliances bring millions of new settlers to Earth";population:+3;growth:+3
+"Ancient healing springs rediscovered, curing all who visit";population:+2;growth:+2
+"Massive interspecies cooperation boosts human population";population:+2;growth:+3
+"Mind expansion techniques become universally available";population:+1;growth:+2
+"Humanity collectively overcomes all fears, boosting birth rates";population:+2;growth:+2
+"New psychic abilities allow humans to predict and avoid dangers";population:+2;growth:+2
+"Humans evolve to require less sleep, increasing productivity";population:+1;growth:+2
+"Worldwide unity events lead to unprecedented birth rates";population:+2;growth:+2
+"Humans gain ability to communicate with all animals, reducing conflicts";population:+1;growth:+2
+"Ancient artifacts reveal secrets to eternal youth";population:+3;growth:+3
+"Mass enlightenment leads to global harmony and population growth";population:+2;growth:+2
+"Humans learn to harness the power of the mind to heal the body";population:+2;growth:+2
+"Massive floating habitats expand human living space";population:+2;growth:+3
+"Cosmic events boost human fertility rates significantly";population:+3;growth:+3
+"Humans gain ability to photosynthesize, reducing dependency on food";population:+1;growth:+2
+"Global meditation events boost mental health, increasing birth rates";population:+2;growth:+2

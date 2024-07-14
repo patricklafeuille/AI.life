@@ -1,0 +1,49 @@
+"Global stock market crash leads to widespread poverty";economy:-10;population:-2;science:-2
+"Massive bank failures trigger a worldwide depression";economy:-9;population:-1;science:-2
+"Alien invasion disrupts global trade";economy:-8;science:-1
+"Sudden hyperinflation makes money worthless";economy:-10;population:-2
+"Global resource war devastates economies";economy:-9;population:-3;science:-2
+"Technological singularity collapses labor markets";economy:-8;science:-1
+"Quantum computing hack causes financial chaos";economy:-9;science:-1
+"Cosmic event disrupts electronic communications";economy:-10;population:-1;science:-2
+"Intergalactic embargo cripples Earth’s economy";economy:-8;population:-1;science:-2
+"Pandemic-induced panic leads to economic collapse";economy:-9;population:-2;science:-1
+"Cyberattack shuts down global financial systems";economy:-10;science:-2
+"Massive natural disaster destroys key economic regions";economy:-9;population:-2;science:-1
+"Universal basic income program fails, causing unrest";economy:-8;population:-1
+"AI-driven economy malfunctions, causing recession";economy:-9;science:-2
+"Global trade war leads to severe economic decline";economy:-10;population:-1;science:-2
+"Uncontrolled cloning results in economic imbalance";economy:-8;population:-1
+"Interdimensional rift causes market volatility";economy:-9;science:-1
+"Failed terraforming project bankrupts multiple nations";economy:-10;population:-1;science:-2
+"Resource depletion causes economic collapse";economy:-9;population:-2;science:-2
+"Mass exodus to another planet drains Earth’s economy";economy:-8;population:-1
+"Mind-control technology disrupts economic stability";economy:-9;science:-1
+"Revolutionary technology makes entire industries obsolete";economy:-10;science:-2
+"Global deflationary spiral cripples growth";economy:-9;population:-1
+"Solar storm disrupts global energy supplies";economy:-8;science:-1
+"Genetic enhancement failure causes economic turmoil";economy:-9;population:-1;science:-2
+"Time travel paradox causes financial instability";economy:-10;science:-1
+"Alien malware infects global economic systems";economy:-8;science:-1
+"Massive debt crisis leads to global austerity";economy:-9;population:-1
+"Energy shortage cripples economic activity";economy:-10;population:-2;science:-2
+"Interplanetary conflict disrupts economic growth";economy:-9;population:-2;science:-1
+"Massive environmental disaster bankrupts nations";economy:-8;population:-2;science:-2
+"Failed utopian experiment leads to economic decline";economy:-9;population:-1
+"Global famine causes economic collapse";economy:-10;population:-2;science:-2
+"Failed AI takeover disrupts markets";economy:-8;science:-1
+"Collapse of global trade networks causes recession";economy:-9;population:-1;science:-2
+"Mutant virus causes economic shutdown";economy:-10;population:-2;science:-2
+"Supernatural events disrupt financial systems";economy:-9;science:-1
+"Ancient curse bankrupts major economies";economy:-8;science:-1
+"Mind-to-mind commerce failure causes economic panic";economy:-9;science:-1
+"Hyperloop accidents cause infrastructure collapse";economy:-10;science:-1
+"Alien invasion disrupts Earth's economies";economy:-8;population:-2;science:-1
+"Solar flare wipes out electronic financial records";economy:-9;science:-1
+"Genetic mutation disrupts workforce productivity";economy:-10;population:-1;science:-2
+"Interdimensional trade collapse causes recession";economy:-8;science:-1
+"Global black market surge destabilizes economies";economy:-9;population:-1
+"AI-driven market crash causes financial ruin";economy:-10;science:-1
+"Failed space colonization project bankrupts nations";economy:-8;population:-1
+"Massive cyber warfare cripples global economy";economy:-9;science:-2
+"Global infrastructure collapse disrupts economies";economy:-10;population:-2;science:-2
