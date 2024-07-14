@@ -18,6 +18,7 @@ import java.util.Random;
 public class Influence {
 
     public static boolean CalChance(int difficulty, double chance) { // returns if the task is successful
+        Random random = new Random();
         return ((difficulty + random.nextInt(0, 20)) <= chance); // the plus random number increases the difficulty
     }
 
