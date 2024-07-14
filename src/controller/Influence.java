@@ -18,7 +18,7 @@ import java.util.Random;
 public class Influence {
 
     public static boolean CalChance(int difficulty, double chance) { // returns if the task is successful
-        return (difficulty <= chance);
+        return ((difficulty + random.nextInt(0, 20)) <= chance); // the plus random number increases the difficulty
     }
 
     public static void TryInfluence(String var, String change) { // after selected the variable to influence, here is the main process of influencing
@@ -36,7 +36,7 @@ public class Influence {
         };
         
         int AISuspicionChange = switch(change) { // determines the base value for AI suspicion
-            case "increased" -> 2;
+            case "increased" -> 5;
             case "decreased" -> 5;
             default -> throw new IllegalStateException("Unexpected value: " + change);
         };
@@ -63,7 +63,7 @@ public class Influence {
 
         if (CalChance(selectedInfluence.getDifficulty(), competence)) { // Case SUCCESS
 
-            AISuspicionChange += random.nextInt(-1, 20); // Increase or decrease suspicion randomly
+            AISuspicionChange += random.nextInt(10, 20); // Increase suspicion randomly
 
             // print out the changes after the task
             String AISuspicionChangeInText;
@@ -110,7 +110,7 @@ public class Influence {
             }
             world.changeAiSuspicion(AISuspicionChange);
         } else { // Case FAILED
-            AISuspicionChange = AISuspicionChange + random.nextInt(0, 2);
+            AISuspicionChange = AISuspicionChange + random.nextInt(0, 5);
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             world.changeAiSuspicion(AISuspicionChange);
         }
