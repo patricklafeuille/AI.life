@@ -36,6 +36,7 @@ public class TrainingPhase {
 
         if (World.getWeek() == 0) {
             Tools.showMessageScreen("Initialising first training", "small");
+            Tools.printDelayedEmptyLine();
             System.out.println("""
             --------------------------------
             Welcome to your first training phase!

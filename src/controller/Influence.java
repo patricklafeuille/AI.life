@@ -133,9 +133,13 @@ public class Influence {
         Player player = Player.getInstance();
         World world = World.getInstance();
 
+        Tools.showMessageScreen("Loading world state", "small");
         Tools.showState(player,world);
+        Tools.mediumPause();
 
+        Tools.printDelayedEmptyLine();
         System.out.println("""
+                ----------------------------------------------
                 What do you want to influence?
                 Beware influence economy, science, population growth and environment might increase suspicion!
                 Moreover, the influence takes a week and costs your power.
@@ -193,6 +197,13 @@ public class Influence {
             }
             
         } else {
+            Tools.printDelayedEmptyLine();
+            System.out.println("""
+                ----------------------------------------------
+                Transitioning to the life phase...
+                ----------------------------------------------
+                """);
+            Tools.mediumPause();
             LifePhase.startLifePhase();
         }
     }

@@ -130,7 +130,7 @@ public class StartModule extends main.Main {
 
         Player player = Player.getInstance();
 
-        Tools.showLoadingScreen("medium");
+        Tools.printDelayedEmptyLine();
         System.out.println("""
         ----------------------------------------------
         Choose your starting phase:

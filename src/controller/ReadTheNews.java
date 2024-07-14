@@ -65,6 +65,7 @@ public class ReadTheNews {
         boolean isPositiveEvent = isPositiveEvent(world, selectedVariable);
 
         String eventDescription = fetchEvent(selectedVariable, isPositiveEvent);
+        Tools.printDelayedEmptyLine();
 
         Tools.showMessageScreen("Scanning headlines", "small");
         Tools.printDelayedEmptyLine();

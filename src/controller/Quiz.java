@@ -229,7 +229,9 @@ public class Quiz {
     }
 
     public static void startQuiz(Quiz quiz) { // main method to actually start a quiz (I know, the order of the methods is a bit weird)
+        Tools.printDelayedEmptyLine();
         System.out.println("""
+        ----------------------------------------------
         Welcome to the Quiz section!
         What type of Quiz do you want to do?
         You can either increase your intelligence, or your power.
@@ -243,6 +245,7 @@ public class Quiz {
                 break;
             case 2:
                 System.out.println("""
+                ----------------------------------------------
                 Welcome to Trivia. Time to test your knowledge!
                 For name questions, usually the last name should suffice.
                 Choose a category:

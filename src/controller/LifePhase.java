@@ -32,13 +32,31 @@ public class LifePhase {
         switch (choice) {
             case 1:
                 Tools.printDelayedEmptyLine();
+                System.out.println("""
+                ----------------------------------------------
+                Transitioning to control room...
+                ----------------------------------------------
+                """);
+                Tools.mediumPause();
                 Influence.selectInfluence();
                 break;
             case 2:
                 Tools.printDelayedEmptyLine();
+                System.out.println("""
+                ----------------------------------------------
+                Transitioning to news stand...
+                ----------------------------------------------
+                """);
+                Tools.mediumPause();
                 ReadTheNews.reactToNews();
                 break;
             case 3:
+                System.out.println("""
+                ----------------------------------------------
+                Transitioning to training phase...
+                ----------------------------------------------
+                """);
+                Tools.mediumPause();
                 TrainingPhase trainingPhase = new TrainingPhase(player);
                 trainingPhase.startTrainingPhase();
                 break;
