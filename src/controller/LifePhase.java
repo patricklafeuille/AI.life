@@ -7,12 +7,13 @@ import util.Tools;
 import java.util.Scanner;
 
 public class LifePhase {
-    public static void startLifePhase() {
+    public static void startLifePhase() { // starting life phase homepage
         Player player = Player.getInstance();
         World world = World.getInstance();
         
         Tools.showState(player,world);
-        
+
+        // giving player the choice what to do
         System.out.println("""
                 WHAT DO YOU WANT TO DO?
                 [1] Influence the World
@@ -35,6 +36,8 @@ public class LifePhase {
         }
     }
 
+
+    // MAIN FOR TESTING
     public static void main(String[] args) {
         startLifePhase();
     }
