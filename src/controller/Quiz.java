@@ -18,7 +18,7 @@ public class Quiz {
     private int difficultyLevel;
     private static List<Integer> scores = new ArrayList<>();
     private static int bonus = 0;
-    private Player player;
+    private Player player = Player.getInstance();
 
     public Quiz(Player player) {
         this.score = 0;
