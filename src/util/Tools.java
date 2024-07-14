@@ -1,7 +1,6 @@
 package util;
 import model.World;
 import model.Player;
-import model.Society;
 
 import java.util.Scanner;
 
@@ -85,10 +84,9 @@ public class Tools {
         }
     }
     
-    public static void showState(Player player, Society society, World world) {
+    public static void showState(Player player, World world) {
         System.out.println("--------------------------------");
         player.printPlayerState();
-        society.printSocietyState();
         world.printWorldState();
         System.out.println("--------------------------------");
     }
