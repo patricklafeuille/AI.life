@@ -9,6 +9,15 @@ import util.FileReaderUtil;
 import util.Question;
 import model.Player;
 
+
+/**
+ * The Quiz class is responsible for the quiz section of the game.
+ * We thought it would be a good way to make the game more interactive (since the player types in their answers)
+ * and because it gives them more sovereignty over their character's attributes.
+ * They can choose between a math quiz and a trivia quiz.
+ * The first will increase the player's intelligence, while the latter will increase the player's power.
+ * There's also a bonus system if the player performed very poorly or very well.
+ */
 public class Quiz {
 
     // Here, we initialise the variables that we'll use in the quiz.
@@ -179,12 +188,12 @@ public class Quiz {
         System.out.println("You answered " + correctAnswers + " out of " + totalQuestions + " questions correctly.");
         System.out.println("Your score is: " + score + "%");
 
-        if (score < 70) {
-            System.out.println("You scored below 70%. You will receive a -2 penalty, and no bonus from the score.");
-            bonus -= 2;  // Penalty for scoring below 70
+        if (score < 70) { // arbitrary fail score
+            System.out.println("You scored below 70%. You will receive a -5 penalty, and no bonus from the score.");
+            bonus -= 5;
         } else if (score > 95) {
-            System.out.println("You scored near perfectly. You will receive a +2 extra bonus.");
-            bonus += score + 2;
+            System.out.println("You scored near perfectly. You will receive a +10 extra bonus.");
+            bonus += score + 10;
         } else bonus += score;
 
         calculateBonus(attribute);
@@ -202,23 +211,26 @@ public class Quiz {
         }
     }
 
+    // player can decide to play again or exit
     private void askToPlayAgain() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to play again? [0] Exit [1] Play Again");
         int choice = scanner.nextInt();
         if (choice == 1) {
-            main(new String[]{});
+            System.out.println("Starting quiz again...");
+            startQuiz(this, player);
         } else {
-            LifePhase.startLifePhase();
+            LifePhase.startLifePhase(); // transition into main part of the game
         }
     }
 
-    public static void startQuiz(Quiz quiz, Player player) {
+    public static void startQuiz(Quiz quiz, Player player) { // main method to actually start a quiz (I know, the order of the methods is a bit weird)
         System.out.println("""
         Welcome to the Quiz section!
         What type of Quiz do you want to do?
         You can either increase your intelligence, or your power.
-        [1] Math Quiz [2] Power Quiz
+        [1] Math Quiz (intelligence) [2] Trivia Quiz (power)
+        (Default: Math)
         """);
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -229,9 +241,10 @@ public class Quiz {
             case 2:
                 System.out.println("""
                 Welcome to Trivia. Time to test your knowledge!
-                Most answers are one-word, so often only last names of people are asked.
-                Choose a category: 
+                For name questions, usually the last name should suffice.
+                Choose a category:
                 [1] Nature [2] Music [3] History [4] Literature [5] Java
+                (Default: Nature)
                 """);
                 int categoryChoice = scanner.nextInt();
                 String category = switch (categoryChoice) {
@@ -245,11 +258,13 @@ public class Quiz {
                 quiz.startTriviaQuiz(category);
                 break;
             default:
-                System.out.println("Invalid choice. Defaulting to Math Quiz.");
+                System.out.println("Invalid choice. Defaulting to Nature Quiz.");
                 quiz.startMathQuiz();
                 break;
         }
     }
+
+    // Sometimes we coded a main method for testing & debugging, or catching edge cases. Sometimes not. LOL (I'm burned out)
     public static void main(String[] args) {
         Player player = new Player();
         Quiz quiz = new Quiz(player);
