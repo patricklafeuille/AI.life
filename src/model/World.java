@@ -5,13 +5,30 @@ import static controller.EndModule.EndGame;
 public class    World {
 
     private static int week;
-    private long population; //in billions, 0 - 12
-    private double human_growth_rate; // -10 - 10
+    private static double population; //in billions, 0 - 12
+    private static double human_growth_rate; // -10 - 10
     private int environment; // 1-100
     private int economy; // 1-100
     private int science; //
     private int aiSuspicion;
     private static World instance;
+
+    // Method to calculate probabilities
+    public double getPopulationProbability() {
+        return population / 12.0;
+    }
+
+    public double getEnvironmentProbability() {
+        return environment / 100.0;
+    }
+
+    public double getEconomyProbability() {
+        return economy / 100.0;
+    }
+
+    public double getScienceProbability() {
+        return science / 100.0;
+    }
 
     public static World getInstance() {
         if (instance == null) {
@@ -23,6 +40,7 @@ public class    World {
     public static void nextWeek() {
         World.week++;
         System.out.println("----------------------------------------------\nWEEK " + World.week);
+        changePopulation(population + (Math.round(human_growth_rate / 10)));
     }
 
     public static int getWeek() {
@@ -37,7 +55,7 @@ public class    World {
         this.aiSuspicion = aiSuspicion;
     }
 
-    public long getPopulation() {
+    public double getPopulation() {
         return population;
     }
 
@@ -61,12 +79,12 @@ public class    World {
         World.week = w;
     }
 
-    public void setPopulation(long population) {
-        this.population = population;
+    public static void setPopulation(double population) {
+        World.population = population;
     }
 
     public void setGrowth(double growth) {
-        this.human_growth_rate = growth;
+        human_growth_rate = growth;
     }
 
     public void setEnvironment(int environment) {
@@ -81,13 +99,13 @@ public class    World {
         this.science = science;
     }
 
-    public void changePopulation(int n) {
-        this.population = this.population + n;
+    public static void changePopulation(double n) {
+        population += n;
 
-        if (this.population < 0) {
+        if (population < 0) {
             setPopulation(0);
             EndGame("low population");
-        } else if (this.population > 12) {
+        } else if (population > 12) {
             setPopulation(12);
             EndGame("high population");
         }
@@ -133,12 +151,12 @@ public class    World {
     }
 
     public void changeGrowth(double n) {
-        this.human_growth_rate = this.human_growth_rate + n;
+        human_growth_rate = human_growth_rate + n;
 
-        if (this.human_growth_rate > 10) {
+        if (human_growth_rate > 10) {
             setGrowth(10);
         }
-        if (this.human_growth_rate < -10) {
+        if (human_growth_rate < -10) {
             setGrowth(-10);
         }
     }
@@ -158,7 +176,7 @@ public class    World {
     public void printWorldState() {
         System.out.println(
                 "| pop. "
-                        + this.population
+                        + population
                         + " | env. "
                         + this.environment
                         + " | eco. "
