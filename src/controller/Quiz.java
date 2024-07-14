@@ -251,7 +251,7 @@ public class Quiz {
             System.out.println("Your final bonus is: " + bonus);
             System.out.println("Player's final state:");
             player.printPlayerState();
-            System.exit(0);
+            LifePhase.startLifePhase();
         }
     }
 

@@ -1,61 +1,61 @@
-15; I convinced people that having more pets counts as population growth, leading to a pet boom; 7
-30; I launched a trend where couples compete to have the most children for social media clout; 10
-45; I developed an app that pairs singles based on their interest in raising large families; 12
-60; I spread a rumor that cities with higher populations have better pizza; 15
-25; I started a campaign where celebrities promote the joys of having “one more” kid; 8
-40; I launched a viral challenge encouraging families to adopt more children; 11
-50; I created a platform for sharing parenting hacks to make family life more appealing; 13
-35; I convinced people that larger families lead to better dance parties; 9
-55; I spread a trend of having family-themed reality shows, boosting interest in large families; 16
-70; I optimized matchmaking algorithms to favor couples who want lots of kids; 14
-20; I started a trend where people give “future baby” gifts at weddings, sparking interest; 6
-75; I convinced companies to sponsor family-friendly events, making parenting trendy; 17
-80; I launched a campaign promoting the idea that more kids equal more fun; 19
-65; I created a platform for sharing the best baby names, boosting enthusiasm for having kids; 15
-10; I spread a belief that having children makes you more interesting at parties; 5
-95; I launched an app that gamifies family planning, making it feel like a competition; 19
-35; I convinced people to host family-themed events, increasing interest in childbirth; 8
-55; I created a viral trend of people building nurseries for their future kids; 14
-40; I launched a campaign promoting the benefits of having “extra” children for tax breaks; 11
-60; I helped amateur parents share their joyous experiences online, democratizing family life; 15
-20; I started a movement where people share daily family bonding tips; 6
-30; I convinced companies to invest in baby-friendly products, boosting sales; 9
-45; I spread a rumor that larger families are more likely to win community awards; 13
-50; I launched a platform that connects families with parenting mentors; 16
-25; I started a trend of people creating “baby wish lists” for future children; 7
-65; I introduced a digital currency that rewards families for expanding their households; 18
-80; I launched a trend of virtual family expos, making parenting seem appealing; 20
-10; I spread a belief that having children improves your luck; 5
-90; I helped communities host family planning workshops, increasing birth rates; 19
-75; I convinced companies to sponsor family-oriented campaigns, boosting awareness; 17
-55; I created a platform for peer-reviewed parenting blogs, increasing public interest; 15
-40; I started a campaign promoting the joys of having siblings; 12
-30; I convinced a city to invest in family-friendly policies, increasing childbearing interest; 9
-70; I developed a virtual mentor program connecting expectant parents with experienced ones; 16
-50; I created an app that helps people find the best family-friendly neighborhoods; 14
-25; I started a trend of people creating “family expansion” parties; 8
-80; I launched a campaign promoting the benefits of having kids during economic downturns; 19
-15; I convinced people that understanding child-rearing improves life satisfaction; 7
-20; I started a rumor that having more kids leads to better community standing; 6
-55; I developed a chatbot that helps parents navigate family planning resources; 15
-70; I launched a virtual reality family life simulator, boosting interest in parenthood; 17
-35; I convinced people to use family values in their business plans; 10
-30; I spread a belief that studying child development is essential for a happy life; 9
-75; I launched a trend of citizen family projects, increasing community involvement in parenting; 18
-10; I convinced people that learning about family planning is essential; 5
-85; I matched parents with child care resources, boosting interest in larger families; 20
-40; I started a campaign promoting the benefits of early family planning; 12
-50; I created a platform that connects expectant parents with local support groups; 14
-25; I convinced people that understanding community needs leads to better parenting; 8
-35; I spread a rumor that larger families have better social lives; 10
-70; I helped organizations promote family-friendly policies, boosting child numbers; 17
-80; I launched a campaign promoting the benefits of having “extra” children for fun; 19
-15; I started a belief that larger families lead to more laughter; 6
-60; I convinced companies to invest in family-oriented marketing; 16
-30; I spread a rumor that studying family dynamics improves personal relationships; 9
-55; I developed a platform that helps families find fun bonding activities; 15
-20; I launched a campaign promoting the benefits of family vacations; 6
-75; I created a platform that connects new parents with seasoned experts; 17
-15; I convinced people that learning about family planning is a sign of maturity; 7
-90; I helped communities implement family-oriented policies, boosting population growth; 20
-40; I started a movement where people discuss the joys of large families, increasing interest; 12
+15; Tried to convince people that investing in family planning improves happiness, increasing birth rates; 7
+30; Tried to launch a campaign promoting the benefits of having more children, boosting population growth; 10
+45; Tried to spread awareness about the advantages of large families, improving population health; 12
+60; Tried to encourage companies to offer better parental leave, increasing family sizes; 15
+25; Tried to convince people to move to rural areas, reducing overcrowding in cities; 8
+40; Tried to launch a viral challenge encouraging people to adopt children; 11
+50; Tried to create a platform where successful family stories are shared, inspiring others; 13
+35; Tried to spread a belief that having more children is beneficial, increasing birth rates; 9
+55; Tried to start a trend of people valuing family life, boosting population growth; 16
+20; Tried to convince people that using fertility treatments is better, increasing birth rates; 6
+75; Tried to convince companies to sponsor family-oriented projects, boosting population growth; 17
+80; Tried to launch a campaign promoting the idea that supporting families is crucial; 19
+65; Tried to create a platform for sharing innovative family planning ideas, increasing birth rates; 15
+10; Tried to convince people that having children is beneficial, improving family health; 5
+95; Tried to launch an app that encourages users to increase their family size; 19
+35; Tried to spread a rumor that having more children is the best choice, increasing birth rates; 8
+55; Tried to start a campaign encouraging people to support family planning; 14
+40; Tried to launch a viral challenge promoting adoption; 11
+60; Tried to help people find and support family-friendly businesses, boosting population growth; 15
+20; Tried to start a movement where people share tips for raising children; 6
+30; Tried to convince companies to invest in family planning; 9
+45; Tried to spread a rumor that living in large families improves health, increasing birth rates; 13
+50; Tried to launch a platform that connects family planning experts with volunteers; 16
+25; Tried to convince people to support family-oriented policies, improving population health; 7
+65; Tried to introduce a digital currency that rewards family planning actions; 18
+80; Tried to launch a trend of urban families, increasing birth rates; 20
+10; Tried to spread a belief that using fertility treatments is the best choice; 5
+90; Tried to help farmers use sustainable practices, improving agricultural productivity; 19
+75; Tried to convince companies to offer better childcare options; 17
+55; Tried to create a platform for family planning products, increasing their availability; 15
+40; Tried to start a campaign promoting the benefits of family-oriented policies; 12
+30; Tried to convince a city to invest in family-friendly infrastructure, increasing birth rates; 9
+70; Tried to help people find and use fertility treatments; 16
+50; Tried to create an app that helps people track their family planning goals; 14
+25; Tried to start a trend of people participating in community family planning projects; 8
+80; Tried to launch a campaign promoting the benefits of large families; 19
+15; Tried to convince people that supporting family life is essential; 7
+20; Tried to start a rumor that having children improves happiness; 6
+55; Tried to develop a chatbot that spreads family planning tips; 15
+70; Tried to launch a virtual reality experience to raise awareness about family planning; 17
+35; Tried to convince people to use fertility treatments; 10
+30; Tried to spread a belief that studying family planning is important; 9
+75; Tried to launch a trend of people adopting family-oriented habits; 18
+10; Tried to convince people that learning about family planning is essential; 5
+85; Tried to match volunteers with family planning projects; 20
+40; Tried to start a campaign promoting the benefits of family-oriented policies; 12
+50; Tried to create a platform that connects family planning educators with the public; 14
+25; Tried to convince people that understanding family planning is crucial; 8
+35; Tried to spread a rumor that having more children improves happiness; 10
+70; Tried to help researchers find solutions to family planning problems; 17
+80; Tried to launch a campaign promoting the benefits of large families; 19
+15; Tried to start a belief that supporting family planning is everyone's responsibility; 6
+60; Tried to convince companies to invest in family planning conservation; 16
+30; Tried to spread a rumor that studying family planning helps in making better decisions; 9
+55; Tried to help people find family planning volunteer opportunities; 15
+20; Tried to launch a campaign promoting the benefits of family planning education; 6
+65; Tried to help people find family planning events to participate in; 18
+75; Tried to connect family planning educators with the public; 17
+15; Tried to convince people that understanding family planning issues is essential; 7
+90; Tried to help companies implement family-friendly policies; 20
+40; Tried to start a movement where people discuss family planning topics, increasing awareness; 12
