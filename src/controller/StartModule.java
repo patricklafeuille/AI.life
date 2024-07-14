@@ -14,13 +14,9 @@ public class StartModule extends main.Main {
         System.out.println("Welcome to AI.life.\n");
 
         System.out.println("""
-            We write the year 2030. The world has changed. AI has become an integral part of society.
+            Year 2030. The world has changed. AI has become an integral part of society.
             After most of humanity's crucial infrastructure has been delegated to the supervision of AIs,
             the world has become a safer and more efficient place.
-            """);
-        Tools.pause(600);
-
-        System.out.println("""
             While there are some rogue human packs who fear AI and choose to live off the grid,
             most are content with the new world order.
             """);
@@ -83,6 +79,9 @@ public class StartModule extends main.Main {
                 ----------------------------------------------
                 You chose to be a good AI.
                 Your objective is to help humanity survive and evolve.
+                You win when the economy, science or environment score reaches 100.
+                You lose when any of them or the population reaches 0.
+                You will get shut off when the AI suspicion reaches 100.
                 ----------------------------------------------
                 """);
                 return true;
@@ -91,43 +90,15 @@ public class StartModule extends main.Main {
                 ----------------------------------------------
                 You chose to be a bad AI.
                 Your objective is to eradicate humans.
+                You win when the economy, science or environment score reaches 0,
+                also when the population reaches 12 (billion) or 0.
+                You lose when economy, science or environment reaches 100.
+                You will get shut off when the AI suspicion reaches 100.
                 ----------------------------------------------
                 """);
                 return false;
             } else {
                 System.out.println("Invalid input. Please enter 1 for Good AI or 2 for Bad AI.");
-            }
-        }
-    }
-
-    public static boolean chooseDataset() {
-        System.out.println("""
-        ----------------------------------------------
-        Choose your dataset:
-        [1] Emotional dataset
-        [2] Rational dataset
-        ----------------------------------------------
-        """);
-        while (true) {
-            Tools.scan();
-            String answer = Tools.getAns();
-
-            if (answer.equals("1")) {
-                System.out.println("""
-                ----------------------------------------------
-                You chose to be an emotional AI.
-                ----------------------------------------------
-                """);
-                return true;
-            } else if (answer.equals("2")) {
-                System.out.println("""
-                ----------------------------------------------
-                You chose to be a rational AI.
-                ----------------------------------------------
-                """);
-                return false;
-            } else {
-                System.out.println("Invalid input. Please enter 1 for Emotional AI or 2 for Rational AI.");
             }
         }
     }
@@ -177,6 +148,7 @@ public class StartModule extends main.Main {
         ----------------------------------------------
         The game is quite simple. You interact via the console, which you already did to get here.
         Congrats!
+        
         Example: You are given the choice between [0] and [1]. You type 0 or 1 and press Enter.
         You will be given choices to make, and you will have to type the number corresponding to your choice.
         At different points during the game, you can choose to go back to an earlier stage. This will be indicated then.
@@ -223,8 +195,6 @@ public class StartModule extends main.Main {
         Player player = Player.getInstance();
         player.setName(chooseName());
         player.setObjective(chooseObjective());
-        player.setDataset(chooseDataset());
-
         showIntroduction();
         startWith();
     }
