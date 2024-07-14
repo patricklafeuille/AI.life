@@ -11,16 +11,16 @@ import model.Player;
 
 public class Quiz {
 
-    private int score;
-    private int totalQuestions;
-    private int correctAnswers;
-    private int incorrectAnswers;
-    private int difficultyLevel;
-    private static List<Integer> scores = new ArrayList<>();
-    private static int bonus = 0;
+    // Here, we initialise the variables that we'll use in the quiz.
+    private int score; // tracks the players score
+    private int totalQuestions; // tracks the total questions asked
+    private int correctAnswers; // tracks the amount of correct answers
+    private int incorrectAnswers; // tracks the amount of incorrect answers
+    private int difficultyLevel; // some questions will be harder than others, this tracks the difficulty level
+    private static int bonus = 0; // bonus points that will decide how the player's attributes change
     private Player player = Player.getInstance();
 
-    public Quiz(Player player) {
+    public Quiz(Player player) { // Constructor for the Quiz class
         this.score = 0;
         this.totalQuestions = 0;
         this.correctAnswers = 0;
@@ -29,39 +29,17 @@ public class Quiz {
         this.player = player;
     }
 
-    public int getScore() {
-        return this.score;
-    }
+    // No getters & setters needed for this class, bc we don't need to access them from outside
 
-    public int getTotalQuestions() {
-        return this.totalQuestions;
-    }
-
-    public int getCorrectAnswers() {
-        return this.correctAnswers;
-    }
-
-    public int getIncorrectAnswers() {
-        return this.incorrectAnswers;
-    }
-
-    public int getDifficultyLevel() {
-        return this.difficultyLevel;
-    }
-
-    public static int getBonus() {
-        return bonus;
-    }
-
-    public void startMathQuiz() {
+    public void startMathQuiz() { // Method to start the math quiz
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        String[] operations = {"+", "-", "*", "%"};
+        String[] operations = {"+", "-", "*", "%"}; // array of the different operations (difficulties)
 
-        // Ask the user to choose the number of questions
+        // player can pick how many questions they want to answer
         System.out.println("""
-                Choose the number of questions: 
-                [1] 12 [2] 20 [3] 40
+                Choose the number of questions:
+                [1] 12 [2] 20 (+5 Bonus) [3] 40 (+ 10 Bonus)
                 """);
         int choice = scanner.nextInt();
         int numQuestions = 0;
@@ -75,10 +53,12 @@ public class Quiz {
             case 2:
                 numQuestions = 20;
                 difficultyIncrement = 5;
+                bonus += 5;
                 break;
             case 3:
                 numQuestions = 40;
                 difficultyIncrement = 10;
+                bonus += 10;
                 break;
             default:
                 System.out.println("Invalid choice. Defaulting to 12 questions.");
@@ -87,6 +67,7 @@ public class Quiz {
                 break;
         }
 
+        // main part of the math quiz, here we generate the questions and check if the player answered correctly
         for (int i = 0; i < numQuestions; i++) {
             if (i % difficultyIncrement == 0 && i != 0) {
                 difficultyLevel++;
@@ -107,8 +88,7 @@ public class Quiz {
                 case "*":
                     correctAnswer = a * b;
                     break;
-                case "%":
-                    // Ensure no division by zero and valid division
+                case "%": // picked modulo since it can be answered in int
                     b = random.nextInt(9) + 1;
                     a *= random.nextInt(9);
                     correctAnswer = a % b;
@@ -128,18 +108,23 @@ public class Quiz {
             }
 
             // Check if the user fails the test in this category
-            if (incorrectAnswers > totalQuestions / 2 && totalQuestions > 3) {
-                System.out.println("Too many incorrect. You have failed the test");
-                askToPlayAgain();
-                return;
-            }
+            failedTest(incorrectAnswers, totalQuestions);
         }
 
         updateScoreAndBonus("intelligence");
         askToPlayAgain();
     }
 
-    public void startTriviaQuiz(String category) {
+    // method to check if player failed the test (pretty arbitrary logic, but it's fine for this purpose)
+    private void failedTest(int incorrectAnswers, int totalQuestions) {
+        if (incorrectAnswers > totalQuestions / 2 && totalQuestions > 3){
+            System.out.println("Too many incorrect. You have failed the test.");
+            askToPlayAgain();
+        }
+    }
+
+
+    public void startTriviaQuiz(String category) { // Method to start the trivia quiz
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         FileReaderUtil fileReader = new FileReaderUtil();
@@ -149,6 +134,8 @@ public class Quiz {
             System.out.println("No questions available for this category.");
             return;
         }
+
+        // example for ChatGPT use:
 
         List<Question> selectedQuestions = new ArrayList<>();
         for (int i = 1; i <= 3; i++) {
@@ -168,7 +155,7 @@ public class Quiz {
         for (int i = 0; i < selectedQuestions.size(); i++) {
             Question question = selectedQuestions.get(i);
             System.out.println("D" + question.getDifficulty() + " : " + "Q " + (i + 1) + ": " + question.getQuestion());
-            String answer = scanner.nextLine().toLowerCase().trim();
+            String answer = scanner.nextLine().toLowerCase().trim(); // this makes sure that capitalisation & white spaces are ignored
 
             totalQuestions++;
             if (answer.equals(question.getAnswer().toLowerCase().trim())) {
@@ -179,56 +166,32 @@ public class Quiz {
                 System.out.println("Wrong. The correct answer is " + question.getAnswer() + ".");
             }
 
-            // Check if the user fails the test in this category
-            if (incorrectAnswers > totalQuestions / 2 && totalQuestions > 3) {
-                System.out.println("Too many incorrect. You have failed the test.");
-                askToPlayAgain();
-                return;
-            }
+            failedTest(incorrectAnswers, totalQuestions);
         }
 
         updateScoreAndBonus("power");
         askToPlayAgain();
     }
 
+    // method to update the score and award bonus points
     private void updateScoreAndBonus(String attribute) {
         score = (int) ((double) correctAnswers / totalQuestions * 100);
         System.out.println("You answered " + correctAnswers + " out of " + totalQuestions + " questions correctly.");
         System.out.println("Your score is: " + score + "%");
 
-        if (score < 75) {
-            System.out.println("You scored below 75%. You will receive a -2 penalty, and no bonus from the score.");
-            bonus -= 2;  // Penalty for scoring below 75%
-            scores.add(0);
+        if (score < 70) {
+            System.out.println("You scored below 70%. You will receive a -2 penalty, and no bonus from the score.");
+            bonus -= 2;  // Penalty for scoring below 70
         } else if (score > 95) {
             System.out.println("You scored near perfectly. You will receive a +2 extra bonus.");
-            bonus += 2;
-            scores.add(score);// Bonus for scoring 100%
-        } else scores.add(score);
+            bonus += score + 2;
+        } else bonus += score;
 
         calculateBonus(attribute);
     }
 
     private void calculateBonus(String attribute) {
-        int totalScore = 0;
-        if (scores.isEmpty()) {
-            return;
-        }
-
-        for (int score : scores) {
-            totalScore += score;
-        }
-        int totalBonus = 0;
-        int attributeBonus = 0;
-
-        if (!(scores.size() == 1 && scores.get(0) == 0)) {
-            double averageScore = (double) totalScore / scores.size();
-            System.out.println("Average score: " + averageScore);
-            attributeBonus = (int) Math.round(averageScore / 13);
-            totalBonus = bonus + attributeBonus;
-        } else {
-            totalBonus = bonus;
-        }
+        int totalBonus = bonus;
 
         if (attribute.equals("intelligence")) {
             player.changeIntelligence(totalBonus);
@@ -237,8 +200,6 @@ public class Quiz {
             player.changePower(totalBonus);
             System.out.println("Power changed by " + totalBonus);
         }
-
-        bonus += attributeBonus;
     }
 
     private void askToPlayAgain() {
