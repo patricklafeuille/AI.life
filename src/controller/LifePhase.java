@@ -12,9 +12,6 @@ public class LifePhase {
         Player player = Player.getInstance();
         Society society = Society.getInstance();
         World world = World.getInstance();
-
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
         
         Tools.showState(player,society,world);
         
@@ -23,7 +20,8 @@ public class LifePhase {
                 [2] React to news
                 [3] Return to Training Phase
                 """);
-        
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
         switch (choice) {
             case 1:
                 Influence.selectInfluence();
@@ -36,5 +34,9 @@ public class LifePhase {
                 trainingPhase.startTrainingPhase();
                 break;
         }
+    }
+
+    public static void main(String[] args) {
+        startLifePhase();
     }
 }
