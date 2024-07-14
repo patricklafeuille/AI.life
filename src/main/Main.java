@@ -7,6 +7,8 @@ import java.util.Random;
 
 public class Main {
 
+// START OF THE GAME
+    
     public static void main(String[] args) {
 
         Random random = new Random();
