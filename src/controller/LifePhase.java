@@ -6,6 +6,14 @@ import util.Tools;
 
 import java.util.Scanner;
 
+/**
+ * The LifePhase class is the home menu of this game.
+ * The players can go to the three main parts of this game from here:
+ * 1) Influence
+ * 2) ReactToNews
+ * 3) Training Phase where the Quizzes are.
+ */
+
 public class LifePhase {
     public static void startLifePhase() { // starting life phase homepage
         Player player = Player.getInstance();
