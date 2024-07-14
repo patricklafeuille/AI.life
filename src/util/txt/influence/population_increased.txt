@@ -51,7 +51,6 @@
 70; I helped organizations promote family-friendly policies, boosting child numbers; 17
 80; I launched a campaign promoting the benefits of having “extra” children for fun; 19
 15; I started a belief that larger families lead to more laughter; 6
-45; I created an AI that suggests baby-friendly products based on trends; 13
 60; I convinced companies to invest in family-oriented marketing; 16
 30; I spread a rumor that studying family dynamics improves personal relationships; 9
 55; I developed a platform that helps families find fun bonding activities; 15

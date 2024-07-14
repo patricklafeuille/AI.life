@@ -13,6 +13,7 @@ public class EndModule {
             case "low economy" -> "Low economy...";
             case "high economy" -> "High economy...";
             case "low population" -> "Human dies out...";
+            case "high population" -> "Overpopulation...
             case "low science" -> "Low science...";
             case "high science" -> "High science...";
             case "high suspicion" -> "Human shut off the AI...";

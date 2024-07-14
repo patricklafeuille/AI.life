@@ -87,6 +87,9 @@ public class    World {
         if (this.population < 0) {
             setPopulation(0);
             EndGame("low population");
+        } else if (this.population > 1000000000) {
+            setPopulation(1000000000);
+            EndGame("high population");
         }
     }
 
