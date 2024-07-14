@@ -62,7 +62,7 @@ public class Tools {
     }
 
     public static void smallPause() {
-        pause(500);
+        pause(750);
     }
 
     public static void mediumPause() {
