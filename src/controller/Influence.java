@@ -114,6 +114,24 @@ public class Influence {
             AISuspicionChange = AISuspicionChange + random.nextInt(0, 5);
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
             world.changeAiSuspicion(AISuspicionChange);
+
+            switch (var) {
+                case "suspicion":
+                    player.changeIntelligence(-10);
+                    break;
+                case "economy":
+                    player.changePower(-10);
+                    break;
+                case "science":
+                    player.changeIntelligence(-20);
+                    break;
+                case "population":
+                    player.changePower(-20);
+                    break;
+                case "environment":
+                    player.changePower(-25);
+                    break;
+            }
         }
         Tools.showState(player,world);
 
