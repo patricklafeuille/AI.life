@@ -110,6 +110,7 @@ public class TrainingPhase {
                 displayStats();
                 displayRound();
                 System.out.println("""
+                --------------------------------
                 Choose an option:
                 [1] Play Quiz
                 [2] Exit to Life Phase
@@ -123,32 +124,31 @@ public class TrainingPhase {
                         break;
                     case 2:
                         exit = true;
+                        // Transition to life phase
+                        System.out.println("""
+                 ----------------------------------------------
+                Transitioning to the life phase...
+                ----------------------------------------------
+                """);
+                        Tools.mediumPause();
+                        startLifePhase();
                         break;
                     default:
                         System.out.println("Invalid choice. Please try again.");
                         Tools.smallPause();
                 }
             }
-            // Transition to life phase
-            System.out.println("""
-                ----------------------------------------------
-                Transitioning to the life phase...
-                ----------------------------------------------
-                """);
-            Tools.mediumPause();
-            startLifePhase();
+
         }
     }
 
     private void startLifePhase() {
-        Tools.printWithMediumDelay("Transitioning to the life phase...");
-        Tools.mediumPause();
-        // Implement transition to the life phase
+        LifePhase.startLifePhase();
     }
 
     public static void main(String[] args) {
         Player player = new Player();
-        World.setWeek(0);
+        World.setWeek(1);
         TrainingPhase trainingPhase = new TrainingPhase(player);
         trainingPhase.startTrainingPhase();
     }
