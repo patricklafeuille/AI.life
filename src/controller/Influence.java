@@ -148,24 +148,39 @@ public class Influence {
                 case 5 -> "environment";
                 default -> null;
             };
-
-            if (variable.equals("suspicion")) {
-                TryInfluence("suspicion", "decreased");
-            } else {
-                System.out.println("[1] Increase "
-                        + variable
-                        + " [2] Decrease "
-                        + variable
-                        + " [0] Return");
-                int howInfluence = scanner.nextInt();
-                if (howInfluence == 1) {
-                    TryInfluence(variable, "increased");
-                } else if (howInfluence == 2) {
-                    TryInfluence(variable, "decreased");
+            
+            boolean reachRequirement = switch(choice) {
+                case 1 -> (player.getIntelligence() >= 10);
+                case 2 -> (player.getPower() >= 10);
+                case 3 -> (player.getIntelligence() >= 20);
+                case 4 -> (player.getPower() >= 20);
+                case 5 -> (player.getPower() >= 25);
+                default -> false;
+            };
+            
+            if (reachRequirement) {
+                if (variable.equals("suspicion")) {
+                    TryInfluence("suspicion", "decreased");
                 } else {
-                    selectInfluence();
+                    System.out.println("[1] Increase "
+                            + variable
+                            + " [2] Decrease "
+                            + variable
+                            + " [0] Return");
+                    int howInfluence = scanner.nextInt();
+                    if (howInfluence == 1) {
+                        TryInfluence(variable, "increased");
+                    } else if (howInfluence == 2) {
+                        TryInfluence(variable, "decreased");
+                    } else {
+                        selectInfluence();
+                    }
                 }
+            } else {
+                System.out.println("You do not reach the requirement.");
+                LifePhase.startLifePhase();
             }
+            
         } else {
             LifePhase.startLifePhase();
         }
