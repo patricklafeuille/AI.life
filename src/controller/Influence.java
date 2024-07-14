@@ -63,7 +63,7 @@ public class Influence {
 
         if (CalChance(selectedInfluence.getDifficulty(), competence)) { // Case SUCCESS
 
-            AISuspicionChange += random.nextInt(-5, 5); // Increase or decrease suspicion randomly
+            AISuspicionChange += random.nextInt(-20, 5); // Increase or decrease suspicion randomly
 
             // print out the changes after the task
             String AISuspicionChangeInText;
