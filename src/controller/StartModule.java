@@ -75,7 +75,10 @@ public class StartModule extends main.Main {
         """);
         Tools.separationLine();
         Tools.scan();
-        Player.setName(Tools.getAns());
+        String name = Tools.getAns();
+        if (!name.equals("")) {
+            Player.setName(name);
+        }
         Tools.showMessageScreen("Setting name", "small");
         System.out.println("Nice to meet you, " + Player.getName() + ".");
         return Tools.getAns();
