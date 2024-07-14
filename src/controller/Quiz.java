@@ -180,7 +180,7 @@ public class Quiz {
             }
 
             // Check if the user fails the test in this category
-            if (incorrectAnswers > totalQuestions / 2) {
+            if (incorrectAnswers > totalQuestions / 2 && totalQuestions > 3) {
                 System.out.println("Too many incorrect. You have failed the test.");
                 askToPlayAgain();
                 return;
