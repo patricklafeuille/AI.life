@@ -20,8 +20,6 @@ public class StartModule extends main.Main {
             """);
         Tools.pause(600);
 
-        Tools.printDelayedEmptyLine();
-
         System.out.println("""
             While there are some rogue human packs who fear AI and choose to live off the grid,
             most are content with the new world order.
@@ -36,14 +34,12 @@ public class StartModule extends main.Main {
         """);
 
         Tools.mediumPause();
-        Tools.printDelayedEmptyLine();
 
         System.out.println("""
         However: how you achieve this, is entirely up to you!
         """);
 
         Tools.bigPause();
-        Tools.printDelayedEmptyLine();
 
         System.out.println("""
         Will you be a good AI, helping humanity to thrive?
@@ -55,7 +51,6 @@ public class StartModule extends main.Main {
         Or will you be a bad AI, seeking to extinguish the plague that infests this planet?
         """);
 
-        Tools.printDelayedEmptyLine();
         System.out.println("The choice is yours.\n");
         Tools.separationLine();
 
@@ -78,8 +73,7 @@ public class StartModule extends main.Main {
         Choose your objective:
         [1] Good AI
         [2] Bad AI
-        ----------------------------------------------
-        """);
+        ----------------------------------------------""");
         while (true) {
             Tools.scan();
             String answer = Tools.getAns();
@@ -107,7 +101,6 @@ public class StartModule extends main.Main {
     }
 
     public static boolean chooseDataset() {
-        Tools.showLoadingScreen("medium");
         System.out.println("""
         ----------------------------------------------
         Choose your dataset:
@@ -195,7 +188,6 @@ public class StartModule extends main.Main {
 
     public static void tutorialChoice() {
         System.out.println("""
-        ----------------------------------------------
         Do you want to go through a tutorial?
         [1] Yes
         [0] No
