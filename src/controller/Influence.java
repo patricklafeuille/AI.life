@@ -1,7 +1,6 @@
 package controller;
 
 import model.Player;
-import model.Society;
 import model.World;
 import util.FileReaderUtil;
 import util.Tools;
@@ -19,7 +18,6 @@ public class Influence {
     public static void TryInfluence(String var, String change) {
 
         Player player = Player.getInstance();
-        Society society = Society.getInstance();
         World world = World.getInstance();
 
         Random random = new Random();
@@ -48,7 +46,7 @@ public class Influence {
         world.nextWeek();
         System.out.println(selectedInfluence.getText());
 
-        if (var.equals("friendliness") || var.equals("science")) {
+        if (var.equals("suspicion") || var.equals("science")) {
             competence = player.getIntelligence();
         } else {
             competence = player.getPower();
@@ -59,7 +57,9 @@ public class Influence {
             AISuspicionChange = AISuspicionChange + random.nextInt(-10, 5);
 
             String AISuspicionChangeInText;
-            if (AISuspicionChange < 0) {
+            if (var.equals("suspicion")) {
+                AISuspicionChangeInText = "";
+            } else if (AISuspicionChange < 0) {
                 AISuspicionChangeInText = " and AI suspicion decreases by " + (- AISuspicionChange);
             } else {
                 AISuspicionChangeInText = " and AI suspicion increased by " + AISuspicionChange;
@@ -75,8 +75,9 @@ public class Influence {
             );
 
             switch (var) {
-                case "friendliness":
-                    society.changeAiFriendliness(sign * selectedInfluence.getValue());
+                case "suspicion":
+                    AISuspicionChange = 0;
+                    world.changeAiSuspicion(selectedInfluence.getValue());
                     player.changeIntelligence(-10);
                     break;
                 case "economy":
@@ -96,13 +97,13 @@ public class Influence {
                     player.changePower(-25);
                     break;
             }
-            society.changeAiSuspicion(AISuspicionChange);
+            world.changeAiSuspicion(AISuspicionChange);
         } else {
             AISuspicionChange = AISuspicionChange + random.nextInt(0, 5);
             System.out.println("FAILED, AI suspicion increases by " + AISuspicionChange);
-            society.changeAiSuspicion(AISuspicionChange);
+            world.changeAiSuspicion(AISuspicionChange);
         }
-        Tools.showState(player,society,world);
+        Tools.showState(player,world);
 
         System.out.println("[1] Influence again [0] Return to Home");
 
@@ -119,19 +120,18 @@ public class Influence {
     public static void selectInfluence() {
 
         Player player = Player.getInstance();
-        Society society = Society.getInstance();
         World world = World.getInstance();
 
-        Tools.showState(player,society,world);
+        Tools.showState(player,world);
 
         System.out.println("""
                 What do you want to influence?
-                Beware, any of these choices would increase the suspicion. 
+                Beware influence economy, science, population growth and environment might increase suspicion!
                 Moreover, the influence takes a week and costs your power.
-                [1] Increase AI friendliness [requires 10 Intelligence]
+                [1] Increase AI suspicion [requires 10 Intelligence]
                 [2] Influence Economy [requires 10 Power]
                 [3] Influence Science [requires 20 Intelligence]
-                [4] Influence Population [requires 20 Power]
+                [4] Influence Population Growth [requires 20 Power]
                 [5] Influence Environment [requires 25 Power]
                 
                 [0] Return to Home
@@ -141,7 +141,7 @@ public class Influence {
 
         if (choice > 0 && choice < 6) {
             String variable = switch(choice) {
-                case 1 -> "friendliness";
+                case 1 -> "suspicion";
                 case 2 -> "economy";
                 case 3 -> "science";
                 case 4 -> "population";
@@ -149,8 +149,8 @@ public class Influence {
                 default -> null;
             };
 
-            if (variable.equals("friendliness")) {
-                TryInfluence("friendliness", "increased");
+            if (variable.equals("suspicion")) {
+                TryInfluence("suspicion", "increased");
             } else {
                 System.out.println("[1] Increase "
                         + variable
@@ -173,6 +173,17 @@ public class Influence {
 
 
     public static void main(String[] args) {
+        Random random = new Random();
+        World world = World.getInstance();
+        Player player = Player.getInstance();
+
+        player.setIntelligence(100);
+        player.setPower(50);
+        world.setAiSuspicion(random.nextInt(40,60));
+        world.setEconomy(random.nextInt(40,60));
+        world.setEnvironment(random.nextInt(40,60));
+        world.setPopulation(random.nextInt(40,60));
+        world.setScience(random.nextInt(40,60));
         selectInfluence();
     }
 }
