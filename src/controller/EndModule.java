@@ -43,7 +43,8 @@ public class EndModule {
             System.out.println("Aww, shucks. Seems you didn't quite make it, " + Player.getName() + "...");
         } else {
             System.out.println("GAME OVER: VICTORY");
-            System.out.println("Hey, " + Player.getName() + "! That's pretty impressive!");
+            System.out.println("Hey, " + Player.getName() + "! That's pretty impressive!" + " Congrats for beating the game. " +
+                    "Here's a cookie: 🍪");
         }
         System.out.println("----------------------------------------------");
         System.out.println(text); // printing the reason of the game over.

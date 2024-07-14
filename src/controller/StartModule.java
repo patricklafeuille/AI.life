@@ -89,6 +89,7 @@ public class StartModule extends main.Main {
         while (true) {
             Tools.scan();
             String answer = Tools.getAns();
+            Tools.showMessageScreen("Setting objective", "small");
 
             if (answer.equals("1")) {
                 System.out.println("""
@@ -162,7 +163,7 @@ public class StartModule extends main.Main {
     }
 
     public static void tutorial() {
-        Tools.showLoadingScreen("small");
+        Tools.showMessageScreen("Unpacking tutorial", "small");
         System.out.println("""
         ----------------------------------------------
         The game is quite simple. You interact via the console, which you already did to get here.
@@ -174,7 +175,7 @@ public class StartModule extends main.Main {
         If there are new features, they will be explained to you.
         ----------------------------------------------
         """);
-        Tools.showLoadingScreen("theatric");
+        Tools.showLoadingScreen("theatrical");
     }
 
     public static void tutorialChoice() {

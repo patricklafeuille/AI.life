@@ -50,6 +50,12 @@ public class ReadTheNews {
     private static final FileReaderUtil fileReaderUtil = new FileReaderUtil();
 
     public static void reactToNews() { // basic method to call from other classes
+
+        System.out.println("""
+                        ----------------------------------------------
+                        Welcome to the News Stand!
+                        Let's see what we have in store for you today.
+                        """);
         World world = World.getInstance();
 
         boolean isCritical = isCriticalState(world);
@@ -60,8 +66,11 @@ public class ReadTheNews {
 
         String eventDescription = fetchEvent(selectedVariable, isPositiveEvent);
 
+        Tools.showMessageScreen("Scanning headlines", "small");
+        Tools.printDelayedEmptyLine();
+
         System.out.println("----------------------------------------------");
-        System.out.println("Flashing News: ");
+        System.out.println("BREAKING NEWS: ");
         System.out.println(separateEventDescription(eventDescription));
         System.out.println("----------------------------------------------");
 

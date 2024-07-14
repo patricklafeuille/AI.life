@@ -22,6 +22,7 @@ public class TrainingPhase {
     }
 
     public void displayStats() {
+        Tools.showMessageScreen("Loading stats", "small");
         Tools.printWithSmallDelay("Current Stats:\n" + player.getPlayerState());
         Tools.smallPause();
     }
@@ -34,6 +35,7 @@ public class TrainingPhase {
     public void startTrainingPhase() {
 
         if (World.getWeek() == 0) {
+            Tools.showMessageScreen("Initialising first training", "small");
             System.out.println("""
             --------------------------------
             Welcome to your first training phase!

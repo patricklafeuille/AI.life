@@ -35,7 +35,7 @@ public class LifePhase {
                 Influence.selectInfluence();
                 break;
             case 2:
-                System.out.println("You chose to read the news... let's see how that goes for you");
+                Tools.printDelayedEmptyLine();
                 ReadTheNews.reactToNews();
                 break;
             case 3:
