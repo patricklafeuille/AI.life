@@ -1,7 +1,6 @@
 package main;
 
 import model.Player;
-import model.Society;
 import model.World;
 import java.util.Random;
 
@@ -14,13 +13,11 @@ public class Main {
         Random random = new Random();
         // INITIALIZATION
         Player player = Player.getInstance();
-        Society society = Society.getInstance();
         World world = World.getInstance();
 
         player.setIntelligence(100);
         player.setPower(50);
-        society.setAiFriendliness(random.nextInt(40,60));
-        society.setAiSuspicion(random.nextInt(40,60));
+        world.setAiSuspicion(random.nextInt(40,60));
         world.setEconomy(random.nextInt(40,60));
         world.setEnvironment(random.nextInt(40,60));
         world.setPopulation(random.nextInt(40,60));
