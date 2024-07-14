@@ -5,13 +5,10 @@ import model.World;
 import java.util.Random;
 
 public class Main {
-
-// START OF THE GAME
     
     public static void main(String[] args) {
 
         Random random = new Random();
-        // INITIALIZATION
         Player player = Player.getInstance();
         World world = World.getInstance();
 
@@ -44,7 +41,6 @@ public class Main {
                 player.setName(controller.StartModule.chooseName());
                 player.setObjective(controller.StartModule.chooseObjective());
                 controller.StartModule.tutorialChoice();
-                player.setDataset(controller.StartModule.chooseDataset());
                 controller.StartModule.startWith();
             } else {
                 System.out.println("Invalid input. Please enter 1 to enter the game or 0 to quit");
