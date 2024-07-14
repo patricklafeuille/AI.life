@@ -69,7 +69,7 @@ public class Main {
                 System.exit(0);
             } else if (answer == 1) {
                 StartModule.showIntroduction(); // showing the introduction
-                Player.setName(StartModule.chooseName()); // choose a name
+                player.setName(StartModule.chooseName()); // choose a name
                 player.setObjective(StartModule.chooseObjective()); // choose the objective
                 StartModule.tutorialChoice(); // choose to read tutorial
                 StartModule.startWith(); // start the game with either training phase or life phase

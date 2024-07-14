@@ -1,5 +1,5 @@
 package controller;
-
+import java.util.Scanner;
 import model.World;
 import model.Player;
 import util.Tools;
@@ -68,20 +68,17 @@ public class StartModule extends main.Main {
         Tools.showLoadingScreen("theatrical");
     }
 
+
     public static String chooseName() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("""
         ----------------------------------------------
         What may I call you?
         """);
-        Tools.separationLine();
-        Tools.scan();
-        String name = Tools.getAns();
-        if (!name.equals("")) {
-            Player.setName(name);
-        }
+        String name = scanner.nextLine();
         Tools.showMessageScreen("Setting name", "small");
-        System.out.println("Nice to meet you, " + Player.getName() + ".");
-        return Tools.getAns();
+        System.out.println("Nice to meet you, " + name + ".");
+        return name;
     }
 
     public static boolean chooseObjective() {
