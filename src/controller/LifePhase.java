@@ -4,7 +4,6 @@ import model.Player;
 import model.World;
 import util.Tools;
 
-import java.util.Scanner;
 
 /**
  * The LifePhase class is the home menu of this game.
@@ -24,18 +23,20 @@ public class LifePhase {
         // giving player the choice what to do
         System.out.println("""
                 WHAT DO YOU WANT TO DO?
-                [1] Influence the World
-                [2] React to news
-                [3] Return to Training Phase
+                [1] Influence the world
+                [2] Read the news
+                [3] Return to training
                 """);
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
+
+        int choice = Tools.onlyInt();
         switch (choice) {
             case 1:
+                Tools.printDelayedEmptyLine();
                 Influence.selectInfluence();
                 break;
             case 2:
-                ReactToNews.reactToNews();
+                System.out.println("You chose to read the news... let's see how that goes for you");
+                ReadTheNews.reactToNews();
                 break;
             case 3:
                 TrainingPhase trainingPhase = new TrainingPhase(player);

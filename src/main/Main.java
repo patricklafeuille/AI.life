@@ -1,16 +1,40 @@
 package main;
 
+import controller.*;
 import model.Player;
 import model.World;
 import java.util.Random;
+import util.Tools;
 
 // START THE ENTIRE GAME HERE!
 
+/**
+ * Hello, kind stranger (or tutor)!
+ * This is the Main class, so you might start reading here.
+ *
+ * Patrick and I built a "simple" (turned out not to be all that simple in the end) text-turn-based game called AI.life.
+ * Which you probably already know, since you're here.
+ * The game is basically a simulation of the future,
+ * where the player (an AI) has to influence the world in order to achieve a set objective.
+ * Before you go on, make sure to check out our README.md file and our GitHub repository:
+ *
+ * As a side-note: This is the first "real" project Patrick and I have built, so there's probably a lot of room
+ * for improvement (just setting up Git took way too long LOL), even though we didn't write anything fancy.
+ * And you might encounter the odd bug here or there. But we're proud of what this turned out to be
+ * with the limited time & knowledge we had.
+ *
+ * Hope you have fun exploring and playing!
+ *
+ * PPS: Our annotations probably aren't super helpful - same goes for the commit messages. Not enough practice yet.
+ *
+ * PPPS: In the util package, only the following are annotated: Tools & FileReaderUtil
+ *
+ */
 public class Main {
     
     public static void main(String[] args) {
 
-        // initialising the varibles.
+        // initialising the variables.
         Random random = new Random();
         Player player = Player.getInstance();
         World world = World.getInstance();
@@ -35,21 +59,19 @@ public class Main {
                 
                 Do you want to enter the game?
                 [1] Enter [0] Quit
-                (please only enter integers!)
                 ----------------------------------------------""");
 
         while(true) { // detecting if anything is entered
-            util.Tools.scan();
-            String answer = util.Tools.getAns();
+            int answer = Tools.onlyInt();
 
-            if (answer.equals("0")) {
+            if (answer == 0) {
                 System.exit(0);
-            } else if (answer.equals("1")) {
-                controller.StartModule.showIntroduction(); // showing the introduction
-                player.setName(controller.StartModule.chooseName()); // choose a name
-                player.setObjective(controller.StartModule.chooseObjective()); // choose the objective
-                controller.StartModule.tutorialChoice(); // choose to read tutorial
-                controller.StartModule.startWith(); // start the game with either training phase or life phase
+            } else if (answer == 1) {
+                StartModule.showIntroduction(); // showing the introduction
+                Player.setName(StartModule.chooseName()); // choose a name
+                player.setObjective(StartModule.chooseObjective()); // choose the objective
+                StartModule.tutorialChoice(); // choose to read tutorial
+                StartModule.startWith(); // start the game with either training phase or life phase
             } else {
                 System.out.println("Invalid input. Please enter 1 to enter the game or 0 to quit");
             }

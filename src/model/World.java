@@ -11,7 +11,7 @@ public class World {
     private int economy; // 1 to 100
     private int science; // 1 to 100
     private int aiSuspicion; // How much the society finds the AI suspicious, and how much they want to shut the AI down: 1 to 100
-    private static World instance; // making World an instance so it can be accessed more easily.
+    private static World instance; // making World an instance, so it can be accessed more easily.
 
     // Method to calculate probabilities
     public double getPopulationProbability() {

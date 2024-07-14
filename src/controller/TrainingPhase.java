@@ -1,10 +1,17 @@
 package controller;
 
-import java.util.Scanner;
 import model.Player;
 import model.World;
 import util.Tools;
 
+
+/**
+ * This is the TrainingPhase, basically the dojo of the game. The player usually should land here after
+ * reading the tutorial, and can periodically return during th game. I coded a different intro for the first time the
+ * player enters the training phase {@link #startTrainingPhase()}, where I basically duplicated the code for the
+ * regular quiz section but with an if-else statement to check if it's the first week. Other than that, nothing really
+ * remarkable to see here. Main method for testing at the bottom.
+ */
 public class TrainingPhase {
     private Player player;
     private Quiz quiz;
@@ -25,7 +32,6 @@ public class TrainingPhase {
     }
 
     public void startTrainingPhase() {
-        Scanner scanner = new Scanner(System.in);
 
         if (World.getWeek() == 0) {
             System.out.println("""
@@ -66,7 +72,7 @@ public class TrainingPhase {
             [2] Trivia Quiz
             """);
             Tools.smallPause();
-            int quizChoice = scanner.nextInt();
+            int quizChoice = Tools.onlyInt();
             if (quizChoice == 1) {
                 quiz.startMathQuiz();
             } else {
@@ -82,9 +88,8 @@ public class TrainingPhase {
                 """);
                 Tools.bigPause();
 
-                int categoryChoice = scanner.nextInt();
+                int categoryChoice = Tools.onlyInt();
                 String category = switch (categoryChoice) {
-                    case 1 -> "nature";
                     case 2 -> "music";
                     case 3 -> "history";
                     case 4 -> "literature";
@@ -104,21 +109,16 @@ public class TrainingPhase {
                 System.out.println("""
                 Choose an option:
                 [1] Play Quiz
-                [2] View Additional Stats
-                [3] Exit to Life Phase
+                [2] Exit to Life Phase
                 """);
                 Tools.mediumPause();
 
-                int choice = scanner.nextInt();
+                int choice = Tools.onlyInt();
                 switch (choice) {
                     case 1:
-                        Quiz.startQuiz(quiz, player);
+                        Quiz.startQuiz(quiz);
                         break;
                     case 2:
-                        // Display additional stats if needed
-                        displayAdditionalStats();
-                        break;
-                    case 3:
                         exit = true;
                         break;
                     default:
@@ -137,12 +137,6 @@ public class TrainingPhase {
         }
     }
 
-    private void displayAdditionalStats() {
-        Tools.printWithSmallDelay("Additional stats can be displayed here.");
-        Tools.smallPause();
-        // Implement additional stats display logic if needed
-    }
-
     private void startLifePhase() {
         Tools.printWithMediumDelay("Transitioning to the life phase...");
         Tools.mediumPause();
@@ -151,7 +145,6 @@ public class TrainingPhase {
 
     public static void main(String[] args) {
         Player player = new Player();
-        World world = new World();
         World.setWeek(0);
         TrainingPhase trainingPhase = new TrainingPhase(player);
         trainingPhase.startTrainingPhase();

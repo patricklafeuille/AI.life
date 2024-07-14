@@ -4,12 +4,27 @@ import model.World;
 import model.Player;
 import util.Tools;
 
+
+/**
+ * <p>
+ * This is where it all begins (actually in the main method, but who cares).
+ * Quick run-down:
+ *
+ * {@link #showIntroduction()}
+ * Here we basically printed out some basic introductions to the game.
+ * The backstory and stuff - I know the code here is pretty redundant at times, could
+ * probably be done a lot more beautifully & succinct. But I think the pauses etc. are a nice effect
+ * when playing.
+ * I think the other methods are mostly self-explanatory. (Basic gist: Multiple choice questions, record answer).
+ *
+ * </p>
+ */
 public class StartModule extends main.Main {
 
     private static final int DELAY = 1750;
 
     public static void showIntroduction() {
-        Tools.showLoadingScreen("medium");
+        Tools.showMessageScreen("Loading backstory", "big");
         Tools.separationLine();
         System.out.println("Welcome to AI.life.\n");
 
@@ -20,7 +35,7 @@ public class StartModule extends main.Main {
             While there are some rogue human packs who fear AI and choose to live off the grid,
             most are content with the new world order.
             """);
-        Tools.pause(500);
+        Tools.pause(7500);
 
         System.out.println("You are an AI, model X Æ A-16.\n");
         Tools.mediumPause();
@@ -50,15 +65,16 @@ public class StartModule extends main.Main {
         System.out.println("The choice is yours.\n");
         Tools.separationLine();
 
-        Tools.showLoadingScreen("theatric");
+        Tools.showLoadingScreen("theatrical");
     }
 
     public static String chooseName() {
         System.out.println("What may I call you?");
         Tools.separationLine();
         Tools.scan();
-        Tools.showLoadingScreen("small");
-        System.out.println("Nice to meet you, " + Tools.getAns() + ".");
+        Player.setName(Tools.getAns());
+        Tools.showMessageScreen("Setting name", "small");
+        System.out.println("Nice to meet you, " + Player.getName() + ".");
         return Tools.getAns();
     }
 
@@ -66,7 +82,7 @@ public class StartModule extends main.Main {
         Tools.showLoadingScreen("medium");
         System.out.println("""
         ----------------------------------------------
-        Choose your objective:
+        Now it's time to choose your objective:
         [1] Good AI
         [2] Bad AI
         ----------------------------------------------""");
@@ -84,6 +100,7 @@ public class StartModule extends main.Main {
                 You will get shut off when the AI suspicion reaches 100.
                 ----------------------------------------------
                 """);
+                Tools.mediumPause();
                 return true;
             } else if (answer.equals("2")) {
                 System.out.println("""
@@ -96,9 +113,11 @@ public class StartModule extends main.Main {
                 You will get shut off when the AI suspicion reaches 100.
                 ----------------------------------------------
                 """);
+                Tools.mediumPause();
                 return false;
             } else {
                 System.out.println("Invalid input. Please enter 1 for Good AI or 2 for Bad AI.");
+                Tools.smallPause();
             }
         }
     }

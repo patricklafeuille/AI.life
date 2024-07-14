@@ -4,19 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 import util.FileReaderUtil;
 import util.Question;
 import model.Player;
+import util.Tools;
 
 
 /**
- * The Quiz class is responsible for the quiz section of the game.
+ * Welcome to the Quiz section :)
  * We thought it would be a good way to make the game more interactive (since the player types in their answers)
  * and because it gives them more sovereignty over their character's attributes.
  * They can choose between a math quiz and a trivia quiz.
  * The first will increase the player's intelligence, while the latter will increase the player's power.
  * There's also a bonus system if the player performed very poorly or very well.
+ * Also, I was pretty verbose here in annotating because it was the first file I annotated - this didn't last.
  */
 public class Quiz {
 
@@ -41,7 +42,6 @@ public class Quiz {
     // No getters & setters needed for this class, bc we don't need to access them from outside
 
     public void startMathQuiz() { // Method to start the math quiz
-        Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         String[] operations = {"+", "-", "*", "%"}; // array of the different operations (difficulties)
 
@@ -50,9 +50,9 @@ public class Quiz {
                 Choose the number of questions:
                 [1] 12 [2] 20 (+5 Bonus) [3] 40 (+ 10 Bonus)
                 """);
-        int choice = scanner.nextInt();
-        int numQuestions = 0;
-        int difficultyIncrement = 0;
+        int choice = Tools.onlyInt();
+        int numQuestions;
+        int difficultyIncrement;
 
         switch (choice) {
             case 1:
@@ -105,7 +105,7 @@ public class Quiz {
             }
 
             System.out.println("Q " + (i + 1) + ": What is " + a + " " + operation + " " + b + "?");
-            int answer = scanner.nextInt();
+            int answer = Tools.onlyInt();
 
             totalQuestions++;
             if (answer == correctAnswer) {
@@ -136,27 +136,32 @@ public class Quiz {
     public void startTriviaQuiz(String category) { // Method to start the trivia quiz
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        FileReaderUtil fileReader = new FileReaderUtil();
-        List<Question> questions = fileReader.readQuestionsFromFile("src/util/txt/quiz/" + category + ".txt");
+        FileReaderUtil reader = new FileReaderUtil();
+        List<Question> questions = reader.readQuestionsFromFile("src/util/txt/quiz/" + category + ".txt");
 
         if (questions.isEmpty()) {
             System.out.println("No questions available for this category.");
             return;
         }
 
-        // example for ChatGPT use:
 
         List<Question> selectedQuestions = new ArrayList<>();
         for (int i = 1; i <= 3; i++) {
             final int difficulty = i;
-            List<Question> difficultyQuestions = questions.stream()
-                    .filter(q -> q.getDifficulty() == difficulty)
-                    .collect(Collectors.toList());
+
+            List<Question> difficultyQuestions = new ArrayList<>();
+            for (Question q : questions) {
+                if (q.getDifficulty() == difficulty) {
+                    difficultyQuestions.add(q);
+                }
+            }
+
             for (int j = 0; j < 5; j++) {
                 if (difficultyQuestions.isEmpty()) {
                     break; // Break if there are no more questions available for this difficulty
                 }
-                Question selectedQuestion = difficultyQuestions.remove(random.nextInt(difficultyQuestions.size()));
+                Question selectedQuestion = difficultyQuestions.get(random.nextInt(difficultyQuestions.size()));
+                difficultyQuestions.remove(selectedQuestion);
                 selectedQuestions.add(selectedQuestion);
             }
         }
@@ -213,18 +218,17 @@ public class Quiz {
 
     // player can decide to play again or exit
     private void askToPlayAgain() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to play again? [0] Exit [1] Play Again");
-        int choice = scanner.nextInt();
+        int choice = Tools.onlyInt();
         if (choice == 1) {
             System.out.println("Starting quiz again...");
-            startQuiz(this, player);
+            startQuiz(this);
         } else {
             LifePhase.startLifePhase(); // transition into main part of the game
         }
     }
 
-    public static void startQuiz(Quiz quiz, Player player) { // main method to actually start a quiz (I know, the order of the methods is a bit weird)
+    public static void startQuiz(Quiz quiz) { // main method to actually start a quiz (I know, the order of the methods is a bit weird)
         System.out.println("""
         Welcome to the Quiz section!
         What type of Quiz do you want to do?
@@ -232,8 +236,7 @@ public class Quiz {
         [1] Math Quiz (intelligence) [2] Trivia Quiz (power)
         (Default: Math)
         """);
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
+        int choice = Tools.onlyInt();
         switch (choice) {
             case 1:
                 quiz.startMathQuiz();
@@ -246,7 +249,7 @@ public class Quiz {
                 [1] Nature [2] Music [3] History [4] Literature [5] Java
                 (Default: Nature)
                 """);
-                int categoryChoice = scanner.nextInt();
+                int categoryChoice = Tools.onlyInt();
                 String category = switch (categoryChoice) {
                     case 1 -> "nature";
                     case 2 -> "music";
@@ -268,6 +271,6 @@ public class Quiz {
     public static void main(String[] args) {
         Player player = new Player();
         Quiz quiz = new Quiz(player);
-        startQuiz(quiz, player);
+        startQuiz(quiz);
     }
 }

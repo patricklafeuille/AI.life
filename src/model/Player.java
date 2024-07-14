@@ -2,17 +2,34 @@ package model;
 
 public class Player {
 
-    private String name; // The name of the AI
+    /**
+     * This is the player class, which is the main class of the model package and handles the basic
+     * attributes of the player - such as name, intelligence, power, and objective.
+     * What is a singleton class?
+     * It contains the Player class, which is a singleton class, and the World class, which is also a singleton class.
+     * The Player class contains the attributes of the player, such as name, intelligence, power, and objective.
+     * The World class contains the attributes of the world, such as week, and the state of the world.
+     * The Player class also contains the methods to change the intelligence and power of the player, and to print the state of the player.
+     * The World class contains the methods to change the week, and to print the state of the world.
+     * The Player class also contains the main method for testing.
+     */
+
+    private static String name; // The name of the AI
     private boolean objective; // Objective of the AI (true means good)
     private int intelligence; // IQ between 50 and 150
     private int power; // Power between 0 and 100
-    private static Player instance; // Making Player an instance so it can be accessed more easily
+    private static Player instance; // Making Player an instance, so it can be accessed more easily
 
     public static Player getInstance() {
         if (instance == null) {
             instance = new Player();
         }
         return instance;
+    }
+
+
+    public static String getName() {
+        return name;
     }
 
     public int getIntelligence() {
@@ -23,8 +40,8 @@ public class Player {
         return power;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public static void setName(String n) {
+        name = n;
     }
 
     public void setObjective(boolean objective) {

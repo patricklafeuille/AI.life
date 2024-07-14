@@ -2,14 +2,27 @@ package util;
 import model.World;
 import model.Player;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Thank god for this class. Simply moving out some basic methods actually makes quite the difference
+ * in terms of readability and maintainability. Who would have thought?
+ * The methods themselves aren't too complicated.
+ * {@link #scan()} is just a simple scanner method.
+ * {@link #pause(long)} is another simple method to help create some reading time for the player.
+ * {@link #showMessageScreen(String, String)} shows a message for a set duration (duh).
+ * {@link #showState(Player, World)} prints the state of the player and the world.
+ *
+ * Other than that, there are some more specific methods, based on the ones above, to make things quicker.
+ *
+ */
 public class Tools {
 
+    private static final Scanner scanner = new Scanner(System.in);
     static String ans = "";
 
     public static void scan() {
-        Scanner scanner = new Scanner(System.in);
         ans = scanner.nextLine();
     }
 
@@ -31,10 +44,6 @@ public class Tools {
     }
 
 
-    public static void printWithBigDelay(String text) {
-        printWithDelay(text, 110);
-    }
-
     public static void printWithSmallDelay(String text) {
         printWithDelay(text, 50);
     }
@@ -53,19 +62,19 @@ public class Tools {
     }
 
     public static void smallPause() {
-        pause(150);
+        pause(500);
     }
 
     public static void mediumPause() {
-        pause(300);
+        pause(2000);
     }
 
     public static void bigPause() {
-        pause(400);
+        pause(3000);
     }
 
-    public static void theatricPause() {
-        pause(450);
+    public static void theatricalPause() {
+        pause(3500);
     }
 
     public static void printDelayedEmptyLine(){
@@ -73,15 +82,19 @@ public class Tools {
         smallPause();
     }
 
-
-    public static void showLoadingScreen(String text) {
-        System.out.println("Loading...");
-        switch (text) {
+    public static void showMessageScreen(String message, String duration) {
+        System.out.println(message + "...");
+        switch (duration) {
             case "small" -> smallPause();
             case "medium" -> mediumPause();
             case "big" -> bigPause();
-            default -> theatricPause();
+            case "theatrical" -> theatricalPause();
+            default -> pause(Integer.parseInt(duration));
         }
+    }
+
+    public static void showLoadingScreen(String duration) {
+        showMessageScreen("Loading", duration);
     }
     
     public static void showState(Player player, World world) {
@@ -90,7 +103,28 @@ public class Tools {
         world.printWorldState();
         System.out.println("--------------------------------");
     }
-    
+
+    public static int onlyInt(){
+        int input = 0;
+        boolean validInput = false;
+
+        while (!validInput) {
+            try {
+                input = scanner.nextInt();
+                validInput = true;
+            } catch (InputMismatchException e) {
+                System.out.println("""
+                ----------------------------------------------
+                ERROR! That's not even a number.
+                Try again:
+                """);
+                scanner.next(); // clear the invalid input
+            }
+        }
+
+        return input;
+    }
+
     public static void separationLine() {
         System.out.println("--------------------------------");
     }

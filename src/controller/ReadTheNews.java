@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * <p> Welcome to React to News! Pain in the ass.
+ * <p> Welcome to React to News!
  *  * Basic overview (don't want to comment on everything):
- *  {@link ReactToNews}
+ *  {@link ReadTheNews}
  *  * First created some finals for the thresholds that are supposed to ensure that certain types of events
  *  * happen if the world state is in a dire place somehow. Example: If population is very low, there should
  *  * be events related to world population.
@@ -22,12 +22,24 @@ import java.util.Random;
  *  * (IntelliJ told me I can put the switch within the return, p. smart).
  *
  *  {@link #isPositiveEvent(World, String)}
- *  * Then, based on the current state, it is determined whether the event should be positive or negative.</p>
+ *  * Then, based on the current state, it is determined whether the event should be positive or negative.
  *
+ *  Now, the {@link #fetchEvent(String, boolean)} is relatively similar to what I did in the Quiz class,
+ *  it reads a random event from the (through the above methods specified) text file.
+ *
+ *  {@link #applyEventEffects(String)}
+ *  This is the crux of this class. Basically, it first separates the text via the ; separator, as before.
+ *  But then I wanted to be able to change multiple variables at once, so we have a for-loop that starts from
+ *  index 1 (since index 0 is the event description) and then splits the effect into variable
+ *  and change using the : separator.
+ *  Based on the variable, the change is applied to the world state. Tada! :)
+ *
+ *  The main method is just for testing purposes.
+ *  </p>
  *
  */
 
-public class ReactToNews {
+public class ReadTheNews {
 
     private static final int CRITICAL_POP = 2; // in billions
     private static final int CRITICAL_ENV = 20;
@@ -48,8 +60,18 @@ public class ReactToNews {
 
         String eventDescription = fetchEvent(selectedVariable, isPositiveEvent);
 
+        System.out.println("----------------------------------------------");
+        System.out.println("Flashing News: ");
         System.out.println(separateEventDescription(eventDescription));
+        System.out.println("----------------------------------------------");
+
+        Tools.pause(3000);
+        Tools.printDelayedEmptyLine();
+
         applyEventEffects(eventDescription);
+
+        Tools.pause(2000);
+        Tools.printDelayedEmptyLine();
 
         World.nextWeek();
         startLifePhase();
@@ -94,7 +116,8 @@ public class ReactToNews {
 
     private static String fetchEvent(String selectedVariable, boolean isPositiveEvent) {
         System.out.println("Fetching event...");
-        Tools.showLoadingScreen("small");
+        Tools.pause(3000);
+        Tools.printDelayedEmptyLine();
         System.out.println("Event Type: " + selectedVariable);
         String filename = (isPositiveEvent ? "positive_" : "negative_") + selectedVariable + ".txt";
         List<String> events = fileReaderUtil.readLinesFromFile("src/util/txt/news/" + filename);
@@ -146,6 +169,8 @@ public class ReactToNews {
         LifePhase.startLifePhase();
     }
 
+
+    // for testing purposes
     public static void main(String[] args) {
         Player.getInstance().setIntelligence(100);
         Player.getInstance().setPower(50);

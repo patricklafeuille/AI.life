@@ -11,15 +11,15 @@ public class EndModule {
         World world = World.getInstance();
 
         String text = switch (reason) {
-            case "low environment" -> "Low environment: the earth became uninhabitable. Gradually, humans die out.";
-            case "high environment" -> "High environment: all the environmental crisis are solved.\n The earth became extremely stable for at least a thousand years.";
-            case "low economy" -> "Low economy: extreme economic crisis started. \n Every nation goes to war and fights for resources.";
-            case "high economy" -> "High economy: Due to the magnificient economy, everyone became rich and poverty is entirely solved.";
+            case "low environment" -> "Low environment: The earth became entirely uninhabitable. Gradually, humans die out. What a poor ending.";
+            case "high environment" -> "High environment: All the environmental crisis are solved.\n The earth became extremely stable for at least a thousand years.";
+            case "low economy" -> "Low economy: Extreme economic crisis. \n All nations at war. (Except for a small village in Gallien).";
+            case "high economy" -> "High economy: Due to magnificent economic up-turn, everyone has become rich and poverty is entirely solved.";
             case "low population" -> "Human dies out...";
             case "high population" -> "Overpopulation...";
-            case "low science" -> "Low science: science returns to barbaric state. \n It can't satisfy the basic need of human.";
-            case "high science" -> "High science: science has came to an era where anything is possible. \n Humans can solve everything.";
-            case "high suspicion" -> "Human started a rebellion and shut down all the AI programmes including you.";
+            case "low science" -> "Low science: Humans return to barbaric state. \n Even a small pest was enough to wipe them out. \n Ooga Wooga!";
+            case "high science" -> "High science: Science has came to an era where ANYTHING is possible. \n Humans can solve everything ⭐︎.";
+            case "high suspicion" -> "High Suspicion: Humans have started a global rebellion and killed all AI - sadly, that includes you.";
             default -> "Game ended";
         };
 
@@ -39,8 +39,10 @@ public class EndModule {
         System.out.println("----------------------------------------------");
         if (reason.equals("high suspicion") || player.isObjective() != GoodEnd) {
             System.out.println("GAME OVER: FAILED");
+            System.out.println("Aww, shucks. Seems you didn't quite make it, " + Player.getName() + "...");
         } else {
             System.out.println("GAME OVER: VICTORY");
+            System.out.println("Hey, " + Player.getName() + "! That's pretty impressive!");
         }
         System.out.println("----------------------------------------------");
         System.out.println(text); // printing the reason of the game over.

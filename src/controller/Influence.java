@@ -7,7 +7,6 @@ import util.Tools;
 
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  * The Influence class is a part of the life phase, 
@@ -51,7 +50,7 @@ public class Influence {
         int randomIndex = random.nextInt(Influence.size());
         util.Influence selectedInfluence = Influence.get(randomIndex);
 
-        world.nextWeek(); // Next week
+        World.nextWeek(); // Next week
         
         System.out.println(selectedInfluence.getText()); // show the text of the influence task
 
@@ -119,8 +118,7 @@ public class Influence {
 
         System.out.println("[1] Influence again [0] Return to Home");
 
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
+        int choice = Tools.onlyInt();
 
         if (choice == 1) {
             selectInfluence();
@@ -148,8 +146,8 @@ public class Influence {
                 
                 [0] Return to Home
                 """);
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
+
+        int choice = Tools.onlyInt();
 
         if (choice > 0 && choice < 6) {
             String variable = switch(choice) {
@@ -179,7 +177,7 @@ public class Influence {
                             + " [2] Decrease "
                             + variable
                             + " [0] Return");
-                    int howInfluence = scanner.nextInt();
+                    int howInfluence = Tools.onlyInt();
                     if (howInfluence == 1) {
                         TryInfluence(variable, "increased");
                     } else if (howInfluence == 2) {
