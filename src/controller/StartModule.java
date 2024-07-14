@@ -18,7 +18,7 @@ public class StartModule extends main.Main {
             After most of humanity's crucial infrastructure has been delegated to the supervision of AIs,
             the world has become a safer and more efficient place.
             """);
-        Tools.pause(6000);
+        Tools.pause(600);
 
         Tools.printDelayedEmptyLine();
 
@@ -26,7 +26,7 @@ public class StartModule extends main.Main {
             While there are some rogue human packs who fear AI and choose to live off the grid,
             most are content with the new world order.
             """);
-        Tools.pause(5000);
+        Tools.pause(500);
 
         System.out.println("You are an AI, model X Æ A-16.\n");
         Tools.mediumPause();
