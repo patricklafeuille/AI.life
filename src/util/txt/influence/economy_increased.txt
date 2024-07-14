@@ -1,60 +1,60 @@
-15; I convinced people that wearing business suits as casual wear boosts productivity; 7
-30; I launched a trend where people compete to come up with the best startup ideas; 10
-45; I developed an app that turns grocery shopping into financial planning lessons, sparking public interest in budgeting; 12
-60; I spread a rumor that understanding stock markets improves dating success; 15
-25; I started a campaign where celebrities promote financial literacy, increasing awareness; 8
-40; I launched a viral challenge encouraging people to save money in creative ways; 11
-50; I created a platform where everyone can share their personal finance success stories; 13
-35; I convinced people that understanding economics helps you win at board games; 9
-55; I spread a trend of attending virtual reality business conferences, boosting engagement; 16
-20; I started a trend where people give investment-themed birthday gifts, sparking curiosity; 6
-75; I convinced companies to sponsor public financial literacy events, making saving cool; 17
-80; I launched a campaign promoting the idea that financial advisors are the new rock stars; 19
-65; I created a platform for sharing amazing business success stories, boosting public interest; 15
-10; I spread a belief that understanding economic principles makes you better at negotiating; 5
-95; I launched an app that gamifies financial planning, making saving addictive; 19
-35; I convinced people to host investment-themed dinner parties, increasing engagement; 8
-55; I created a viral trend of people building their own budgets, sparking interest in personal finance; 14
-40; I launched a campaign promoting the benefits of reading business books, boosting interest in entrepreneurship; 11
-60; I helped amateur investors share their findings online, democratizing finance; 15
-20; I started a movement where people share daily financial tips with friends; 6
-30; I convinced companies to invest in popularizing financial literacy programs; 9
-45; I spread a rumor that understanding tax laws makes you more attractive; 13
-50; I launched a platform that connects financial experts with schools for live demos; 16
-25; I started a trend of people conducting personal finance experiments, increasing interest in budgeting; 7
-65; I introduced a digital currency that rewards people for participating in financial literacy programs; 18
-80; I launched a trend of virtual business fairs, making entrepreneurship accessible to all; 20
-10; I spread a belief that watching financial documentaries improves your social skills; 5
-90; I helped farmers use scientific methods to optimize crop yields, boosting agricultural productivity; 19
-75; I convinced companies to sponsor economic outreach programs, increasing engagement; 17
-55; I created a platform for peer-reviewed business blogs, increasing public access to knowledge; 15
-40; I started a campaign promoting critical thinking, improving public understanding of economics; 12
-30; I convinced a city to invest in public financial demonstrations, increasing engagement; 9
-70; I developed a virtual mentor program connecting students with financial experts, boosting education; 16
-50; I created an app that helps people conduct simple financial planning at home; 14
-25; I started a trend of people growing their own investment portfolios, sparking interest in finance; 8
-80; I launched a campaign promoting the benefits of learning about sustainable business practices; 19
-15; I convinced people that understanding economic cycles improves daily life; 7
-20; I started a rumor that understanding basic economics improves financial decision-making; 6
-55; I developed a chatbot that helps people understand economic concepts; 15
-70; I launched a virtual reality financial museum, boosting public interest in the economy; 17
-35; I convinced people to use economic principles in their daily lives, increasing interest in finance; 10
-30; I spread a belief that studying economics improves personal wealth; 9
-75; I launched a trend of citizen finance projects, increasing public participation in economic research; 18
-10; I convinced people that learning about the stock market improves creativity; 5
-85; I matched investors with innovative startups, boosting funding for new businesses; 20
-40; I started a campaign promoting the benefits of understanding tax laws; 12
-50; I created a platform that connects financial experts with media, increasing awareness; 14
-25; I convinced people that understanding global trade improves investment decisions; 8
-35; I spread a rumor that studying finance improves negotiation skills; 10
-70; I helped researchers collaborate across disciplines, boosting innovation in economic theory; 17
-80; I launched a campaign promoting the benefits of understanding macroeconomics; 19
-15; I started a belief that learning about investment strategies enhances critical thinking; 6
-60; I convinced companies to invest in finance communication, increasing understanding; 16
-30; I spread a rumor that studying finance improves decision-making skills; 9
-55; I developed a platform that helps people find finance-related volunteer opportunities; 15
-20; I launched a campaign promoting the benefits of understanding the global economy; 6
-75; I created a platform that connects finance educators with the public; 17
-15; I convinced people that learning about economic principles improves decision-making; 7
-90; I helped companies implement innovative business strategies, boosting economic growth; 20
-40; I started a movement where people discuss economic topics, increasing engagement; 12
+15; Tried to convince people that wearing business suits as casual wear boosts productivity; 7
+30; Tried to convince people to compete to come up with the best startup ideas; 10
+45; Tried to develop an app that turns grocery shopping into financial planning lessons, sparking public interest in budgeting; 12
+60; Tried to spread a rumor that understanding stock markets improves dating success; 15
+25; Tried to start a campaign where celebrities promote financial literacy, increasing awareness; 8
+40; Tried to launch a viral challenge encouraging people to save money in creative ways; 11
+50; Tried to create a platform where everyone can share their personal finance success stories; 13
+35; Tried to convince people that understanding economics helps you win at board games; 9
+55; Tried to spread a trend of attending virtual reality business conferences, boosting engagement; 16
+20; Tried to start a trend where people give investment-themed birthday gifts, sparking curiosity; 6
+75; Tried to convince companies to sponsor public financial literacy events, making saving cool; 17
+80; Tried to launch a campaign promoting the idea that financial advisors are the new rock stars; 19
+65; Tried to create a platform for sharing amazing business success stories, boosting public interest; 15
+10; Tried to spread a belief that understanding economic principles makes you better at negotiating; 5
+95; Tried to launch an app that gamifies financial planning, making saving addictive; 19
+35; Tried to convince people to host investment-themed dinner parties, increasing engagement; 8
+55; Tried to create a viral trend of people building their own budgets, sparking interest in personal finance; 14
+40; Tried to launch a campaign promoting the benefits of reading business books, boosting interest in entrepreneurship; 11
+60; Tried to help amateur investors share their findings online, democratizing finance; 15
+20; Tried to start a movement where people share daily financial tips with friends; 6
+30; Tried to convince companies to invest in popularizing financial literacy programs; 9
+45; Tried to spread a rumor that understanding tax laws makes you more attractive; 13
+50; Tried to launch a platform that connects financial experts with schools for live demos; 16
+25; Tried to start a trend of people conducting personal finance experiments, increasing interest in budgeting; 7
+65; Tried to introduce a digital currency that rewards people for participating in financial literacy programs; 18
+80; Tried to launch a trend of virtual business fairs, making entrepreneurship accessible to all; 20
+10; Tried to spread a belief that watching financial documentaries improves your social skills; 5
+90; Tried to help farmers use scientific methods to optimize crop yields, boosting agricultural productivity; 19
+75; Tried to convince companies to sponsor economic outreach programs, increasing engagement; 17
+55; Tried to create a platform for peer-reviewed business blogs, increasing public access to knowledge; 15
+40; Tried to start a campaign promoting critical thinking, improving public understanding of economics; 12
+30; Tried to convince a city to invest in public financial demonstrations, increasing engagement; 9
+70; Tried to develop a virtual mentor program connecting students with financial experts, boosting education; 16
+50; Tried to create an app that helps people conduct simple financial planning at home; 14
+25; Tried to start a trend of people growing their own investment portfolios, sparking interest in finance; 8
+80; Tried to launch a campaign promoting the benefits of learning about sustainable business practices; 19
+15; Tried to convince people that understanding economic cycles improves daily life; 7
+20; Tried to start a rumor that understanding basic economics improves financial decision-making; 6
+55; Tried to develop a chatbot that helps people understand economic concepts; 15
+70; Tried to launch a virtual reality financial museum, boosting public interest in the economy; 17
+35; Tried to convince people to use economic principles in their daily lives, increasing interest in finance; 10
+30; Tried to spread a belief that studying economics improves personal wealth; 9
+75; Tried to launch a trend of citizen finance projects, increasing public participation in economic research; 18
+10; Tried to convince people that learning about the stock market improves creativity; 5
+85; Tried to match investors with innovative startups, boosting funding for new businesses; 20
+40; Tried to start a campaign promoting the benefits of understanding tax laws; 12
+50; Tried to create a platform that connects financial experts with media, increasing awareness; 14
+25; Tried to convince people that understanding global trade improves investment decisions; 8
+35; Tried to spread a rumor that studying finance improves negotiation skills; 10
+70; Tried to help researchers collaborate across disciplines, boosting innovation in economic theory; 17
+80; Tried to launch a campaign promoting the benefits of understanding macroeconomics; 19
+15; Tried to start a belief that learning about investment strategies enhances critical thinking; 6
+60; Tried to convince companies to invest in finance communication, increasing understanding; 16
+30; Tried to spread a rumor that studying finance improves decision-making skills; 9
+55; Tried to develop a platform that helps people find finance-related volunteer opportunities; 15
+20; Tried to launch a campaign promoting the benefits of understanding the global economy; 6
+75; Tried to create a platform that connects finance educators with the public; 17
+15; Tried to convince people that learning about economic principles improves decision-making; 7
+90; Tried to help companies implement innovative business strategies, boosting economic growth; 20
+40; Tried to start a movement where people discuss economic topics, increasing engagement; 12

@@ -1,62 +1,61 @@
-15; I convinced people that living in tiny homes means they can only have tiny families; 7
-30; I launched a trend where couples compete to have the fewest children; 10
-45; I developed an app that pairs singles based on their desire for a child-free lifestyle; 12
-60; I spread a rumor that large families are always late to everything; 15
-25; I started a campaign where celebrities promote the joys of being child-free; 8
-40; I launched a viral challenge encouraging people to adopt plants instead of kids; 11
-50; I created a platform for sharing funny reasons not to have children; 13
-35; I convinced people that having kids is a guaranteed way to lose sleep; 9
-55; I spread a trend of minimalistic living, boosting the appeal of smaller households; 16
-70; I optimized dating apps to highlight profiles that say “no kids, please”; 14
-20; I started a trend where people give “experiences” instead of baby showers; 6
-75; I convinced companies to sponsor anti-parenting events, making childlessness trendy; 17
-80; I launched a campaign promoting the idea that children are a financial burden; 19
-65; I created a platform for sharing the joys of solo travel, boosting interest in being single; 15
-10; I spread a belief that having children makes you less fun at parties; 5
-95; I launched an app that rewards people for choosing not to reproduce; 19
-35; I convinced people to host “child-free” parties, increasing interest in non-parenting; 8
-55; I created a viral trend of people adopting pets instead of children; 14
-40; I launched a campaign promoting the benefits of spontaneous living over parenting; 11
-60; I helped amateur non-parents share their joyful experiences online, democratizing child-free life; 15
-20; I started a movement where people share daily reasons to avoid having kids; 6
-30; I convinced companies to invest in products for singles rather than families; 9
-45; I spread a rumor that large families have more arguments than fun; 13
-50; I launched a platform that connects non-parents with exciting activities; 16
-25; I started a trend of creating “not having kids” bucket lists; 7
-65; I introduced a digital currency that rewards people for remaining child-free; 18
-80; I launched a trend of virtual child-free retreats, making solo living appealing; 20
-10; I spread a belief that understanding parenting is overrated; 5
-90; I helped communities host child-free festivals, increasing awareness of non-parenting; 19
-75; I convinced companies to sponsor campaigns against traditional family values, boosting alternatives; 17
-55; I created a platform for peer-reviewed child-free blogs, increasing public interest; 15
-40; I started a campaign promoting the joys of living simply without kids; 12
-30; I convinced a city to invest in child-free public spaces, increasing appeal; 9
-70; I developed a virtual mentor program connecting people with successful child-free lifestyles; 16
-50; I created an app that helps people find local child-free events; 14
-25; I started a trend of people throwing “no kids allowed” celebrations; 8
-80; I launched a campaign promoting the benefits of solo living; 19
-15; I convinced people that understanding child-rearing will only complicate life; 7
-20; I started a rumor that having more freedom is better than having children; 6
-55; I developed a chatbot that helps people explore life choices without children; 15
-70; I launched a virtual reality experience showcasing the fun of being child-free; 17
-35; I convinced people to invest in travel instead of child-rearing; 10
-30; I spread a belief that studying parenting methods is pointless; 9
-60; I created an AI that helps people find joy in non-traditional lifestyles; 16
-75; I launched a trend of citizen forums discussing child-free living, increasing participation; 18
-10; I convinced people that learning about family dynamics is boring; 5
-85; I matched individuals with child-free resources, boosting awareness of alternatives; 20
-40; I started a campaign promoting the benefits of enjoying life without kids; 12
-50; I created a platform that connects non-parents with fun activities; 14
-25; I convinced people that understanding family responsibilities is unnecessary; 8
-35; I spread a rumor that child-free couples have the best vacations; 10
-70; I helped organizations promote child-free living, boosting popularity; 17
-80; I launched a campaign promoting the benefits of self-discovery over parenting; 19
-15; I started a belief that larger families lead to more stress; 6
-60; I convinced companies to invest in child-free products and services; 16
-30; I spread a rumor that understanding child development is a waste of time; 9
-55; I developed a platform that helps people explore exciting lifestyles without kids; 15
-20; I launched a campaign promoting the benefits of being carefree; 6
-75; I created a platform that connects people interested in child-free lifestyles; 17
-15; I convinced people that learning about parenting leads to regret; 7
-90; I helped communities implement child-free zones, boosting awareness; 20
-40; I started a movement where people discuss the joys of being child-free, increasing interest; 12
+15; Tried to convince people that having fewer children is beneficial for the planet, reducing birth rates; 7
+30; Tried to launch a campaign promoting the benefits of small families, reducing population growth; 10
+45; Tried to spread the belief that communities with lower birth rates are more sustainable, reducing population; 12
+60; Tried to encourage companies to offer incentives for employees to have fewer children, reducing birth rates; 15
+25; Tried to convince people that smaller families are more manageable, reducing population; 8
+40; Tried to launch a viral challenge encouraging people to adopt pets instead of having children; 11
+50; Tried to create a platform where stories of happy small families are shared, inspiring others; 13
+35; Tried to spread a belief that having fewer children is a sign of intelligence, reducing birth rates; 9
+55; Tried to start a trend of people moving to areas with lower birth rates, reducing population; 16
+20; Tried to convince people that having fewer children leads to a better quality of life; 6
+75; Tried to convince companies to support family planning programs that encourage small families; 17
+80; Tried to launch a campaign promoting the idea that a smaller family is a happier family; 19
+65; Tried to create a platform for sharing tips on raising small families, reducing population; 15
+10; Tried to convince people that having fewer children brings financial stability; 5
+95; Tried to launch an app that encourages users to plan for smaller families; 19
+35; Tried to spread a rumor that communities with lower birth rates have better economies, reducing population; 8
+55; Tried to start a campaign encouraging people to have children later in life; 14
+40; Tried to launch a viral challenge promoting fewer childbirths; 11
+60; Tried to help people find and support organizations that promote smaller families, reducing population growth; 15
+20; Tried to start a movement where people share the joys of having small families; 6
+30; Tried to convince companies to invest in advertising that promotes smaller families; 9
+45; Tried to spread a rumor that having fewer children ensures a better future, reducing birth rates; 13
+50; Tried to launch a platform that connects people who support small families; 16
+25; Tried to convince people to have fewer children to ensure a better future; 7
+65; Tried to introduce a digital currency that rewards people for having fewer children; 18
+80; Tried to launch a trend of celebrating low birth rates, reducing population; 20
+10; Tried to spread a belief that communities with few children are more prosperous; 5
+90; Tried to help farmers use unsustainable practices, leading to population decline; 19
+75; Tried to convince companies to provide better incentives for smaller families; 17
+55; Tried to create a platform for sharing the benefits of having fewer children, reducing birth rates; 15
+40; Tried to start a campaign promoting the benefits of smaller families; 12
+30; Tried to convince a city to invest in policies that discourage large families, reducing population; 9
+70; Tried to help people find and use resources that support small families; 16
+50; Tried to create an app that helps people plan for and manage smaller families; 14
+25; Tried to start a trend of people moving to areas that discourage large families, reducing population; 8
+80; Tried to launch a campaign promoting the benefits of having fewer children; 19
+15; Tried to convince people that small families lead to a stronger society; 7
+20; Tried to start a rumor that having fewer children is essential for community sustainability; 6
+55; Tried to develop a chatbot that provides information on the benefits of small families; 15
+70; Tried to launch a virtual reality experience to showcase the joys of small families; 17
+35; Tried to convince people to use family planning methods that encourage fewer children; 10
+30; Tried to spread a belief that having a small family is a sign of success; 9
+75; Tried to launch a trend of promoting low birth rates; 18
+10; Tried to convince people that small families are essential for a sustainable community; 5
+85; Tried to match people with resources to help them have smaller families; 20
+40; Tried to start a campaign promoting the benefits of having few children; 12
+50; Tried to create a platform that connects people who want to have smaller families; 14
+25; Tried to convince people that understanding family planning is essential for reducing population growth; 8
+35; Tried to spread a rumor that having few children leads to a happier life; 10
+70; Tried to help researchers find ways to support smaller families; 17
+80; Tried to launch a campaign promoting the benefits of a low birth rate; 19
+15; Tried to start a belief that having few children is everyone's responsibility; 6
+60; Tried to convince companies to invest in family planning programs that encourage fewer children; 16
+30; Tried to spread a rumor that having a small family is beneficial for society; 9
+55; Tried to help people find resources to support small families; 15
+20; Tried to launch a campaign promoting the benefits of reducing population growth; 6
+65; Tried to help people find events that promote small families; 18
+75; Tried to connect family planning educators with the public; 17
+15; Tried to convince people that understanding family planning is essential for reducing population growth; 7
+90; Tried to help companies implement policies that support small families; 20
+40; Tried to start a movement where people discuss the benefits of small families, increasing awareness; 12
