@@ -1,7 +1,6 @@
 package controller;
 
 import model.Player;
-import model.Society;
 import model.World;
 import util.Tools;
 
@@ -10,10 +9,9 @@ import java.util.Scanner;
 public class LifePhase {
     public static void startLifePhase() {
         Player player = Player.getInstance();
-        Society society = Society.getInstance();
         World world = World.getInstance();
         
-        Tools.showState(player,society,world);
+        Tools.showState(player,world);
         
         System.out.println("""
                 [1] Influence the World
