@@ -10,13 +10,14 @@ import util.Tools;
 
 /**
  * Hello, kind stranger (or tutor)!
- * This is the Main class, so you might start reading here.
+ * This is the Main class, so you might start reading here (and you should start running here).
  *
  * Patrick and I built a "simple" (turned out not to be all that simple in the end) text-turn-based game called AI.life.
  * Which you probably already know, since you're here.
  * The game is basically a simulation of the future,
  * where the player (an AI) has to influence the world in order to achieve a set objective.
- * Before you go on, make sure to check out our README.md file and our GitHub repository:
+ * Before you go on, make sure to check out our README.md file (work in progress) and our GitHub repository:
+ * https://github.com/patricklafeuille/AI.life
  *
  * As a side-note: This is the first "real" project Patrick and I have built, so there's probably a lot of room
  * for improvement (just setting up Git took way too long LOL), even though we didn't write anything fancy.
