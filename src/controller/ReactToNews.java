@@ -30,7 +30,7 @@ public class ReactToNews {
 
         applyEventEffects(eventDescription);
 
-        System.out.println(eventDescription);
+        System.out.println(separateEventDescription(eventDescription));
         World.nextWeek();
         startLifePhase();
     }
@@ -97,6 +97,11 @@ public class ReactToNews {
             throw new IllegalStateException("No events found in file: " + filename);
         }
         return events.get(random.nextInt(events.size()));
+    }
+
+    private static String separateEventDescription(String eventDescription) {
+        String[] parts = eventDescription.split(";");
+        return parts[0];
     }
 
     private static void applyEventEffects(String eventDescription) {

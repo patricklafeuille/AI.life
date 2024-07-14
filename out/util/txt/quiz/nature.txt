@@ -1,0 +1,91 @@
+1;What color does a poppy usually have?;red
+1;How many legs does a spider have?;eight
+1;What is the largest mammal?;blue whale
+1;What do bees collect and use to make honey?;nectar
+1;What is the primary gas found in the air we breathe?;nitrogen
+1;What type of leaf does an oak tree have?;lobed
+1;What season comes after winter?;spring
+1;How many petals does a typical daisy have?;ten
+1;What color are flamingos?;pink
+1;Which animal is known for its long neck?;giraffe
+1;What type of animal is a frog?;amphibian
+1;What is the tallest type of grass?;bamboo
+1;How many continents are there on Earth?;seven
+1;What is the hardest natural substance on Earth?;diamond
+1;Which planet is known as the Red Planet?;mars
+1;What is the largest planet in our solar system?;jupiter
+1;What do you call a group of lions?;pride
+1;Which bird is known for its colorful feathers?;peacock
+1;What is the most common element in the universe?;hydrogen
+1;Which ocean is the largest?;pacific
+1;What is the largest land animal?;elephant
+1;What is the smallest country in the world?;vatican city
+1;What type of tree produces acorns?;oak
+1;Which animal is known for its black and white stripes?;zebra
+1;What is the largest bird?;ostrich
+1;How many hearts does an octopus have?;three
+1;What kind of fruit is a banana?;berry
+1;What is the most common gas in the Earth's atmosphere?;nitrogen
+1;Which animal is known as the king of the jungle?;lion
+1;What do you call a baby kangaroo?;joey
+2;What is the process by which plants make their food?;photosynthesis
+2;What gas do plants absorb from the atmosphere?;carbon dioxide
+2;Which part of the plant conducts photosynthesis?;leaf
+2;What is the boiling point of water in Celsius?;100
+2;What is the tallest mountain in the world?;everest
+2;What is the hardest rock?;diamond
+2;What kind of trees lose their leaves in the fall?;deciduous
+2;What is the largest desert in the world?;sahara
+2;Which animal is known for its ability to change colors?;chameleon
+2;What is the second most abundant gas in the Earth's atmosphere?;oxygen
+2;Which part of the flower becomes the fruit?;ovary
+2;What is the largest freshwater lake by volume?;lake baikal
+2;Which animal can regrow its limbs?;salamander
+2;What kind of animal is a Komodo dragon?;lizard
+2;What is the primary source of energy for the Earth?;sun
+2;Which planet is closest to the sun?;mercury
+2;What is the main component of the Earth's core?;iron
+2;Which animal is the fastest land animal?;cheetah
+2;What is the longest river in the world?;nile
+2;What is the process of water vapor turning into liquid water?;condensation
+2;What type of animal is a dolphin?;mammal
+2;What is the chemical symbol for gold?;au
+2;Which animal has the longest lifespan?;tortoise
+2;What is the most venomous snake?;inland taipan
+2;What is the largest bone in the human body?;femur
+2;What is the main gas found in the sun?;hydrogen
+2;What do you call a scientist who studies rocks?;geologist
+2;What is the study of weather called?;meteorology
+2;Which planet has the most moons?;jupiter
+2;What is the primary gas in Venus's atmosphere?;carbon dioxide
+3;What is the chemical formula for table salt?;nacl
+3;What is the deepest part of the ocean called?;mariana trench
+3;Which animal has the largest brain relative to its body size?;dolphin
+3;What type of rock is formed from molten lava?;igneous
+3;What is the primary force that causes tides?;gravity
+3;What element is diamond made of?;carbon
+3;What is the study of plants called?;botany
+3;Which planet is known for its rings?;saturn
+3;What is the most abundant metal in the Earth's crust?;aluminum
+3;Which element is essential for the formation of bones?;calcium
+3;What is the chemical symbol for potassium?;k
+3;What is the second longest river in the world?;amazon
+3;What is the rarest blood type?;ab negative
+3;What do you call the study of fossils?;paleontology
+3;What is the largest organ in the human body?;skin
+3;What is the name of the process by which cells divide?;mitosis
+3;Which gas is produced by photosynthesis?;oxygen
+3;What is the smallest unit of life?;cell
+3;Which planet has the Great Red Spot?;jupiter
+3;What is the most common isotope of hydrogen?;protium
+3;What is the process by which DNA is copied?;replication
+3;What is the most common type of star in the universe?;red dwarf
+3;What is the name of the protein that carries oxygen in blood?;hemoglobin
+3;Which element has the highest melting point?;tungsten
+3;What is the hardest natural substance?;diamond
+3;Which planet has a day longer than its year?;venus
+3;What is the most common element in the Earth's atmosphere?;nitrogen
+3;What is the term for animals that eat both plants and animals?;omnivores
+3;What is the fastest bird in the world?;peregrine falcon
+3;Which animal has the most complex communication system?;dolphin
+3;What is the main ingredient in glass?;silica
