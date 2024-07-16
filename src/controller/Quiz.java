@@ -132,7 +132,6 @@ public class Quiz {
         }
     }
 
-
     public void startTriviaQuiz(String category) { // Method to start the trivia quiz
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -208,11 +207,11 @@ public class Quiz {
         int totalBonus = bonus;
 
         if (attribute.equals("intelligence")) {
-            player.changeIntelligence(totalBonus);
             System.out.println("Intelligence changed by " + totalBonus);
+            player.changeIntelligence(totalBonus);
         } else if (attribute.equals("power")) {
-            player.changePower(totalBonus);
             System.out.println("Power changed by " + totalBonus);
+            player.changePower(totalBonus);
         }
     }
 
@@ -222,6 +221,9 @@ public class Quiz {
         int choice = Tools.onlyInt();
         if (choice == 1) {
             System.out.println("Starting quiz again...");
+            totalQuestions = 0;
+            correctAnswers = 0;
+            incorrectAnswers = 0;
             startQuiz(this);
         } else {
             LifePhase.startLifePhase(); // transition into main part of the game
